@@ -11,7 +11,7 @@
       <div v-if="route.path === '/'" class="d-flex gap-2 ai-center f-body-small site-header--menu">
         <a href="#audience">{{ $t('layout.public.menuAudience') }}</a>
         <a href="#scope">{{ $t('layout.public.menuScope') }}</a>
-        <AdminButton size="small" :text="$t('auth.login')" target="_blank" :href="`${config.public.appUrl}/login`" />
+        <Button size="small" :text="$t('auth.login')" target="_blank" :href="`${config.public.appUrl}/login`" />
       </div>
     </header>
 

@@ -1,0 +1,67 @@
+@use "@scss/global/mediaqueries" as mq;
+
+.showcase-nav {
+  overflow: scroll;
+
+  @include mq.nonmobile {
+    justify-content: center;
+  }
+}
+
+.showcase-nav--item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.75rem 2rem;
+  border-radius: 1000px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--text-secondary, rgba(46, 42, 36, 0.6));
+  transition: background-color 100ms ease, color 100ms ease;
+  white-space: nowrap;
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: rgba(222, 201, 160, 0.18);
+  }
+
+  &.active {
+    border: 1px solid rgba(222, 201, 160, 0.5);
+    background-color: rgba(222, 201, 160, 0.35);
+    color: inherit;
+  }
+
+  &.disabled {
+    pointer-events: none;
+  }
+
+  .label {
+    margin-left: 0.5rem;
+    display: inline-block;
+    padding: 0.3rem 0.75rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    background: #FFF;
+    border-radius: 5px;
+  }
+
+  @include mq.mobile {
+    &-claude {
+      order: -1;
+    }
+  }
+}
+
+.showcase-content {
+  .d-flex-mobile {
+    .content {
+      max-width: 450px;
+    }
+
+    @include mq.mobile {
+      flex-direction: column-reverse;
+    }
+  }
+
+}

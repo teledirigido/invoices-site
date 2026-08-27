@@ -4,7 +4,7 @@
       <p>{{ $t('index.toast.success') }}</p>
     </div>
     <form v-else action="#" class="c-form c-form-default" @submit.prevent="submit">
-      <div class="field">
+      <div class="field d-flex gap-05" style="padding-bottom: 1rem;">
         <input
           ref="input"
           v-model="email"
@@ -13,18 +13,16 @@
           :placeholder="$t('index.toast.placeholder')"
           :disabled="loading"
         />
-        <div class="d-flex helper pt-1 space-between">
-          <p>
-            <NuxtLink to="/pages/privacy" class="underlined-on-hover f-size-xs" target="_blank">
-              {{ $t('index.toast.privacyLink') }}
-            </NuxtLink>
-          </p>
-          <p class="pt-05 f-size-s text-right" v-if="email.length > 5">
-            {{ $t('index.toast.pressEnter') }}
-          </p>
-        </div>
-        <p v-if="error" class="notify-error">{{ error }}</p>
+        <button type="submit">{{ $t('index.toast.submit') }}</button>
       </div>
+      <div class="d-flex helper space-between">
+        <p>
+          <NuxtLink to="/pages/privacy" class="underlined-on-hover f-size-xs" target="_blank">
+            {{ $t('index.toast.privacyLink') }}
+          </NuxtLink>
+        </p>
+      </div>
+      <p v-if="error" class="notify-error">{{ error }}</p>
     </form>
   </Toast>
 </template>
@@ -72,7 +70,7 @@ async function submit() {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .notify-success {
   padding: 1rem 0;
   text-align: center;
@@ -81,5 +79,13 @@ async function submit() {
   color: red;
   font-size: 0.85rem;
   margin-top: 0.5rem;
+}
+button {
+  background: #444;
+  color: #FFF;
+  padding:1rem;
+  border-radius: 0.5rem;
+  border:0 none;
+  font-size: inherit;
 }
 </style>

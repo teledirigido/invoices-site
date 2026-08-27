@@ -11,7 +11,7 @@
         {{ $t('index.hero.description') }}
       </p>
       <div class="pt-2">
-        <AdminButton
+        <Button
           :text="$t('index.hero.cta')"
           icon="mdi-arrow-right"
           :has-shadow="true"

@@ -21,6 +21,5 @@ npm run build
 Locally preview production build:
 
 ```bash
-# npm
 npm run preview
 ```

@@ -8,12 +8,12 @@
       "disclaimer": "No spam. No strings attached."
     },
     "highlights": {
-      "dailyTitle": "IRPF and VAT up to date, at a glance",
-      "dailyDesc": "See the real state of your accounts each quarter",
+      "dailyTitle": "IRPF and VAT up to date",
+      "dailyDesc": "See the real progress of your accounts each quarter.",
+      "modelsTitle": "All your tax forms in one click",
+      "modelsDesc": "Download and export your Modelo 130, 303 and 349, ready to upload to the Tax Agency.",
       "invoicesTitle": "Invoices, clients and expenses",
-      "invoicesDesc": "Issue invoices, record expenses, track who has paid you and stay on top of your obligations.",
-      "verifactuTitle": "Built for Freelancers",
-      "verifactuDesc": "Add your Digital Certificate. Validate with Verifactu. Integrate Claude.ai. No extra costs, no limits."
+      "invoicesDesc": "Issue invoices, record expenses from the web, from Claude.ai, or wherever you like."
     },
     "problem": {
       "label": "Nitidez is also predictability",
@@ -44,7 +44,7 @@
       "chipPresenta": "Doesn't file for you"
     },
     "notifyMe": {
-      "label": "Currently in private development",
+      "label": "Currently in private BETA",
       "heading": "By freelancers, for freelancers",
       "description": "If it sounds like the tool you needed last January, sign up and get early access when it opens."
     },
@@ -58,12 +58,20 @@
       "tabClaude": "Claude.ai",
       "comingSoon": "Coming soon",
       "descWebApp": "All your accounting, clear and in one dashboard.",
-      "descClaude": "Invoice, log expenses and check your taxes just by talking to Claude."
+      "descClaude": "Invoice, log expenses and check your taxes just by talking to Claude.",
+      "aiHeading": "Integrated AI",
+      "aiText1Line1": "Talk to Claude.",
+      "aiText1Line2": "Pick your client, enter the amount, and your invoice is ready.",
+      "aiText2Line1": "Store expenses on the spot.",
+      "aiText2Line2": "Snap a photo and you're done.",
+      "aiText3Line1": "Get to know your current VAT and IRPF status.",
+      "aiText3Line2": "No surprises."
     },
     "toast": {
       "subscriptionConfirmed": "Your subscription has been confirmed.",
       "success": "Check your email and confirm your subscription.",
       "placeholder": "Enter your email address",
+      "submit": "Submit",
       "privacyLink": "View Privacy Policy",
       "pressEnter": "Press enter to submit...",
       "tooManyAttempts": "Too many attempts. Try again later.",

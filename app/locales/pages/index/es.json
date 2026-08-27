@@ -8,12 +8,12 @@
       "disclaimer": "Sin spam. Sin compromisos."
     },
     "highlights": {
-      "dailyTitle": "IRPF e IVA al día, a la vista",
-      "dailyDesc": "Ves el estado real de tus cuentas en cada trimestre",
+      "dailyTitle": "IRPF e IVA al día",
+      "dailyDesc": "Ve el progreso real de tus cuentas en cada trimestre.",
+      "modelsTitle": "Todos tus modelos a un clic",
+      "modelsDesc": "Descarga y exporta tus modelos 130, 303 y 349, listos para subir a la Agencia Tributaria.",
       "invoicesTitle": "Facturas, clientes y gastos",
-      "invoicesDesc": "Emite facturas, registra gastos, controla quién te ha pagado y enterate de tus obligaciones.",
-      "verifactuTitle": "Hecho para Autónomos",
-      "verifactuDesc": "Añade tu Certificado Digital. Valida con Verifactu. Integra Claude.ai. Sin costes adicionales, sin límites."
+      "invoicesDesc": "Emite facturas, registra gastos desde la web, desde Claude.ai o donde quieras."
     },
     "problem": {
       "label": "Nitidez es también predictibilidad",
@@ -57,13 +57,21 @@
       "tabWebApp": "Web App",
       "tabClaude": "Claude.ai",
       "comingSoon": "Pronto",
-      "descWebApp": "Tu contabilidad en un panel dedicado a tus servicios de Autonomo",
-      "descClaude": "Factura, registra gastos y consulta tus impuestos hablando con Claude."
+      "descWebApp": "Contabilidad en un panel dedicado a todos tus servicios de Autonomo.",
+      "descClaude": "Factura, registra gastos y consulta tus impuestos hablando con Claude.",
+      "aiHeading": "IA Integrada",
+      "aiText1Line1": "Habla con Claude.",
+      "aiText1Line2": "Elige tu cliente, ingresa el importe y ya tienes tu factura.",
+      "aiText2Line1": "Registra gastos al momento.",
+      "aiText2Line2": "Sube una foto y listo.",
+      "aiText3Line1": "Conoce tu situación actual de IVA o IRPF.",
+      "aiText3Line2": "Sin sorpresas."
     },
     "toast": {
       "subscriptionConfirmed": "Tu suscripción ha sido confirmada.",
       "success": "Revisa tu email y confirma tu suscripción.",
       "placeholder": "Añade tu correo electrónico",
+      "submit": "Enviar",
       "privacyLink": "Ver Política de privacidad",
       "pressEnter": "Presiona enter para enviar...",
       "tooManyAttempts": "Demasiados intentos. Inténtalo más tarde.",

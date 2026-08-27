@@ -6,26 +6,26 @@
     <div class="grid-3 grid-highlights f-hanken pb-2 gap-2 f-body">
       <div class="item br-1 p-2 f-hanken">
         <h3 class="f-size-m">
-          IRPF e IVA al día
+          {{ $t('index.highlights.dailyTitle') }}
         </h3>
         <p class="pt-1 c-text-secondary f-size-sm">
-          Ve el progreso real de tus cuentas en cada trimestre.
+          {{ $t('index.highlights.dailyDesc') }}
         </p>
       </div>
       <div class="item br-1 p-2 f-hanken">
         <h3 class="f-size-m">
-          Todos tus modelos a un clic
+          {{ $t('index.highlights.modelsTitle') }}
         </h3>
         <p class="pt-1 c-text-secondary f-size-sm">
-          Descarga y exporta tus modelos 130, 303 y 349, listos para subir a la Agencia Tributaria.
+          {{ $t('index.highlights.modelsDesc') }}
         </p>
       </div>
       <div class="item br-1 p-2 f-hanken">
         <h3 class="f-size-m">
-          Facturas, clientes y gastos
+          {{ $t('index.highlights.invoicesTitle') }}
         </h3>
         <p class="pt-1 c-text-secondary f-size-sm">
-          Emite facturas, registra gastos desde la web, desde Claude.ai o donde quieras.
+          {{ $t('index.highlights.invoicesDesc') }}
         </p>
       </div>
     </div>
@@ -65,7 +65,7 @@
           {{ $t('index.audience.description') }}
         </p>
         <p class="pb-1">{{ $t('index.audience.conclusion') }}</p>
-        <AdminButton
+        <Button
           :text="$t('index.hero.cta')"
           icon="mdi:arrow-right"
           class="br-1"

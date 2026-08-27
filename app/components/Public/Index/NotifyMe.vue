@@ -8,7 +8,7 @@
       </p>
     </div>
     <div class="pt-2">
-      <AdminButton type="primary" :text="$t('index.hero.cta')" :on-click="show" />
+      <Button type="primary" :text="$t('index.hero.cta')" :on-click="show" />
       <p class="c-on-black f-size-xs pt-1 op-05">{{ $t('index.hero.disclaimer') }}</p>
     </div>
   </section>
