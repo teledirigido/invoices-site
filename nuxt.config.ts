@@ -55,7 +55,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxt/fonts', '@nuxt/icon', '@nuxtjs/i18n'],
+  modules: ['@nuxt/fonts', '@nuxt/icon', '@nuxtjs/i18n', '@nuxt/content'],
 
   i18n: {
     strategy: 'no_prefix',
@@ -69,7 +69,6 @@ export default defineNuxtConfig({
           'en.json',
           'pages/index/en.json',
           'layout/public/en.json',
-          'pages/privacy/en.json',
         ],
       },
       {
@@ -80,7 +79,6 @@ export default defineNuxtConfig({
           'es.json',
           'pages/index/es.json',
           'layout/public/es.json',
-          'pages/privacy/es.json',
         ],
       },
     ],

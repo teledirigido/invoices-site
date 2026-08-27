@@ -1,5 +1,5 @@
 <template>
-  <PublicLegalPage slug="privacy" />
+  <PublicLegalPage slug="terms-claude" />
 </template>
 
 <script setup>

@@ -1,3 +1,5 @@
+.DS_Store
+
 # Nuxt dev/build outputs
 .output
 .data
