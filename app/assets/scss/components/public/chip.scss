@@ -1,0 +1,21 @@
+@use "@scss/global/mediaqueries" as mq;
+
+.template-public .chip {
+
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 1000px;
+  text-align: center;
+
+  &--primary {
+    background-color: #FFF;
+    color: #777;
+    border: 1px solid rgba(46, 42, 36, 0.09);
+  }
+
+  &--secondary {
+    color: rgb(122, 114, 102);
+    background: rgb(237, 228, 213);
+  }
+
+}

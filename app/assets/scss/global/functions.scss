@@ -1,0 +1,46 @@
+@use '@scss/global/mediaqueries' as mq;
+@use '@scss/theme/variables' as var;
+
+@function rem($value) {
+  $remValue: calc($value / var.$bodyFontSize) + rem;
+  @return $remValue;
+}
+
+@mixin contentWrapper($value, $addMobileMaxWidth: true) {
+  max-width: $value;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  @media screen and (max-width: #{$value+50px}) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @if $addMobileMaxWidth {
+    @include mq.mobile {
+      max-width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}

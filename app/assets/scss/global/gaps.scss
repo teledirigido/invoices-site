@@ -1,0 +1,113 @@
+@use '@scss/global/mediaqueries' as mq;
+
+@for $i from 1 through 10 {
+  .pt-#{$i} {
+    padding-top: $i+rem;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: $i+rem;
+  }
+
+  .mt-#{$i} {
+    margin-top: $i+rem;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: $i+rem;
+  }
+
+  .p-#{$i} {
+    padding: $i+rem;
+  }
+
+  .my-#{$i} {
+    margin-top: $i+rem;
+    margin-bottom: $i+rem;
+  }
+
+  .py-#{$i} {
+    padding-top: $i+rem;
+    padding-bottom: $i+rem;
+  }
+
+  .px-#{$i} {
+    padding-left: $i+rem;
+    padding-right: $i+rem;
+  }
+}
+
+.pt-05 {
+  padding-top: 0.5rem;
+}
+
+.pb-05 {
+  padding-bottom: 0.5rem;
+}
+
+@include mq.nondesktop {
+  @for $i from 1 through 5 {
+    .pt-#{$i}--nondesktop {
+      padding-top: $i+rem;
+    }
+
+    .pb-#{$i}--nondesktop {
+      padding-bottom: $i+rem;
+    }
+  }
+}
+
+@include mq.mobile {
+  @for $i from 1 through 5 {
+    .pt-#{$i}--mobile {
+      padding-top: $i+rem;
+    }
+
+    .p-#{$i}--mobile {
+      padding: $i+rem;
+    }
+
+    .pb-#{$i}--mobile {
+      padding-bottom: $i+rem;
+    }
+  }
+
+  @for $i from 3 through 8 {
+    .py-#{$i} {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .pt-#{$i} {
+      padding-top: 2rem;
+    }
+
+    .mt-#{$i} {
+      margin-top: 2rem;
+    }
+
+    .mb-#{$i} {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.p-05 {
+  padding: 0.5rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mx-auto {
+  margin-right: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}

@@ -1,0 +1,15 @@
+.locale-switcher {
+  // appearance: none;
+  padding: 0.5rem 1rem;
+  padding-right: 1rem;
+  border-radius: 0.2rem;
+  background-color: #FFF;
+  border: 1px solid;
+  background-color: var(--c-secondary-2);
+  border: 0 none;
+  color: var(--c-on-secondary);
+
+  &:hover {
+    cursor: pointer;
+  }
+}

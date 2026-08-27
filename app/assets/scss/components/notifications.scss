@@ -1,0 +1,39 @@
+@use "sass:color";
+
+.c-notification {
+
+  background-color: #FFF;
+  // box-shadow: 0 20px 30px #DFDFDF;
+  border-radius: 1rem;
+  word-break: break-word;
+
+  &--display-default {
+    padding: 1.5rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &--display-inline {
+    padding-bottom: 1rem;
+  }
+
+  ol {
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  &--error {
+    color: color.adjust(red, $lightness: -10%);
+  }
+
+  &--default,
+  &--success {
+    background-color: var(--c-success);
+    color: #FFF;
+  }
+
+
+}

@@ -1,0 +1,31 @@
+@use "sass:color";
+
+.form-inline-actions {
+
+  display: inline-flex;
+
+  button {
+    display: inline-block;
+    appearance: none;
+    background: none;
+    border: 0;
+    font-size: 100%;
+    font-weight: inherit;
+    font-family: inherit;
+    line-height: 100%;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    &.delete {
+      color: color.adjust(red, $lightness: -10%)
+    }
+  }
+
+  .actions-confirm {
+    display: flex;
+    gap: 0.5rem;
+  }
+}

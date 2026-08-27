@@ -1,0 +1,122 @@
+@use "sass:color";
+
+// This file and admin-button.scss need to be normalize to be semantically more correct
+// At the time of creation we only had admin-button
+
+.template-public {
+
+  .admin-button-wrapper {
+
+    --border-radius: 10000px;
+    display: inline-flex;
+    position: relative;
+    transition: ease background 200ms;
+    line-height: 100%;
+
+    &.admin-button--disabled,
+    .admin-button--disabled {
+      opacity: 0.5;
+      cursor: default;
+      // pointer-events: none;
+    }
+
+  }
+
+  .admin-button {
+    --padding: var(--field-padding, 1.5rem);
+
+    padding: var(--padding, 1.1rem);
+    transition: ease all 200ms;
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+
+    &--text {
+      padding: var(--padding, 1rem 2.5rem);
+    }
+
+    &.button-with-icon {
+      padding: var(--padding);
+    }
+
+
+    // Primary
+    &-primary {
+
+      background-color: #444;
+      color: #FFF;
+      border-radius: var(--border-radius);
+
+      &:hover:not(:disabled) {
+        background-color: #111;
+        color: #f1f1f1;
+        // box-shadow: 0 0 10px rgba(black,0.5);
+        cursor: pointer;
+      }
+
+      &:is(button) {
+        border: 0 none;
+      }
+
+    }
+
+    // Secondary
+    &-secondary {
+      --padding-y: 0.5rem;
+
+      border-radius: var(--border-radius);
+      background-color: var(--c-secondary-2);
+      color: color.adjust(#F5DBBE, $lightness: -60%);
+
+      &:hover {
+        // background-color: color.adjust(#F5DBBE, $lightness: -10%);
+        background-color: var(--c-secondary-2);
+        color: #333;
+      }
+
+      .admin-button--submenu {
+        z-index: 10;
+        // background-color: color.adjust(#F5DBBE, $lightness: -5%);
+        background-color: var(--c-secondary);
+        box-shadow: 0 5px 20px -7px rgba(#000, 0.2);
+
+        a:hover {
+          // background-color: color.adjust(#F5DBBE, $lightness: 5%);
+          text-decoration: underline;
+        }
+      }
+    }
+
+    // text
+    &-text {
+      --padding: 0.2rem 1.5rem;
+      background-color: #f1f1f1;
+      border-radius: 1rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &-small {
+      padding: 0.5rem 1.2rem;
+    }
+  }
+
+  .bg-black .admin-button-primary {
+    background-color: rgb(246, 238, 225);
+    color: rgb(42, 38, 32);
+
+    &:hover {
+      background-color: rgb(205, 189, 162);
+      color: rgb(42, 38, 32)
+    }
+  }
+
+  .landing-hero .admin-button-primary {
+    box-shadow: rgba(46, 42, 36, 0.5) 0px 10px 30px -12px;
+  }
+
+}

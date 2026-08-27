@@ -1,0 +1,60 @@
+@use "@scss/global/mediaqueries" as mq;
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.ai-center {
+  align-items: center
+}
+
+.jc-end {
+  justify-content: flex-end;
+}
+
+.ji-end {
+  justify-items: end;
+}
+
+.space-between,
+.jc-sb {
+  justify-content: space-between;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+@include mq.desktop {
+  .d-flex {
+    &--desktop {
+      display: flex;
+    }
+  }
+}
+
+@include mq.nondesktop {
+  .d-inline-flex {
+    &--nondesktop {
+      display: inline-flex;
+    }
+  }
+}
+
+.ai- {
+  &-center {
+    align-items: center;
+  }
+}

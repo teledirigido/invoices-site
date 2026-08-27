@@ -1,0 +1,59 @@
+@use "@scss/global/mediaqueries" as mq;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.04;
+  font-weight: 600;
+}
+
+.f-light {
+  font-weight: 300
+}
+
+.f-size-xl {
+  font-size: 3.2rem;
+
+  @include mq.nondesktop {
+    font-size: 2rem;
+  }
+}
+
+.f-size-l {
+  font-size: 2.8rem;
+}
+
+
+.f-size-m {
+  font-size: 2rem;
+
+  @include mq.nondesktop {
+    font-size: 1.3rem;
+  }
+}
+
+.f-size-sm {
+  font-size: 1.5rem;
+
+  @include mq.nondesktop {
+    font-size: 1.3rem;
+  }
+}
+
+.f-size-s {
+  font-size: 1rem;
+
+  @include mq.nondesktop {
+    font-size: 0.85rem;
+  }
+}
+
+.f-size-xs {
+  font-size: 0.85rem;
+
+  @include mq.nondesktop {
+    font-size: 0.85rem;
+  }
+}

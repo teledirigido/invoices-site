@@ -1,0 +1,19 @@
+.landing-hero {
+
+  color: rgb(92, 85, 76);
+
+  p {
+    line-height: 1.55;
+  }
+
+  h1 {
+    font-size: clamp(42px, 6.6vw, 78px);
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+    margin: 0px 0px 26px;
+    color: rgb(42, 38, 32);
+    animation: 0.7s 0.06s both fade-up;
+  }
+
+}

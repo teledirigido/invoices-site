@@ -1,0 +1,95 @@
+@use "@scss/theme/variables" as var;
+@use '@scss/global/functions' as fn;
+@use '@scss/global/mediaqueries' as mq;
+
+body {
+  font-family: var.$bodyFont;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #FAF3EA;
+}
+
+.content-wrapper--auth {
+  @include fn.contentWrapper(650px, false);
+}
+
+.content-wrapper {
+  @include fn.contentWrapper(1280px, false);
+
+  & {
+    color: #333;
+  }
+
+  @include mq.mobile {
+    &.pt-10 {
+      padding-top: 3rem;
+    }
+  }
+
+  p {
+    line-height: 145%;
+  }
+}
+
+.full-height {
+  width: 100%;
+  min-height: 680px;
+
+  @include mq.desktop {
+    height: 100vh;
+  }
+}
+
+.is-narrative {
+  white-space: pre-line;
+
+  p {
+    line-height: 135%;
+    margin-bottom: 0.75rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.fade-enter-from {
+  opacity: 0;
+  transform: translateY(-4px);
+}
+
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(4px);
+}
+
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.has-bg {
+  box-shadow: 0 20px 40px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  background-color: #FFF;
+  transition: ease padding 300ms;
+}
+
+.card-disabled {
+  opacity: 0.7;
+  filter: blur(1px);
+  pointer-events: none;
+  user-select: none;
+}

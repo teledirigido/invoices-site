@@ -1,0 +1,42 @@
+@use "sass:color";
+
+.table-pagination {
+  .table-pagination--item-button {
+    appearance: none;
+    font-size: inherit;
+    border: 0 none;
+
+    &:disabled {
+      opacity: 0.5;
+    }
+
+    &:hover:not(:disabled) {
+      cursor: pointer;
+    }
+  }
+
+  &--admin {
+    .table-pagination--item-button {
+      transition: ease background 300ms;
+      background-color: #F5DBBE;
+      padding: 0.5rem 2rem;
+      border-radius: 0.5rem;
+
+      &:hover:not(.admin-button-primary):not(:disabled) {
+        background-color: color.adjust(#F5DBBE, $lightness: -10%);
+        color: #333;
+      }
+    }
+  }
+
+  &--default {
+    .table-pagination--item-button {
+      background-color: color.adjust(#F5DBBE, $lightness: -10%);
+
+      &:hover:not(:disabled) {
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    }
+  }
+}
