@@ -1,0 +1,73 @@
+{
+  "index": {
+    "hero": {
+      "tagline": "Contabilidad para autónomos en España",
+      "heading": "Claridad en tus cuentas. Nitidez con Hacienda",
+      "description": "Gestiona tus facturas, clientes y gastos en un solo lugar entendiendo cada obligación fiscal.",
+      "cta": "Avísame cuando haya plazas",
+      "disclaimer": "Sin spam. Sin compromisos."
+    },
+    "highlights": {
+      "dailyTitle": "IRPF e IVA al día, a la vista",
+      "dailyDesc": "Ves el estado real de tus cuentas en cada trimestre",
+      "invoicesTitle": "Facturas, clientes y gastos",
+      "invoicesDesc": "Emite facturas, registra gastos, controla quién te ha pagado y enterate de tus obligaciones.",
+      "verifactuTitle": "Hecho para Autónomos",
+      "verifactuDesc": "Añade tu Certificado Digital. Valida con Verifactu. Integra Claude.ai. Sin costes adicionales, sin límites."
+    },
+    "problem": {
+      "label": "Nitidez es también predictibilidad",
+      "heading": "Adiós a las sorpresas de fin de trimestre",
+      "description": "Facturas, gastos, clientes, proveedores y gestión intracomunitaria siempre disponibles. Verifactu e integración con Claude.ai para las tareas diarias.",
+      "conclusion": "Al fin una herramienta de nuestro lado."
+    },
+    "audience": {
+      "label": "Para quién es",
+      "heading": "Pensado para un tipo de autónomo/a",
+      "description": "• Eres autónomo/a en España. \n• Llevas registro de Clientes y Proveedores. \n• Trabajas en servicios: sin inventario, sin empleados. \n• Tienes clientes de España, EU o en el extranjero \n• Te manejas con los números y quieres entender tus propias finanzas. \n• Tienes gestor, o no.",
+      "conclusion": "Perfecto. Nitidez es para ti."
+    },
+    "models": {
+      "modelo130Title": "Modelo 130",
+      "modelo130Desc": "Tu pago fraccionado de IRPF, calculado sobre el rendimiento neto acumulado del año.",
+      "modelo303Title": "Modelo 303",
+      "modelo303Desc": "El IVA repercutido menos el deducible, listo cada trimestre sin cuadres manuales",
+      "retaTitle": "RETA",
+      "retaDesc": "Tu cuota de Seguridad Social contemplada dentro del cálculo, no como una sorpresa aparte."
+    },
+    "scope": {
+      "label": "Alcance Honesto",
+      "heading": "Lo que Nitidez.es no es",
+      "description": "No sustituye a un gestor en situaciones complejas. No gestiona nóminas, módulos ni varias actividades simultáneas. No presenta nada en tu nombre. Te pone al mando de tus números para que entiendas cada obligación antes de que venza.",
+      "chipNominas": "No hace nóminas",
+      "chipModulos": "No hace módulos",
+      "chipPresenta": "No presenta por ti"
+    },
+    "notifyMe": {
+      "label": "Actualmente en desarrollo privado",
+      "heading": "Por Autonomos, para autónomos",
+      "description": "Si suena a la herramienta que te hizo falta el enero pasado, apúntate y consigue acceso anticipado cuando abra."
+    },
+    "screenshots": {
+      "altIngresos": "Vista de ingresos en Nitidez",
+      "altFactura": "Vista de factura en Nitidez",
+      "altChat": "Conversación con Nitidez dentro de Claude.ai"
+    },
+    "appShowcase": {
+      "tabWebApp": "Web App",
+      "tabClaude": "Claude.ai",
+      "comingSoon": "Pronto",
+      "descWebApp": "Tu contabilidad en un panel dedicado a tus servicios de Autonomo",
+      "descClaude": "Factura, registra gastos y consulta tus impuestos hablando con Claude."
+    },
+    "toast": {
+      "subscriptionConfirmed": "Tu suscripción ha sido confirmada.",
+      "success": "Revisa tu email y confirma tu suscripción.",
+      "placeholder": "Añade tu correo electrónico",
+      "privacyLink": "Ver Política de privacidad",
+      "pressEnter": "Presiona enter para enviar...",
+      "tooManyAttempts": "Demasiados intentos. Inténtalo más tarde.",
+      "genericError": "Algo salió mal. Inténtalo de nuevo."
+    }
+  }
+}

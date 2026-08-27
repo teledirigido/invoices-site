@@ -1,0 +1,73 @@
+{
+  "index": {
+    "hero": {
+      "tagline": "Accounting for freelancers in Spain",
+      "heading": "Understand your tax obligations with Nitidez",
+      "description": "Manage your invoices, clients and expenses in one place while understanding every tax obligation.",
+      "cta": "Notify me",
+      "disclaimer": "No spam. No strings attached."
+    },
+    "highlights": {
+      "dailyTitle": "IRPF and VAT up to date, at a glance",
+      "dailyDesc": "See the real state of your accounts each quarter",
+      "invoicesTitle": "Invoices, clients and expenses",
+      "invoicesDesc": "Issue invoices, record expenses, track who has paid you and stay on top of your obligations.",
+      "verifactuTitle": "Built for Freelancers",
+      "verifactuDesc": "Add your Digital Certificate. Validate with Verifactu. Integrate Claude.ai. No extra costs, no limits."
+    },
+    "problem": {
+      "label": "Nitidez is also predictability",
+      "heading": "Say goodbye to end-of-quarter surprises",
+      "description": "Invoices, expenses, clients, suppliers and intra-community management always available. Verifactu and Claude.ai integration for daily tasks.",
+      "conclusion": "Finally a tool on our side."
+    },
+    "audience": {
+      "label": "Who it's for",
+      "heading": "Built for a specific kind of freelancer",
+      "description": "• You're a freelancer in Spain. \n• You keep track of Clients and Suppliers. \n• You work in services: no inventory, no employees. \n• You have clients in Spain, EU or abroad. \n• You're comfortable with numbers and want to understand your own finances. \n• You have an accountant, or not.",
+      "conclusion": "Perfect. Nitidez is for you."
+    },
+    "models": {
+      "modelo130Title": "Modelo 130",
+      "modelo130Desc": "Your fractional IRPF payment, calculated on the cumulative net income for the year.",
+      "modelo303Title": "Modelo 303",
+      "modelo303Desc": "Output VAT minus deductible VAT, ready every quarter with no manual reconciliation",
+      "retaTitle": "RETA",
+      "retaDesc": "Your Social Security contribution factored into the calculation, not as a separate surprise."
+    },
+    "scope": {
+      "label": "Honest Scope",
+      "heading": "What Nitidez.es is not",
+      "description": "It doesn't replace an accountant in complex situations. It doesn't handle payroll, modules, or multiple simultaneous activities. It doesn't file anything on your behalf. It puts you in charge of your numbers so you understand every obligation before it's due.",
+      "chipNominas": "No payroll",
+      "chipModulos": "No modules",
+      "chipPresenta": "Doesn't file for you"
+    },
+    "notifyMe": {
+      "label": "Currently in private development",
+      "heading": "By freelancers, for freelancers",
+      "description": "If it sounds like the tool you needed last January, sign up and get early access when it opens."
+    },
+    "screenshots": {
+      "altIngresos": "Income view in Nitidez",
+      "altFactura": "Invoice view in Nitidez",
+      "altChat": "Conversation with Nitidez inside Claude.ai"
+    },
+    "appShowcase": {
+      "tabWebApp": "Web App",
+      "tabClaude": "Claude.ai",
+      "comingSoon": "Coming soon",
+      "descWebApp": "All your accounting, clear and in one dashboard.",
+      "descClaude": "Invoice, log expenses and check your taxes just by talking to Claude."
+    },
+    "toast": {
+      "subscriptionConfirmed": "Your subscription has been confirmed.",
+      "success": "Check your email and confirm your subscription.",
+      "placeholder": "Enter your email address",
+      "privacyLink": "View Privacy Policy",
+      "pressEnter": "Press enter to submit...",
+      "tooManyAttempts": "Too many attempts. Try again later.",
+      "genericError": "Something went wrong. Try again."
+    }
+  }
+}

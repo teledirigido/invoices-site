@@ -32,7 +32,7 @@
 <script setup>
 const { t } = useI18n();
 const { visible, hide } = useNotifyToast();
-const { $api } = useNuxtApp();
+const config = useRuntimeConfig();
 const input = ref(null);
 const email = ref('');
 const loading = ref(false);
@@ -54,7 +54,7 @@ async function submit() {
 
   loading.value = true;
   try {
-    await $api('/api/notify', {
+    await $fetch(`${config.public.appUrl}/api/notify`, {
       method: 'POST',
       body: { email: email.value },
     });

@@ -1,0 +1,11 @@
+{
+  "layout": {
+    "public": {
+      "chip": "Beta Privada",
+      "menuAudience": "Para quién",
+      "menuScope": "Qué no es",
+      "menuNotify": "Avísame",
+      "madeBy": "Hecho por miguel.nz"
+    }
+  }
+}

@@ -1,34 +1,31 @@
 <template>
   <Hero />
-
-  <section class="w-1000 mx-auto pt-2 pb-6 pb-3--mobile fade-up" style="animation-delay: 0.28s">
-    <Screenshot
-      slug="ingresos"
-      src="/images/hero-image.png"
-      :alt="$t('index.screenshots.altIngresos')"
-      :max-height="510"
-      :show-scroll="true"
-    />
-  </section>
+  <AppShowcase />
 
   <section class="w-1140 mx-auto">
     <div class="grid-3 grid-highlights f-hanken pb-2 gap-2 f-body">
       <div class="item br-1 p-2 f-hanken">
-        <h3 class="f-size-m">{{ $t('index.highlights.dailyTitle') }}</h3>
+        <h3 class="f-size-m">
+          IRPF e IVA al día
+        </h3>
         <p class="pt-1 c-text-secondary f-size-sm">
-          {{ $t('index.highlights.dailyDesc') }}
+          Ve el progreso real de tus cuentas en cada trimestre.
         </p>
       </div>
       <div class="item br-1 p-2 f-hanken">
-        <h3 class="f-size-m">{{ $t('index.highlights.verifactuTitle') }}</h3>
+        <h3 class="f-size-m">
+          Todos tus modelos a un clic
+        </h3>
         <p class="pt-1 c-text-secondary f-size-sm">
-          {{ $t('index.highlights.verifactuDesc') }}
+          Descarga y exporta tus modelos 130, 303 y 349, listos para subir a la Agencia Tributaria.
         </p>
       </div>
       <div class="item br-1 p-2 f-hanken">
-        <h3 class="f-size-m">{{ $t('index.highlights.invoicesTitle') }}</h3>
+        <h3 class="f-size-m">
+          Facturas, clientes y gastos
+        </h3>
         <p class="pt-1 c-text-secondary f-size-sm">
-          {{ $t('index.highlights.invoicesDesc') }}
+          Emite facturas, registra gastos desde la web, desde Claude.ai o donde quieras.
         </p>
       </div>
     </div>
@@ -125,6 +122,7 @@
   </Toast>
 </template>
 <script lang="ts" setup>
+import AppShowcase from '~/components/Public/Index/AppShowcase.vue';
 import Hero from '~/components/Public/Index/Hero.vue';
 import NotifyMe from '~/components/Public/Index/NotifyMe.vue';
 import Screenshot from '~/components/Public/Screenshot.vue';

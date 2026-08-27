@@ -1,0 +1,78 @@
+{
+  "privacy": {
+    "topText": "Legal",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: July 2026",
+    "summary": {
+      "noCookiesTitle": "No tracking cookies",
+      "noCookiesDesc": "No third-party analytics, pixels, or external scripts.",
+      "onlyEmailTitle": "Only your email",
+      "onlyEmailDesc": "The only data we collect is the email you enter yourself.",
+      "noSharingTitle": "Never sold or shared",
+      "noSharingDesc": "Your email is never given to third parties for commercial purposes.",
+      "unsubscribeTitle": "Unsubscribe anytime",
+      "unsubscribeDesc": "Email hi{'@'}miguel.nz and we'll delete your data, no questions asked."
+    },
+    "controller": {
+      "title": "1. Data controller",
+      "text": "The data controller for the data collected through this website is {name}, reachable at {email}.",
+      "domain": "Domain: {domain}"
+    },
+    "dataCollected": {
+      "title": "2. What data we collect",
+      "text": "We only collect your {highlight} when you voluntarily enter it in the waitlist form. No browsing data is collected beyond what is strictly necessary for the server to operate (standard access logs that are automatically deleted).",
+      "highlight": "email address"
+    },
+    "purpose": {
+      "title": "3. Purpose and legal basis",
+      "intro": "We process your email address for the following purposes:",
+      "notifyTitle": "To notify you when Nitidez opens access.",
+      "notifyDesc": "Legal basis: your explicit consent when entering your email and submitting the form (Art. 6.1.a GDPR).",
+      "betaTitle": "To send you communications related to the private beta",
+      "betaDesc": "(product status, launch date, relevant updates). Legal basis: the same consent granted.",
+      "noOtherUse": "We will not use your email for any other purpose nor share it with third parties for commercial purposes. Consent is voluntary: not signing up has no consequences."
+    },
+    "retention": {
+      "title": "4. Data retention",
+      "intro": "We will keep your email address until:",
+      "reason1": "You request removal or deletion of your data, or",
+      "reason2": "Nitidez opens to the general public and the waitlist is no longer needed.",
+      "noLonger": "In no case will we retain data longer than necessary for the described purpose."
+    },
+    "recipients": {
+      "title": "5. Recipients",
+      "text": "To send emails we use {resend} (Plus Five Five, Inc.), an email delivery provider based in the United States. Data is transferred and processed in the US. Resend acknowledges the GDPR rights of EU/EEA residents. You can review their privacy policy at {link}. We are working to migrate the email delivery service to EU-based infrastructure. We do not share your data with any other third party."
+    },
+    "rights": {
+      "title": "6. Your rights",
+      "intro": "Under the GDPR (EU Regulation 2016/679) you have the right to:",
+      "access": "Access",
+      "accessDesc": "know what data we hold about you.",
+      "rectification": "Rectification",
+      "rectificationDesc": "correct inaccurate data.",
+      "erasure": "Erasure",
+      "erasureDesc": "request that we delete your email.",
+      "objection": "Objection and restriction",
+      "objectionDesc": "object to or restrict processing.",
+      "portability": "Portability",
+      "portabilityDesc": "receive your data in a structured format.",
+      "withdraw": "Withdraw consent",
+      "withdrawDesc": "at any time, without affecting the lawfulness of prior processing.",
+      "exercise": "To exercise any of these rights, email us at {email}. We will respond within 30 days. If you believe your rights have not been addressed, you can file a complaint with the {aepd}.",
+      "aepdName": "Spanish Data Protection Agency (AEPD)"
+    },
+    "cookies": {
+      "title": "7. Cookies and tracking",
+      "text": "Nitidez.es does not use tracking cookies or third-party analytics tools. There are no advertising pixels or embedded social media scripts on this site."
+    },
+    "security": {
+      "title": "8. Security",
+      "text": "We apply reasonable technical measures to protect stored data: TLS-encrypted communications, restricted database access, and regular backups. As this is an early-stage private beta, we recommend not sharing sensitive information beyond your email address."
+    },
+    "changes": {
+      "title": "9. Changes to this policy",
+      "text": "If we make material changes to this policy, we will notify you by email if you are already on the waitlist. The current version will always be available on this page with the last updated date shown at the top."
+    },
+    "disclaimer": "This policy has been drafted in good faith to comply with the GDPR and LOPDGDD. It is not legal advice. If you have specific questions about your situation, consult a legal professional."
+  }
+}
