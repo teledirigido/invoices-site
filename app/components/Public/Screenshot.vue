@@ -13,14 +13,17 @@
     >
       <video
         v-if="media === 'video'"
+        ref="videoRef"
         data-dc-tpl="34"
-        :src="src"
         class="screenshot-frame__video"
         autoplay
         loop
         muted
         playsinline
-      />
+      >
+        <source v-for="s in sources" :key="s.src" :src="s.src" :type="s.type">
+        <source :src="src" type="video/mp4">
+      </video>
       <img
         v-else
         data-dc-tpl="34"
@@ -40,13 +43,16 @@
     >
       <video
         v-if="media === 'video'"
-        :src="src"
+        ref="videoRef"
         class="screenshot-frame__video"
         autoplay
         loop
         muted
         playsinline
-      />
+      >
+        <source v-for="s in sources" :key="s.src" :src="s.src" :type="s.type">
+        <source :src="src" type="video/mp4">
+      </video>
       <img
         v-else
         :src="src"
@@ -64,6 +70,7 @@ const props = withDefaults(
     media?: 'image' | 'video';
     slug: string;
     src: string;
+    sources?: { src: string; type: string }[];
     alt?: string;
     maxHeight?: number;
   }>(),
@@ -74,6 +81,7 @@ const props = withDefaults(
 );
 
 const containerRef = ref<HTMLElement>();
+const videoRef = ref<HTMLVideoElement>();
 const offset = ref(0);
 
 function onScroll() {
@@ -90,6 +98,14 @@ function onScroll() {
 onMounted(() => {
   nextTick(onScroll);
   window.addEventListener('scroll', onScroll, { passive: true });
+
+  const video = videoRef.value;
+  if (video) {
+    video.load();
+    video.addEventListener('loadedmetadata', () => {
+      video.play().catch(() => {});
+    }, { once: true });
+  }
 });
 onUnmounted(() => window.removeEventListener('scroll', onScroll));
 </script>

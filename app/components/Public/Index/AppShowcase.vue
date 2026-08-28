@@ -70,6 +70,7 @@
                   slug="chat"
                   media="video"
                   src="/images/hero-web-2x.mp4"
+                  :sources="[{ src: '/images/hero-web-2x.webm', type: 'video/webm' }]"
                   :alt="$t('index.screenshots.altChat')"
                   :max-height="510"
                   :show-scroll="true"
