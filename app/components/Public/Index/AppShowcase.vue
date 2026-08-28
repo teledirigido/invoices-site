@@ -40,6 +40,8 @@
             src="/images/hero-image.png"
             :alt="$t('index.screenshots.altIngresos')"
             :max-height="510"
+            :width="1440"
+            :height="900"
             :show-scroll="true"
           />
         </div>

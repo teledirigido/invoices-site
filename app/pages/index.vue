@@ -54,6 +54,8 @@
         src="/images/tipo-autonomo.png"
         :alt="$t('index.screenshots.altFactura')"
         :max-height="390"
+        :width="1440"
+        :height="1050"
         :show-scroll="false"
       />
     </div>

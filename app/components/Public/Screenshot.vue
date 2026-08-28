@@ -29,6 +29,8 @@
         data-dc-tpl="34"
         :src="src"
         :alt="alt"
+        :width="width"
+        :height="height"
         class="screenshot-frame__img"
         :style="{ transform: `translateY(${offset}px)` }"
       />
@@ -57,6 +59,8 @@
         v-else
         :src="src"
         :alt="alt"
+        :width="width"
+        :height="height"
         class="screenshot-frame__img"
         :style="{ transform: `translateY(${offset}px)` }"
       />
@@ -73,6 +77,8 @@ const props = withDefaults(
     sources?: { src: string; type: string }[];
     alt?: string;
     maxHeight?: number;
+    width?: number;
+    height?: number;
   }>(),
   {
     type: 'desktop',
