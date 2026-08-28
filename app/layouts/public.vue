@@ -37,13 +37,21 @@ const contentWrapperPage = computed(() => route.name as string);
 const { t } = useI18n();
 const config = useRuntimeConfig();
 
-useHead(computed(() => ({
-  meta: [
-    { property: 'og:title', content: t('meta.ogTitle') },
-    { property: 'og:description', content: t('meta.ogDescription') },
-    { name: 'description', content: t('meta.ogDescription') },
+useSeoMeta({
+  title: () => t('meta.home.title'),
+  description: () => t('meta.home.description'),
+  ogTitle: () => t('meta.home.title'),
+  ogDescription: () => t('meta.home.description'),
+  twitterCard: 'summary_large_image',
+  twitterTitle: () => t('meta.home.title'),
+  twitterDescription: () => t('meta.home.description'),
+});
+
+useHead({
+  link: [
+    { rel: 'canonical', href: computed(() => `https://nitidez.es${route.path}`) },
   ],
-})));
+});
 </script>
 <style lang="scss">
 @use '@scss/public.scss';

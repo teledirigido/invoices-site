@@ -1,0 +1,22 @@
+# Nitidez
+
+> Invoicing and tax accounting software for freelancers (autónomos) in Spain. Nitidez helps freelancers issue invoices, track expenses, clients and suppliers, and understand quarterly tax obligations (Modelo 130, Modelo 303, RETA) before they're due.
+
+Nitidez is currently in private beta. The public site at https://nitidez.es collects early-access signups; the product itself runs at https://app.nitidez.es.
+
+Nitidez is built specifically for freelancers who work in services (no inventory, no employees), track their own clients and suppliers, and want to understand their own numbers rather than hand everything to an accountant blindly. It does not replace an accountant for complex situations, does not handle payroll or módulos, and does not file anything on the user's behalf.
+
+## Claude Connector (MCP)
+
+Nitidez offers an MCP server that lets a Claude user manage their own Nitidez account by talking to Claude: creating invoices, logging expenses (including from a photo), checking clients/suppliers, and reviewing current VAT/IRPF status. It only ever operates on the account the user has explicitly authorized, using their own authentication — see /pages/terms-claude for the full data-use terms.
+
+## Key pages
+
+- [Home](https://nitidez.es/): product overview, who it's for, what it isn't, early-access signup
+- [Claude Connector — Data Use](https://nitidez.es/pages/terms-claude): what the MCP connector can access and how data is processed by Anthropic
+- [Privacy Policy](https://nitidez.es/pages/privacy): general data handling
+
+## Notes for agents
+
+- The site is bilingual (Spanish default, English available) via a client-side locale switch on the same URL — content may appear in either language depending on the visitor's browser/cookie.
+- The product (app.nitidez.es) requires authentication; there is no public API outside of the MCP connector described above, which requires the user's own Claude account authorization.

@@ -1,7 +1,17 @@
 {
   "meta": {
-    "ogTitle": "Nitidez.es — Contabilidad para autónomos en España",
-    "ogDescription": "Gestiona tus facturas, clientes y gastos en un solo lugar entendiendo cada obligación fiscal."
+    "home": {
+      "title": "Nitidez — Facturación y Fiscalidad para Autónomos en España",
+      "description": "Emite facturas, controla gastos y adelántate al Modelo 130, 303 y RETA — desde la web o hablando con Claude.ai. Pensado para autónomos en España."
+    },
+    "privacy": {
+      "title": "Política de Privacidad — Nitidez",
+      "description": "Cómo Nitidez recoge, usa y protege tus datos como plataforma de contabilidad para autónomos en España."
+    },
+    "termsClaude": {
+      "title": "Uso de Datos del Conector Claude — Nitidez",
+      "description": "A qué datos puede acceder el conector MCP de Nitidez, cómo los procesa Anthropic y cómo desconectarlo en cualquier momento."
+    }
   },
   "auth": {
     "login": "Ingresar"

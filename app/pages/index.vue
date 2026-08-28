@@ -129,7 +129,38 @@ import Screenshot from '~/components/Public/Screenshot.vue';
 import Toast from '~/components/Toast.vue';
 
 definePageMeta({ layout: 'public' });
-const { t } = useI18n();
+const { t, locale } = useI18n();
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: computed(() => JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'SoftwareApplication',
+        name: 'Nitidez',
+        url: 'https://nitidez.es',
+        description: t('meta.home.description'),
+        applicationCategory: 'FinanceApplication',
+        operatingSystem: 'Web',
+        inLanguage: locale.value,
+        audience: {
+          '@type': 'Audience',
+          audienceType: 'Freelancers in Spain (autónomos)',
+        },
+        offers: {
+          '@type': 'Offer',
+          availability: 'https://schema.org/PreOrder',
+        },
+        provider: {
+          '@type': 'Organization',
+          name: 'Nitidez',
+          url: 'https://nitidez.es',
+        },
+      })),
+    },
+  ],
+});
 
 type ConfirmationType = {
   key: 'confirmed' | 'already-confirmed' | 'expired' | 'not-found';

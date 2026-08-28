@@ -55,7 +55,11 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxt/fonts', '@nuxt/icon', '@nuxtjs/i18n', '@nuxt/content'],
+  modules: ['@nuxt/fonts', '@nuxt/icon', '@nuxtjs/i18n', '@nuxt/content', '@nuxtjs/sitemap'],
+
+  site: {
+    url: 'https://nitidez.es',
+  },
 
   i18n: {
     strategy: 'no_prefix',

@@ -1,7 +1,17 @@
 {
   "meta": {
-    "ogTitle": "Nitidez.es — Accounting for freelancers in Spain",
-    "ogDescription": "Manage your invoices, clients, and expenses in one place while understanding every tax obligation."
+    "home": {
+      "title": "Nitidez — Invoicing & Tax Software for Freelancers in Spain",
+      "description": "Issue invoices, track expenses and stay ahead of Modelo 130, 303 and RETA — from the web or by talking to Claude.ai. Built for autónomos in Spain."
+    },
+    "privacy": {
+      "title": "Privacy Policy — Nitidez",
+      "description": "How Nitidez collects, uses and protects your data as a freelancer accounting platform in Spain."
+    },
+    "termsClaude": {
+      "title": "Claude Connector Data Use — Nitidez",
+      "description": "What the Nitidez MCP connector lets Claude access, how your data is processed by Anthropic, and how to disconnect it at any time."
+    }
   },
   "auth": {
     "login": "Login"
