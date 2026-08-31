@@ -4,7 +4,10 @@
       <span data-dc-tpl="30" class="screenshot-desktop__dot"></span>
       <span data-dc-tpl="31" class="screenshot-desktop__dot screenshot-desktop__dot--2"></span>
       <span data-dc-tpl="32" class="screenshot-desktop__dot screenshot-desktop__dot--3"></span>
-      <span data-dc-tpl="33" class="screenshot-desktop__url"> nitidez.es / {{ slug }} </span>
+      <span data-dc-tpl="33" class="screenshot-desktop__url">
+        <img src="/images/favicon/favicon-32x32.png" alt="" class="screenshot-desktop__favicon" />
+        Nitidez — Facturación y Fiscalidad para Autónomos en España
+      </span>
     </div>
     <div
       ref="containerRef"
@@ -72,7 +75,6 @@ const props = withDefaults(
   defineProps<{
     type?: 'mobile' | 'desktop';
     media?: 'image' | 'video';
-    slug: string;
     src: string;
     sources?: { src: string; type: string }[];
     alt?: string;
@@ -131,7 +133,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll));
     align-items: center;
     gap: 7px;
     padding: 12px 16px;
-    background: rgb(239, 230, 215);
+    background: #f8f8f8;
     border-bottom: 1px solid rgba(46, 42, 36, 0.06);
     overflow: scroll;
   }
@@ -140,22 +142,31 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll));
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    background: rgb(216, 197, 166);
+    background: #ff5f57;
 
     &--2 {
-      background: rgb(228, 211, 180);
+      background: #febc2e;
     }
 
     &--3 {
-      background: rgb(234, 220, 194);
+      background: #28c840;
     }
   }
 
   &__url {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     margin-left: 14px;
     font-size: 12.5px;
     color: rgb(154, 145, 132);
     font-weight: 500;
+  }
+
+  &__favicon {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
   }
 }
 

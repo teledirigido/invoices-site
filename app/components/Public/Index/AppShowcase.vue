@@ -35,9 +35,8 @@
           </p>
           <Screenshot
             type="desktop"
-            slug="ingresos"
-            media="image"
-            src="/images/hero-image.png"
+            media="video"
+            src="/images/hero-desktop-3x.mp4"
             :alt="$t('index.screenshots.altIngresos')"
             :max-height="510"
             :width="1440"
