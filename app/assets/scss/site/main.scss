@@ -93,3 +93,9 @@ body {
   pointer-events: none;
   user-select: none;
 }
+
+@include mq.mobile {
+  .on-nonmobile {
+    display: none !important;
+  }
+}

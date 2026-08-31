@@ -6,7 +6,9 @@
       <span data-dc-tpl="32" class="screenshot-desktop__dot screenshot-desktop__dot--3"></span>
       <span data-dc-tpl="33" class="screenshot-desktop__url">
         <img src="/images/favicon/favicon-32x32.png" alt="" class="screenshot-desktop__favicon" />
-        Nitidez — Facturación y Fiscalidad para Autónomos en España
+        Nitidez.es <span class="on-nonmobile">
+          — Facturación y Fiscalidad para Autónomos en España
+        </span>
       </span>
     </div>
     <div
