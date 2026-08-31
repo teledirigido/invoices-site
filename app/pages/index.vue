@@ -50,7 +50,7 @@
   <section id="audience" class="grid-2 gap-3 w-1140 mx-auto pb-4 pb-1--mobile">
     <div class="item">
       <Screenshot
-        src="/images/tipo-autonomo-3.png"
+        src="/images/tipo-autonomo.png"
         :alt="$t('index.screenshots.altFactura')"
         :max-height="390"
         :width="1440"
