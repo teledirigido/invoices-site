@@ -81,6 +81,10 @@
     </div>
   </section>
 
+  <h3 class="f-size-l f-light pt-2">{{ $t('index.models.exportHeading') }}</h3>
+  <div class="pt-05">
+    <p>{{ $t('index.models.exportSubheading') }}</p>
+  </div>
   <section class="bg-secondary p-3 my-2 br-1">
     <div class="grid-3 gap-4">
       <div class="item">
@@ -96,13 +100,35 @@
         </p>
       </div>
       <div class="item">
-        <h3 class="f-size-ml f-light">{{ $t('index.models.retaTitle') }}</h3>
+        <h3 class="f-size-ml f-light">{{ $t('index.models.modelo349Title') }}</h3>
         <p class="pt-1 f-body-small">
-          {{ $t('index.models.retaDesc') }}
+          {{ $t('index.models.modelo349Desc') }}
         </p>
       </div>
     </div>
   </section>
+
+  <section class="pt-5 pb-4">
+    <h3 class="f-size-l f-light text-center">{{ $t('index.socialSecurity.heading') }}</h3>
+    <div class="grid-2 mt-2 gap-2 mx-auto" style="max-width: 850px; ">
+
+      <div class="item bg-white br-1 p-3">
+        <h3 class="f-size-ml f-light">{{ $t('index.socialSecurity.obligationsTitle') }}</h3>
+        <p class="pt-1 f-body-small">
+          {{ $t('index.socialSecurity.obligationsDesc') }}
+        </p>
+      </div>
+
+      <div class="item bg-white br-1 p-3">
+        <h3 class="f-size-ml f-light">{{ $t('index.socialSecurity.bracketTitle') }}</h3>
+        <p class="pt-1 f-body-small">
+          {{ $t('index.socialSecurity.bracketDesc') }}
+        </p>
+      </div>
+
+    </div>
+  </section>
+
 
   <section id="scope" class="w-860 mx-auto text-center py-4">
     <p class="top-text">{{ $t('index.scope.label') }}</p>

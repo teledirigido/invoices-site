@@ -33,7 +33,18 @@
       "modelo303Title": "Modelo 303",
       "modelo303Desc": "Output VAT minus deductible VAT, ready every quarter with no manual reconciliation",
       "retaTitle": "RETA",
-      "retaDesc": "Your Social Security contribution factored into the calculation, not as a separate surprise."
+      "retaDesc": "Your Social Security contribution factored into the calculation, not as a separate surprise.",
+      "modelo349Title": "Modelo 349",
+      "modelo349Desc": "For your clients in the EU, your transactions are declared with no extra effort.",
+      "exportHeading": "Tax forms ready to file",
+      "exportSubheading": "All you have to do is upload them"
+    },
+    "socialSecurity": {
+      "heading": "Nitidez and Social Security",
+      "obligationsTitle": "Handled automatically",
+      "obligationsDesc": "Your RETA contribution is automatically subtracted from your net income when calculating Modelo 130, no separate maths needed.",
+      "bracketTitle": "Know your bracket",
+      "bracketDesc": "Based on your average net income, we show you your bracket and flag if what you're paying is running low or high."
     },
     "scope": {
       "label": "Honest Scope",

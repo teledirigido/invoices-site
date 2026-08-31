@@ -33,15 +33,26 @@
       "modelo303Title": "Modelo 303",
       "modelo303Desc": "El IVA repercutido menos el deducible, listo cada trimestre sin cuadres manuales",
       "retaTitle": "RETA",
-      "retaDesc": "Tu cuota de Seguridad Social contemplada dentro del cálculo, no como una sorpresa aparte."
+      "retaDesc": "Tu cuota de Seguridad Social contemplada dentro del cálculo, no como una sorpresa aparte.",
+      "modelo349Title": "Modelo 349",
+      "modelo349Desc": "Para tus clientes en la UE, tus operaciones quedan declaradas sin esfuerzo extra.",
+      "exportHeading": "Tus modelos listos para presentar",
+      "exportSubheading": "Solo te toca subirlos"
+    },
+    "socialSecurity": {
+      "heading": "Nitidez en la Seguridad Social",
+      "obligationsTitle": "Conoce tus obligaciones",
+      "obligationsDesc": "Tu cuota RETA se resta automáticamente de tu rendimiento neto al calcular el Modelo 130, sin cálculos aparte.",
+      "bracketTitle": "Tu tramo, siempre actualizado",
+      "bracketDesc": "Según tu rendimiento neto medio, te indicamos tu tramo y si lo que estás pagando se queda corto o se pasa."
     },
     "scope": {
       "label": "Alcance Honesto",
       "heading": "Lo que Nitidez.es no es",
-      "description": "No sustituye a un gestor en situaciones complejas. No gestiona nóminas, módulos ni varias actividades simultáneas. No presenta nada en tu nombre. Te pone al mando de tus números para que entiendas cada obligación antes de que venza.",
+      "description": "No gestiona inventario, nominas si tienes empleados, módulos o varias actividades simultáneas. Nitidez.es te da claridad en tus obligaciones fiscales y números para que entiendas cada obligación antes de que venza.",
       "chipNominas": "No hace nóminas",
       "chipModulos": "No hace módulos",
-      "chipPresenta": "No presenta por ti"
+      "chipPresenta": "No gestiona inventario"
     },
     "notifyMe": {
       "label": "Actualmente en desarrollo privado",
