@@ -3,10 +3,10 @@ locale: en
 slug: privacy
 topText: Legal
 title: Privacy Policy
-lastUpdated: "Last updated: July 2026"
+lastUpdated: "Last updated: August 2026"
 summary:
   - title: No tracking cookies
-    desc: No third-party analytics, pixels, or external scripts.
+    desc: We use cookie-less analytics (Umami) that doesn't identify individuals.
   - title: Only your email
     desc: The only data we collect is the email you enter yourself.
   - title: Never sold or shared
@@ -65,7 +65,7 @@ To exercise any of these rights, email us at [hi@miguel.nz](mailto:hi@miguel.nz)
 
 ## 7. Cookies and tracking
 
-Nitidez.es does not use tracking cookies or third-party analytics tools. There are no advertising pixels or embedded social media scripts on this site.
+Nitidez.es does not use tracking cookies. We use **Umami**, a privacy-focused web analytics tool, to understand in an aggregated and anonymous way how many visits the site receives and which pages are viewed. Umami does not use cookies, does not collect personal data, and does not identify individual visitors or share data for advertising purposes. You can review its privacy policy at [umami.is](https://umami.is/privacy). There are no advertising pixels or embedded social media scripts on this site.
 
 ## 8. Security
 

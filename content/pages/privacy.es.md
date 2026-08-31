@@ -3,10 +3,10 @@ locale: es
 slug: privacy
 topText: Legal
 title: Política de Privacidad
-lastUpdated: "Última actualización: julio de 2026"
+lastUpdated: "Última actualización: agosto de 2026"
 summary:
   - title: Sin cookies de rastreo
-    desc: No hay analítica de terceros, píxeles ni scripts externos.
+    desc: Usamos analítica sin cookies (Umami) que no identifica a personas.
   - title: Solo tu correo
     desc: El único dato que recogemos es el email que introduces tú mismo.
   - title: No se vende ni se comparte
@@ -65,7 +65,7 @@ Para ejercer cualquiera de estos derechos escríbenos a [hi@miguel.nz](mailto:hi
 
 ## 7. Cookies y rastreo
 
-Nitidez.es no utiliza cookies de seguimiento ni herramientas de analítica de terceros. No hay píxeles de publicidad ni scripts de redes sociales embebidos en esta web.
+Nitidez.es no utiliza cookies de seguimiento. Usamos **Umami**, una herramienta de analítica web orientada a la privacidad, para conocer de forma agregada y anónima cuántas visitas recibe el sitio y qué páginas se consultan. Umami no usa cookies, no recoge datos personales ni identifica a los visitantes de forma individual, y no comparte datos con fines publicitarios. Puedes consultar su política de privacidad en [umami.is](https://umami.is/privacy). No hay píxeles de publicidad ni scripts de redes sociales embebidos en esta web.
 
 ## 8. Seguridad
 

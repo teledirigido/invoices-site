@@ -12,7 +12,7 @@
       <div
         class="showcase-nav--item showcase-nav--item-claude"
         :class="{ active: activeTab === 'claude' }"
-        @click="activeTab = 'claude'"
+        @click="selectClaudeTab"
       >
         <Icon name="material-icon-theme:claude" />
         {{ $t('index.appShowcase.tabClaude') }}
@@ -91,6 +91,11 @@ import Screenshot from '../Screenshot.vue';
 
 const activeTab = ref<'webapp' | 'claude' | 'chatgpt'>('webapp');
 const ready = ref(false);
+
+function selectClaudeTab() {
+  activeTab.value = 'claude';
+  window.umami?.track('showcase-claude-tab-click');
+}
 
 onMounted(() => {
   if (window.matchMedia('(max-width: 680px)').matches) {

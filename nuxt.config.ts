@@ -18,6 +18,15 @@ export default defineNuxtConfig({
         { property: 'og:type', content: 'website' },
         { name: 'author', content: 'hi@miguel.nz' },
       ],
+      script: process.env.UMAMI_WEBSITE_ID
+        ? [
+            {
+              src: 'https://cloud.umami.is/script.js',
+              defer: true,
+              'data-website-id': process.env.UMAMI_WEBSITE_ID,
+            },
+          ]
+        : [],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/images/favicon/favicon.ico' },
         {
