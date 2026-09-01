@@ -62,21 +62,31 @@
     "screenshots": {
       "altIngresos": "Income view in Nitidez",
       "altFactura": "Invoice view in Nitidez",
-      "altChat": "Conversation with Nitidez inside Claude.ai"
+      "altChat": "Conversation with Nitidez inside Claude.ai",
+      "altChatgpt": "Conversation with Nitidez inside ChatGPT"
     },
     "appShowcase": {
       "tabWebApp": "Web App",
       "tabClaude": "Claude.ai",
+      "tabChatgpt": "ChatGPT",
       "comingSoon": "Coming soon",
       "descWebApp": "All your accounting, clear and in one dashboard.",
       "descClaude": "Invoice, log expenses and check your taxes just by talking to Claude.",
-      "aiHeading": "Integrated AI",
-      "aiText1Line1": "Talk to Claude.",
-      "aiText1Line2": "Pick your client, enter the amount, and your invoice is ready.",
-      "aiText2Line1": "Store expenses on the spot.",
-      "aiText2Line2": "Snap a photo and you're done.",
-      "aiText3Line1": "Get to know your current VAT and IRPF status.",
-      "aiText3Line2": "No surprises."
+      "descChatgpt": "Invoice, log expenses and check your taxes just by talking to ChatGPT.",
+      "claudeHeading": "Talk to Claude",
+      "claudeText1Line1": "Invoice straight from the chat.",
+      "claudeText1Line2": "Name the client and the amount, and Claude builds the invoice.",
+      "claudeText2Line1": "Log expenses on the spot.",
+      "claudeText2Line2": "Send a photo of the receipt and Claude files it.",
+      "claudeText3Line1": "Ask about your VAT and IRPF.",
+      "claudeText3Line2": "Clear answers, no surprises.",
+      "chatgptHeading": "ChatGPT, built in",
+      "chatgptText1Line1": "Create invoices without leaving ChatGPT.",
+      "chatgptText1Line2": "Name the client and the amount, done.",
+      "chatgptText2Line1": "Upload a receipt to the chat.",
+      "chatgptText2Line2": "ChatGPT turns it into a logged expense.",
+      "chatgptText3Line1": "Check your tax standing.",
+      "chatgptText3Line2": "VAT and IRPF up to date, whenever you need it."
     },
     "toast": {
       "subscriptionConfirmed": "Your subscription has been confirmed.",

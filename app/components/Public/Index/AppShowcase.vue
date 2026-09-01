@@ -17,10 +17,9 @@
         <Icon name="material-icon-theme:claude" />
         {{ $t('index.appShowcase.tabClaude') }}
       </div>
-      <div class="showcase-nav--item disabled" :class="{ active: activeTab === 'chatgpt' }" @click="activeTab = 'chatgpt'">
+      <div class="showcase-nav--item showcase-nav--item-chatgpt" :class="{ active: activeTab === 'chatgpt' }" @click="selectChatgptTab">
         <Icon name="hugeicons:chat-gpt" />
-        ChatGPT
-        <span class="label">{{ $t('index.appShowcase.comingSoon') }}</span>
+        {{ $t('index.appShowcase.tabChatgpt') }}
       </div>
     </div>
     <div class="showcase-content">
@@ -51,16 +50,16 @@
         >
           <div class="d-flex-mobile d-flex gap-4 ai-center jc-center">
             <div class="pb-2 content">
-              <h3 class="f-light f-size-l pb-2">{{ $t('index.appShowcase.aiHeading') }}</h3>
+              <h3 class="f-light f-size-l pb-2">{{ $t('index.appShowcase.claudeHeading') }}</h3>
               <div class="d-flex flex-column gap-1 f-size-m f-hanken c-text-secondary">
                 <p>
-                  {{ $t('index.appShowcase.aiText1Line1') }} <br>{{ $t('index.appShowcase.aiText1Line2') }}
+                  {{ $t('index.appShowcase.claudeText1Line1') }} <br>{{ $t('index.appShowcase.claudeText1Line2') }}
                 </p>
                 <p>
-                  {{ $t('index.appShowcase.aiText2Line1') }} <br>{{ $t('index.appShowcase.aiText2Line2') }}
+                  {{ $t('index.appShowcase.claudeText2Line1') }} <br>{{ $t('index.appShowcase.claudeText2Line2') }}
                 </p>
                 <p>
-                  {{ $t('index.appShowcase.aiText3Line1') }} <br>{{ $t('index.appShowcase.aiText3Line2') }}
+                  {{ $t('index.appShowcase.claudeText3Line1') }} <br>{{ $t('index.appShowcase.claudeText3Line2') }}
                 </p>
               </div>
             </div>
@@ -70,9 +69,45 @@
                   type="mobile"
                   slug="chat"
                   media="video"
-                  src="/images/hero-web-2x.mp4"
-                  :sources="[{ src: '/images/hero-web-2x.webm', type: 'video/webm' }]"
+                  src="/images/hero-web-3x.mp4"
+                  :sources="[{ src: '/images/hero-web-3x.webm', type: 'video/webm' }]"
                   :alt="$t('index.screenshots.altChat')"
+                  :max-height="510"
+                  :show-scroll="true"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          v-else-if="activeTab === 'chatgpt'"
+          key="chatgpt"
+          class="showcase-content--item showcase-content--item-chatgpt"
+        >
+          <div class="d-flex-mobile d-flex gap-4 ai-center jc-center">
+            <div class="pb-2 content">
+              <h3 class="f-light f-size-l pb-2">{{ $t('index.appShowcase.chatgptHeading') }}</h3>
+              <div class="d-flex flex-column gap-1 f-size-m f-hanken c-text-secondary">
+                <p>
+                  {{ $t('index.appShowcase.chatgptText1Line1') }} <br>{{ $t('index.appShowcase.chatgptText1Line2') }}
+                </p>
+                <p>
+                  {{ $t('index.appShowcase.chatgptText2Line1') }} <br>{{ $t('index.appShowcase.chatgptText2Line2') }}
+                </p>
+                <p>
+                  {{ $t('index.appShowcase.chatgptText3Line1') }} <br>{{ $t('index.appShowcase.chatgptText3Line2') }}
+                </p>
+              </div>
+            </div>
+            <div>
+              <div style="max-width:250px">
+                <Screenshot
+                  type="mobile"
+                  slug="chatgpt"
+                  media="video"
+                  src="/images/hero-openai-web-3x.mp4"
+                  :sources="[{ src: '/images/hero-openai-web-3x.webm', type: 'video/webm' }]"
+                  :alt="$t('index.screenshots.altChatgpt')"
                   :max-height="510"
                   :show-scroll="true"
                 />
@@ -94,6 +129,11 @@ const ready = ref(false);
 function selectClaudeTab() {
   activeTab.value = 'claude';
   window.umami?.track('showcase-claude-tab-click');
+}
+
+function selectChatgptTab() {
+  activeTab.value = 'chatgpt';
+  window.umami?.track('showcase-chatgpt-tab-click');
 }
 
 onMounted(() => {
