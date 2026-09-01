@@ -11,6 +11,10 @@
     "termsClaude": {
       "title": "Claude Connector Data Use — Nitidez",
       "description": "What the Nitidez MCP connector lets Claude access, how your data is processed by Anthropic, and how to disconnect it at any time."
+    },
+    "termsChatgpt": {
+      "title": "ChatGPT Connector Data Use — Nitidez",
+      "description": "What the Nitidez MCP connector lets ChatGPT access, how your data is processed by OpenAI, and how to disconnect it at any time."
     }
   },
   "auth": {
