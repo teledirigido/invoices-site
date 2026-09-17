@@ -2,10 +2,20 @@
   "index": {
     "hero": {
       "tagline": "Accounting for freelancers in Spain",
-      "heading": "Understand your tax obligations with Nitidez",
+      "headingPrefix": "Understand",
+      "headingSuffix": "Freelancing in Spain, sorted.",
       "description": "Manage your invoices, clients and expenses in one place while understanding every tax obligation.",
-      "cta": "Notify me",
-      "disclaimer": "No spam. No strings attached."
+      "cta": "Get Started",
+      "disclaimer": "60-day trial. No credit card required",
+      "rotatingWords": [
+        "your Invoices.",
+        "the Modelo 303.",
+        "your Spending.",
+        "your IRPF.",
+        "your VAT.",
+        "the Modelo 130.",
+        "the Modelo 349."
+      ]
     },
     "highlights": {
       "dailyTitle": "IRPF and VAT up to date",
@@ -20,6 +30,11 @@
       "heading": "Say goodbye to end-of-quarter surprises",
       "description": "Invoices, expenses, clients, suppliers and intra-community management always available. Verifactu and Claude.ai integration for daily tasks.",
       "conclusion": "Finally a tool on our side."
+    },
+    "pricing": {
+      "chip": "Flat Rate",
+      "amount": "€9.90",
+      "unit": "/mo"
     },
     "audience": {
       "label": "Who it's for",
@@ -57,7 +72,7 @@
     "notifyMe": {
       "label": "Currently in private BETA",
       "heading": "By freelancers, for freelancers",
-      "description": "If it sounds like the tool you needed last January, sign up and get early access when it opens."
+      "description": "If you don't know how your quarter is going to end, why you're paying so much VAT and IRPF, or what Modelo 349 even is, then this is your tool."
     },
     "screenshots": {
       "altIngresos": "Income view in Nitidez",

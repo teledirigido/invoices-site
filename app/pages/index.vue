@@ -31,23 +31,46 @@
     </div>
   </section>
 
-  <section class="w-860 mx-auto landing-hero py-5 text-center">
-    <p class="top-text pb-1">{{ $t('index.problem.label') }}</p>
-    <h2 class="f-size-l f-light">
-      {{ $t('index.problem.heading') }}
-      <!-- <br /> -->
-      <!-- {{ $t('index.problem.headingSub') }} -->
-    </h2>
-    <div class="w-780 mx-auto f-hanken pb-2">
-      <div class="pt-1 f-body f-hanken ws-break-spaces">
-        {{ $t('index.problem.description') }}
+  <section class="py-5 grid-2">
+    <div class="item">
+      <p class="top-text pb-1">{{ $t('index.problem.label') }}</p>
+      <h2 class="f-size-l f-light">
+        {{ $t('index.problem.heading') }}
+      </h2>
+      <div class="mx-auto f-hanken pb-2">
+        <div class="pt-1 f-body f-hanken ws-break-spaces">
+          {{ $t('index.problem.description') }}
+        </div>
+        <div class="pt-2 f-size-m f-bold">{{ $t('index.problem.conclusion') }}</div>
+        <hr class="hr-bottom" />
       </div>
-      <div class="pt-2 f-size-m f-bold">{{ $t('index.problem.conclusion') }}</div>
-      <hr class="hr-bottom" />
+    </div>
+    <div class="item d-flex ai-center jc-center">
+      <div class="pricing-card br-1 p-2">
+        <p class="text-right">
+          <Chip type="secondary" display="inline">{{ $t('index.pricing.chip') }}</Chip>
+        </p>
+        <div class="pt-4">
+          <p class="f-size-l pt-2">{{ $t('index.pricing.amount') }}
+            <span class="f-size-s">{{ $t('index.pricing.unit') }}</span>
+          </p>
+        </div>
+        <p class="pt-05 f-size-s pb-2 c-text-secondary">{{ $t('index.hero.disclaimer') }}</p>
+        <p>
+          <Button
+            class="w-100"
+            :text="$t('index.hero.cta')"
+            icon="mdi:login"
+            target="_blank"
+            :has-shadow="true"
+            :href="`${config.public.appUrl}/register`"
+          />
+        </p>
+      </div>
     </div>
   </section>
 
-  <section id="audience" class="grid-2 gap-3 w-1140 mx-auto pb-4 pb-1--mobile">
+  <section id="audience" class="grid-2 gap-5 w-1140 mx-auto pb-4 pb-1--mobile">
     <div class="item">
       <Screenshot
         src="/images/tipo-autonomo.png"
@@ -66,16 +89,15 @@
           {{ $t('index.audience.description') }}
         </p>
         <p class="pb-1">{{ $t('index.audience.conclusion') }}</p>
-        <Button
-          :text="$t('index.hero.cta')"
-          icon="mdi:arrow-right"
-          class="br-1"
-          style="background-color: #fff"
-          :has-shadow="true"
-          href="#"
-          type="text"
-          :on-click="show"
-        />
+        <p class="pt-1">
+          <Button
+            :text="$t('index.hero.cta')"
+            icon="mdi:login"
+            class="br-1"
+            :has-shadow="true"
+            :href="`${config.public.appUrl}/register`"
+          />
+        </p>
       </div>
     </div>
   </section>
@@ -213,10 +235,9 @@ const confirmationTypes: Array<ConfirmationType> = [
   },
 ];
 
+const config = useRuntimeConfig(); 
 const route = useRoute();
 const router = useRouter();
-
-const { show } = useNotifyToast();
 const toast = ref<InstanceType<typeof Toast> | null>(null);
 const toastMessage = ref('');
 

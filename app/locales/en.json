@@ -8,6 +8,10 @@
       "title": "Privacy Policy — Nitidez",
       "description": "How Nitidez collects, uses and protects your data as a freelancer accounting platform in Spain."
     },
+    "terms": {
+      "title": "Terms of Service — Nitidez",
+      "description": "Terms of use, free trial, pricing, billing and cancellation for the Nitidez service."
+    },
     "termsClaude": {
       "title": "Claude Connector Data Use — Nitidez",
       "description": "What the Nitidez MCP connector lets Claude access, how your data is processed by Anthropic, and how to disconnect it at any time."

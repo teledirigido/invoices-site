@@ -2,10 +2,20 @@
   "index": {
     "hero": {
       "tagline": "Contabilidad para autónomos en España",
-      "heading": "Claridad en tus cuentas. Nitidez con Hacienda",
-      "description": "Gestiona tus facturas, clientes y gastos en un solo lugar entendiendo cada obligación fiscal.",
-      "cta": "Avísame cuando haya plazas",
-      "disclaimer": "Sin spam. Sin compromisos."
+      "headingPrefix": "Claridad con",
+      "headingSuffix": "Nitidez con Hacienda",
+      "description": "Gestiona tus facturas, clientes y gastos. Obten tus Modelos 130, 303 y 349 listos para presentarlos.",
+      "cta": "Comenzar",
+      "disclaimer": "60-días de prueba. No requiere tarjeta de credito.",
+      "rotatingWords": [
+        "tus Facturas.",
+        "el Modelo 303.",
+        "tus Gastos.",
+        "el IRPF.",
+        "el IVA.",
+        "el Modelo 130.",
+        "el Modelo 349."
+      ]
     },
     "highlights": {
       "dailyTitle": "IRPF e IVA al día",
@@ -20,6 +30,11 @@
       "heading": "Adiós a las sorpresas de fin de trimestre",
       "description": "Facturas, gastos, clientes, proveedores y gestión intracomunitaria siempre disponibles. Verifactu e integración con Claude.ai para las tareas diarias.",
       "conclusion": "Al fin una herramienta de nuestro lado."
+    },
+    "pricing": {
+      "chip": "Tarifa Plana",
+      "amount": "9,90 €",
+      "unit": "/mes"
     },
     "audience": {
       "label": "Para quién es",
@@ -57,7 +72,7 @@
     "notifyMe": {
       "label": "Actualmente en desarrollo privado",
       "heading": "Por Autonomos, para autónomos",
-      "description": "Si suena a la herramienta que te hizo falta el enero pasado, apúntate y consigue acceso anticipado cuando abra."
+      "description": "Si no sabes como va a terminar tu trimestre, por qué pagas tanto IVA e IRPF o qué es el Modelo 349. Entonces esta es tu herramienta."
     },
     "screenshots": {
       "altIngresos": "Vista de ingresos en Nitidez",
@@ -70,7 +85,7 @@
       "tabClaude": "Claude.ai",
       "tabChatgpt": "ChatGPT",
       "comingSoon": "Pronto",
-      "descWebApp": "Contabilidad en un panel dedicado a todos tus servicios de Autonomo.",
+      "descWebApp": "Gestiona tus tareas de Autónomo en una sola página.",
       "descClaude": "Factura, registra gastos y consulta tus impuestos hablando con Claude.",
       "descChatgpt": "Factura, registra gastos y consulta tus impuestos hablando con ChatGPT.",
       "claudeHeading": "Conversa con Claude",

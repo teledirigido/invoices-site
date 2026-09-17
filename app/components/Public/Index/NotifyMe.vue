@@ -8,12 +8,12 @@
       </p>
     </div>
     <div class="pt-2">
-      <Button type="primary" :text="$t('index.hero.cta')" :on-click="show" />
+      <Button type="primary" :text="$t('index.hero.cta')" :href="`${config.public.appUrl}/register`" icon="mdi-login" />
       <p class="c-on-black f-size-xs pt-1 op-05">{{ $t('index.hero.disclaimer') }}</p>
     </div>
   </section>
 </template>
 
 <script setup>
-const { show } = useNotifyToast();
+const config = useRuntimeConfig(); 
 </script>

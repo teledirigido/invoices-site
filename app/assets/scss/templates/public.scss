@@ -140,7 +140,7 @@
     padding-left: 1.4rem;
     list-style: disc;
 
-    li + li {
+    li+li {
       margin-top: 0.5rem;
     }
   }
@@ -162,6 +162,34 @@
   background-color: rgb(251, 246, 238);
   border: 1px solid rgba(46, 42, 36, 0.07);
   border-radius: 12px;
+}
+
+.pricing-card {
+  width: 100%;
+  max-width: 340px;
+  background-color: #FFF;
+  border: 1px solid rgba(46, 42, 36, 0.07);
+  box-shadow:
+    rgba(46, 42, 36, 0.08) 0px 20px 40px -28px,
+    rgba(46, 42, 36, 0.06) 0px 4px 10px -6px;
+
+  &__price {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+  }
+
+  &__amount {
+    font-size: clamp(32px, 4.2vw, 44px);
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: rgb(42, 38, 32);
+  }
+
+  &__unit {
+    font-size: 17px;
+  }
 }
 
 @keyframes fade-up {

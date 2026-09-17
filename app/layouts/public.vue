@@ -6,12 +6,12 @@
     <header class="pt-2 site-header d-flex space-between">
       <div class="d-flex gap-1 ai-center">
         <strong><NuxtLink to="/">Nitidez.es</NuxtLink></strong>
-        <Chip display="inline" type="primary">{{ $t('layout.public.chip') }}</Chip>
+        <Chip display="inline">{{ $t('layout.public.chip') }}</Chip>
       </div>
       <div v-if="route.path === '/'" class="d-flex gap-2 ai-center f-body-small site-header--menu">
         <a href="#audience">{{ $t('layout.public.menuAudience') }}</a>
         <a href="#scope">{{ $t('layout.public.menuScope') }}</a>
-        <Button size="small" :text="$t('auth.login')" target="_blank" :href="`${config.public.appUrl}/login`" />
+        <Button icon="mdi-login" size="small" :text="$t('auth.login')" target="_blank" :href="`${config.public.appUrl}/login`" />
       </div>
     </header>
 
@@ -21,7 +21,7 @@
       <div class="d-flex ai-center gap-1">
         <img src="/images/favicon/favicon-32x32.png" alt="">
         <span><strong>Nitidez.es</strong></span> • 
-        <span>{{ $t('layout.public.madeBy') }}</span>
+        <span>Terminos & Condiciones</span>
       </div>
       <div class="d-flex gap-1 ai-center">
         <LocaleSwitcher />

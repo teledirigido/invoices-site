@@ -1,6 +1,8 @@
 .landing-hero {
 
   color: rgb(92, 85, 76);
+  overflow-x: clip;
+  overflow-y: visible;
 
   p {
     line-height: 1.55;
@@ -14,6 +16,14 @@
     margin: 0px 0px 26px;
     color: rgb(42, 38, 32);
     animation: 0.7s 0.06s both fade-up;
+
+    .rotating-word-break {
+      display: none;
+
+      @media (max-width: 640px) {
+        display: block;
+      }
+    }
   }
 
 }
