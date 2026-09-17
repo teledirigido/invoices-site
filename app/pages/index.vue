@@ -47,16 +47,17 @@
     </div>
     <div class="item d-flex ai-center jc-center">
       <div class="pricing-card br-1 p-2">
-        <p class="text-right">
+        <div class="text-right">
           <Chip type="secondary" display="inline">{{ $t('index.pricing.chip') }}</Chip>
-        </p>
-        <div class="pt-4">
-          <p class="f-size-l pt-2">{{ $t('index.pricing.amount') }}
+        </div>
+        <div class="pt-1">
+          <p class="f-size-l pt-2">
+            {{ $t('index.pricing.amount') }}
             <span class="f-size-s">{{ $t('index.pricing.unit') }}</span>
           </p>
         </div>
         <p class="pt-05 f-size-s pb-2 c-text-secondary">{{ $t('index.hero.disclaimer') }}</p>
-        <p>
+        <div>
           <Button
             class="w-100"
             :text="$t('index.hero.cta')"
@@ -65,7 +66,7 @@
             :has-shadow="true"
             :href="`${config.public.appUrl}/register`"
           />
-        </p>
+        </div>
       </div>
     </div>
   </section>
