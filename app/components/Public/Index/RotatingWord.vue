@@ -11,24 +11,20 @@
       v-for="(word, index) in words"
       v-show="index === currentIndex || index === leavingIndex"
       :key="word"
+      :ref="(el) => setItemRef(el, index)"
       class="rotating-word__item"
       :class="{ 'rotating-word__item--leaving': index === leavingIndex }"
     >
       {{ word }}
     </span>
-    <span
-      v-for="word in words"
-      :key="`ruler-${word}`"
-      ref="rulerRefs"
-      class="rotating-word__ruler"
-      aria-hidden="true"
-    >{{ word }}</span>
   </span>
 </template>
 
 <script setup>
-const { tm, rt } = useI18n();
-const words = tm('index.hero.rotatingWords').map((word) => (typeof word === 'string' ? word : rt(word)));
+const emit = defineEmits(['ready']);
+
+const { tm, rt, locale } = useI18n();
+const words = computed(() => tm('index.hero.rotatingWords').map((word) => (typeof word === 'string' ? word : rt(word))));
 
 const INTERVAL_MS = 1200;
 const SLIDE_MS = 400;
@@ -36,8 +32,17 @@ const SLIDE_MS = 400;
 const currentIndex = ref(0);
 const leavingIndex = ref(-1);
 const currentWidth = ref(0);
-const rulerRefs = ref(null);
+const itemEls = new Map();
 let timer;
+let resizeObserver;
+
+function setItemRef(el, index) {
+  if (el) {
+    itemEls.set(index, el);
+  } else {
+    itemEls.delete(index);
+  }
+}
 
 function shuffle(length) {
   const counter = Array.from({ length }, (_, i) => i);
@@ -48,11 +53,25 @@ function shuffle(length) {
   return counter;
 }
 
-let bag = shuffle(words.length);
+let bag = shuffle(words.value.length);
+
+function observeCurrent() {
+  if (!resizeObserver) return;
+  resizeObserver.disconnect();
+  const el = itemEls.get(currentIndex.value);
+  if (el) resizeObserver.observe(el);
+}
+
+watch(locale, () => {
+  bag = shuffle(words.value.length);
+  currentIndex.value = 0;
+  leavingIndex.value = -1;
+  nextTick(observeCurrent);
+});
 
 function drawNext() {
   if (bag.length === 0) {
-    bag = shuffle(words.length);
+    bag = shuffle(words.value.length);
     if (bag[0] === currentIndex.value && bag.length > 1) {
       [bag[0], bag[1]] = [bag[1], bag[0]];
     }
@@ -64,15 +83,10 @@ function next() {
   const nextIndex = drawNext();
   leavingIndex.value = currentIndex.value;
   currentIndex.value = nextIndex;
-  resizeTo(currentIndex.value);
+  nextTick(observeCurrent);
   setTimeout(() => {
     leavingIndex.value = -1;
   }, SLIDE_MS);
-}
-
-function resizeTo(index) {
-  const ruler = rulerRefs.value?.[index];
-  if (ruler) currentWidth.value = ruler.offsetWidth;
 }
 
 function pause() {
@@ -85,10 +99,22 @@ function resume() {
 }
 
 onMounted(() => {
-  resizeTo(currentIndex.value);
+  let firstMeasure = true;
+  resizeObserver = new ResizeObserver((entries) => {
+    const entry = entries[0];
+    if (entry) currentWidth.value = entry.borderBoxSize?.[0]?.inlineSize ?? entry.target.offsetWidth;
+    if (firstMeasure && currentWidth.value) {
+      firstMeasure = false;
+      emit('ready');
+    }
+  });
+  nextTick(observeCurrent);
   resume();
 });
-onUnmounted(() => clearInterval(timer));
+onUnmounted(() => {
+  clearInterval(timer);
+  resizeObserver?.disconnect();
+});
 </script>
 
 <style scoped lang="scss">
@@ -104,7 +130,6 @@ onUnmounted(() => clearInterval(timer));
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
     line-height: 1.2em;
     white-space: nowrap;
     animation: rotating-word-in 0.4s ease both;
@@ -112,15 +137,6 @@ onUnmounted(() => clearInterval(timer));
     &--leaving {
       animation: rotating-word-out 0.4s ease both;
     }
-  }
-
-  &__ruler {
-    position: absolute;
-    top: 0;
-    left: 0;
-    visibility: hidden;
-    pointer-events: none;
-    white-space: nowrap;
   }
 }
 
