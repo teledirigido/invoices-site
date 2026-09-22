@@ -19,11 +19,11 @@
     },
     "highlights": {
       "dailyTitle": "IRPF and VAT up to date",
-      "dailyDesc": "See the real progress of your accounts each quarter.",
+      "dailyDesc": "See the real progress of your accounting each quarter.",
       "modelsTitle": "All your tax forms in one click",
-      "modelsDesc": "Download and export your Modelo 130, 303 and 349, ready to upload to the Tax Agency.",
+      "modelsDesc": "Download, export and upload your Modelo 130, 303 and 349 to Agencia Tributaria",
       "invoicesTitle": "Invoices, clients and expenses",
-      "invoicesDesc": "Issue invoices, record expenses from the web, from Claude.ai, or wherever you like."
+      "invoicesDesc": "Issue invoices, record expenses from the web, Claude.ai or ChatGPT."
     },
     "problem": {
       "label": "Nitidez is also predictability",

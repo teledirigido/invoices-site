@@ -3,73 +3,35 @@
   <AppShowcase />
 
   <section class="w-1140 mx-auto">
-    <div class="grid-3 grid-highlights f-hanken pb-2 gap-2 f-body">
-      <div class="item br-1 p-2 f-hanken">
-        <h3 class="f-size-m">
-          {{ $t('index.highlights.dailyTitle') }}
-        </h3>
-        <p class="pt-1 c-text-secondary f-size-sm">
-          {{ $t('index.highlights.dailyDesc') }}
-        </p>
-      </div>
-      <div class="item br-1 p-2 f-hanken">
-        <h3 class="f-size-m">
+    <div class="grid-3 grid-highlights pb-4 gap-5 f-body">
+      <div class="item br-1">
+        <h3 class="f-size-ml f-light">
           {{ $t('index.highlights.modelsTitle') }}
         </h3>
-        <p class="pt-1 c-text-secondary f-size-sm">
+        <p class="pt-1 c-text-secondary f-hanken">
           {{ $t('index.highlights.modelsDesc') }}
         </p>
       </div>
-      <div class="item br-1 p-2 f-hanken">
-        <h3 class="f-size-m">
+      <div class="item br-1">
+        <h3 class="f-size-ml f-light">
           {{ $t('index.highlights.invoicesTitle') }}
         </h3>
-        <p class="pt-1 c-text-secondary f-size-sm">
+        <p class="pt-1 c-text-secondary f-hanken">
           {{ $t('index.highlights.invoicesDesc') }}
+        </p>
+      </div>
+      <div class="item br-1">
+        <h3 class="f-size-ml f-light">
+          {{ $t('index.highlights.dailyTitle') }}
+        </h3>
+        <p class="pt-1 c-text-secondary f-hanken">
+          {{ $t('index.highlights.dailyDesc') }}
         </p>
       </div>
     </div>
   </section>
 
-  <section class="py-5 grid-2">
-    <div class="item">
-      <p class="top-text pb-1">{{ $t('index.problem.label') }}</p>
-      <h2 class="f-size-l f-light">
-        {{ $t('index.problem.heading') }}
-      </h2>
-      <div class="mx-auto f-hanken pb-2">
-        <div class="pt-1 f-body f-hanken ws-break-spaces">
-          {{ $t('index.problem.description') }}
-        </div>
-        <div class="pt-2 f-size-m f-bold">{{ $t('index.problem.conclusion') }}</div>
-        <hr class="hr-bottom" />
-      </div>
-    </div>
-    <div class="item d-flex ai-center jc-center">
-      <div class="pricing-card br-1 p-2">
-        <div class="text-right">
-          <Chip type="secondary" display="inline">{{ $t('index.pricing.chip') }}</Chip>
-        </div>
-        <div class="pt-1">
-          <p class="f-size-l pt-2">
-            {{ $t('index.pricing.amount') }}
-            <span class="f-size-s">{{ $t('index.pricing.unit') }}</span>
-          </p>
-        </div>
-        <p class="pt-05 f-size-s pb-2 c-text-secondary">{{ $t('index.hero.disclaimer') }}</p>
-        <div>
-          <Button
-            class="w-100"
-            :text="$t('index.hero.cta')"
-            icon="mdi:login"
-            target="_blank"
-            :has-shadow="true"
-            :href="`${config.public.appUrl}/register`"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
+  <Pricing />
 
   <section id="audience" class="grid-2 gap-5 w-1140 mx-auto pb-4 pb-1--mobile">
     <div class="item">
@@ -175,6 +137,7 @@
 import AppShowcase from '~/components/Public/Index/AppShowcase.vue';
 import Hero from '~/components/Public/Index/Hero.vue';
 import NotifyMe from '~/components/Public/Index/NotifyMe.vue';
+import Pricing from '~/components/Public/Index/Pricing.vue';
 import Screenshot from '~/components/Public/Screenshot.vue';
 import Toast from '~/components/Toast.vue';
 

@@ -23,5 +23,8 @@
   },
   "auth": {
     "login": "Login"
+  },
+  "blog": {
+    "backToAll": "Back to All Articles"
   }
 }

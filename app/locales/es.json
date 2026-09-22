@@ -23,5 +23,8 @@
   },
   "auth": {
     "login": "Acceder"
+  },
+  "blog": {
+    "backToAll": "Volver a todos los artículos"
   }
 }

@@ -83,6 +83,7 @@
   max-width: 1000px;
 }
 
+
 .w-860 {
   max-width: 860px;
 }
@@ -95,19 +96,16 @@
   max-width: 600px;
 }
 
-.grid-highlights {
-  .item {
-    background-color: rgb(251, 246, 238);
-    border: 1px solid rgba(46, 42, 36, 0.07);
-  }
-}
-
 .hr-bottom {
   width: 40px;
   height: 3px;
   border-radius: 2px;
   background: var(--accent, #DEC9A0);
   margin: 34px auto 0px;
+
+  &--left {
+    margin-left: 0;
+  }
 }
 
 .top-text {
@@ -167,7 +165,6 @@
 .pricing-card {
   width: 100%;
   max-width: 340px;
-  background-color: #FFF;
   border: 1px solid rgba(46, 42, 36, 0.07);
   box-shadow:
     rgba(46, 42, 36, 0.08) 0px 20px 40px -28px,

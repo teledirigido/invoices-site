@@ -20,10 +20,10 @@
     <footer class="py-1 pb-2 d-flex gap-2 space-between f-body-small site-footer">
       <div class="d-flex ai-center gap-1">
         <img src="/images/favicon/favicon-32x32.png" alt="">
-        <span><strong>Nitidez.es</strong></span> • 
+        <NuxtLink to="/"><span><strong>Nitidez.es</strong></span></NuxtLink> • 
         <span>Terminos & Condiciones</span>
       </div>
-      <div class="d-flex gap-1 ai-center">
+      <div v-if="!route.path.startsWith('/blog')" class="d-flex gap-1 ai-center">
         <LocaleSwitcher />
       </div>
     </footer>

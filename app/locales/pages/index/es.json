@@ -19,11 +19,11 @@
     },
     "highlights": {
       "dailyTitle": "IRPF e IVA al día",
-      "dailyDesc": "Ve el progreso real de tus cuentas en cada trimestre.",
-      "modelsTitle": "Todos tus modelos a un clic",
-      "modelsDesc": "Descarga y exporta tus modelos 130, 303 y 349, listos para subir a la Agencia Tributaria.",
+      "dailyDesc": "Ve el progreso a tiempo real de tus cuentas, facturas e impuestos en cada trimestre.",
+      "modelsTitle": "Todos tus modelos hechos",
+      "modelsDesc": "Descarga, exporta y sube tus modelos 130, 303 y 349 a la Agencia Tributaria.",
       "invoicesTitle": "Facturas, clientes y gastos",
-      "invoicesDesc": "Emite facturas, registra gastos desde la web, desde Claude.ai o donde quieras."
+      "invoicesDesc": "Emite facturas, registra gastos desde la web, Claude.ai o ChatGPT."
     },
     "problem": {
       "label": "Nitidez es también predictibilidad",
