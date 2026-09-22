@@ -66,20 +66,15 @@ const slug = route.params.slug as string;
 const { locale, locales, setLocale } = useI18n();
 
 const { data: article } = await useAsyncData(
-  () => `blog-${slug}-${locale.value}`,
-  () => queryCollection('blog').where('slug', '=', slug).where('locale', '=', locale.value).first(),
-  { watch: [locale] },
+  () => `blog-${slug}`,
+  () => queryCollection('blog').where('slug', '=', slug).first(),
 );
 
 const { data: translationArticle } = await useAsyncData(
-  () => `blog-translation-${slug}-${locale.value}`,
+  () => `blog-translation-${slug}`,
   () => {
     if (!article.value?.translationSlug) return Promise.resolve(null);
-    const otherLocale = locale.value === 'en' ? 'es' : 'en';
-    return queryCollection('blog')
-      .where('slug', '=', article.value.translationSlug)
-      .where('locale', '=', otherLocale)
-      .first();
+    return queryCollection('blog').where('slug', '=', article.value.translationSlug).first();
   },
   { watch: [article] },
 );
@@ -97,9 +92,12 @@ const translation = computed(() => {
 });
 
 const { data: categories } = await useAsyncData(
-  () => `blog-categories-${locale.value}`,
-  () => queryCollection('blogCategories').where('locale', '=', locale.value).all(),
-  { watch: [locale] },
+  () => `blog-categories-${slug}`,
+  () => {
+    if (!article.value?.locale) return Promise.resolve([]);
+    return queryCollection('blogCategories').where('locale', '=', article.value.locale).all();
+  },
+  { watch: [article] },
 );
 
 const category = computed(() => {
@@ -107,7 +105,8 @@ const category = computed(() => {
   return categories.value?.find((c) => c.slug === article.value!.categorySlug) ?? null;
 });
 
-const formatDate = (dateTime: string) => new Date(dateTime).toLocaleDateString(locale.value);
+const formatDate = (dateTime: string) =>
+  new Date(dateTime).toLocaleDateString(article.value?.locale ?? locale.value);
 
 definePageMeta({ layout: 'public' });
 
@@ -134,7 +133,7 @@ useSeoMeta({
 useHead(() => {
   const links: Link[] = [
     { rel: 'canonical', href: canonicalUrl.value },
-    { rel: 'alternate', hreflang: locale.value, href: canonicalUrl.value },
+    { rel: 'alternate', hreflang: article.value?.locale ?? locale.value, href: canonicalUrl.value },
   ];
   if (translation.value) {
     links.push(
