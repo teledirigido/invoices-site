@@ -5,18 +5,23 @@
     <ul v-if="articles?.length">
       <li v-for="article in articles" :key="article.slug" class="blog-item d-flex gap-1">
         <div>
-          <h3 class="f-size-ml f-light underlined-on-hover"><NuxtLink :to="`/blog/${article.slug}`">{{ article.title }}</NuxtLink></h3>
-          <p class="pt-1 d-flex">
-            <Chip
-            type="secondary"
+          <h3 class="f-size-ml f-light underlined-on-hover">
+            <NuxtLink :to="`/blog/${article.slug}`">{{ article.title }}</NuxtLink>
+          </h3>
+          <p class="pt-1 d-flex gap-05 c-text-secondary">
+            {{ $t('blog.minRead', { count: getReadingMinutes(article.body) }) }}
+            <span>•</span>
+            <NuxtLink
               v-if="categoryNames[article.categorySlug ?? '']"
-              class="f-body-small"
+              :to="`/blog/categories/${article.categorySlug}`"
             >
-              <NuxtLink :to="`/blog/categories/${article.categorySlug}`">{{ categoryNames[article.categorySlug ?? ''] }}</NuxtLink>
-            </Chip>
+              {{ categoryNames[article.categorySlug ?? ''] }}
+            </NuxtLink>
           </p>
         </div>
-        <p class="ml-auto f-body-small c-text-secondary"> {{ formatDate(article.dateTime) }}</p>
+        <p class="ml-auto f-body-small c-text-secondary">
+          {{ formatDate(article.dateTime) }}
+        </p>
       </li>
     </ul>
   </div>

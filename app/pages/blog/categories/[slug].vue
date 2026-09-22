@@ -12,7 +12,9 @@
             </Chip>
           </p>
         </div>
-        <p class="ml-auto f-body-small c-text-secondary"> {{ formatDate(article.dateTime) }}</p>
+        <p class="ml-auto f-body-small c-text-secondary">
+          {{ formatDate(article.dateTime) }} · {{ $t('blog.minRead', { count: getReadingMinutes(article.body) }) }}
+        </p>
       </li>
     </ul>
 

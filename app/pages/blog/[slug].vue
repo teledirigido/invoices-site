@@ -3,7 +3,7 @@
     <article class="blog-entry">
       <h1 class="f-size-l f-light pb-1">{{ article.title }}</h1>
       <p class="f-body-small c-text-secondary pb-2">
-        {{ formatDate(article.dateTime) }}
+        {{ formatDate(article.dateTime) }} · {{ $t('blog.minRead', { count: getReadingMinutes(article.body) }) }}
         <template v-if="category">
           · <NuxtLink class="underlined" :to="`/blog/categories/${category.slug}`">{{ category.name }}</NuxtLink>
         </template>
@@ -35,6 +35,7 @@
 </template>
 
 <script setup lang="ts">
+import type { Link } from '@unhead/vue';
 import type { LocaleObject } from '@nuxtjs/i18n';
 import Pricing from '~/components/Public/Index/Pricing.vue';
 
@@ -83,9 +84,10 @@ const formatDate = (dateTime: string) => new Date(dateTime).toLocaleDateString(l
 
 definePageMeta({ layout: 'public' });
 
+const config = useRuntimeConfig();
 const description = computed(() => article.value?.description ?? article.value?.title ?? '');
-const canonicalUrl = computed(() => `https://nitidez.es${route.path}`);
-const ogImageUrl = 'https://nitidez.es/images/open-graph.png';
+const canonicalUrl = computed(() => `${config.public.siteUrl}${route.path}`);
+const ogImageUrl = computed(() => `${config.public.siteUrl}/images/open-graph.png`);
 
 useSeoMeta({
   title: () => article.value?.title,
@@ -102,32 +104,45 @@ useSeoMeta({
   articlePublishedTime: () => article.value?.dateTime,
 });
 
-useHead(() => ({
-  script: article.value
-    ? [
-        {
-          type: 'application/ld+json',
-          innerHTML: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BlogPosting',
-            headline: article.value.title,
-            description: description.value,
-            datePublished: article.value.dateTime,
-            dateModified: article.value.dateTime,
-            inLanguage: article.value.locale,
-            mainEntityOfPage: {
-              '@type': 'WebPage',
-              '@id': canonicalUrl.value,
-            },
-            image: ogImageUrl,
-            publisher: {
-              '@type': 'Organization',
-              name: 'Nitidez.es',
-              url: 'https://nitidez.es',
-            },
-          }),
-        },
-      ]
-    : [],
-}));
+useHead(() => {
+  const links: Link[] = [
+    { rel: 'canonical', href: canonicalUrl.value },
+    { rel: 'alternate', hreflang: locale.value, href: canonicalUrl.value },
+  ];
+  if (translation.value) {
+    links.push(
+      { rel: 'alternate', hreflang: translation.value.locale, href: `${config.public.siteUrl}/blog/${translation.value.slug}` },
+      { rel: 'alternate', hreflang: 'x-default', href: canonicalUrl.value },
+    );
+  }
+  return {
+    link: links,
+    script: article.value
+      ? [
+          {
+            type: 'application/ld+json',
+            innerHTML: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'BlogPosting',
+              headline: article.value.title,
+              description: description.value,
+              datePublished: article.value.dateTime,
+              dateModified: article.value.dateTime,
+              inLanguage: article.value.locale,
+              mainEntityOfPage: {
+                '@type': 'WebPage',
+                '@id': canonicalUrl.value,
+              },
+              image: ogImageUrl.value,
+              publisher: {
+                '@type': 'Organization',
+                name: 'Nitidez.es',
+                url: config.public.siteUrl,
+              },
+            }),
+          },
+        ]
+      : [],
+  };
+});
 </script>

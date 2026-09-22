@@ -25,6 +25,9 @@
     "login": "Login"
   },
   "blog": {
-    "backToAll": "Back to All Articles"
+    "backToAll": "Back to All Articles",
+    "viewAll": "See all articles",
+    "latestArticles": "Latest Articles",
+    "minRead": "{count} min read"
   }
 }

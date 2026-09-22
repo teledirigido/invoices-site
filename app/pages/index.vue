@@ -127,6 +127,8 @@
     </div>
   </section>
 
+  <ArchiveBlog :count="3" />
+
   <NotifyMe />
 
   <Toast ref="toast" :duration="4000" @close="() => router.replace({ query: {} })">
@@ -135,6 +137,7 @@
 </template>
 <script lang="ts" setup>
 import AppShowcase from '~/components/Public/Index/AppShowcase.vue';
+import ArchiveBlog from '~/components/Public/Index/ArchiveBlog.vue';
 import Hero from '~/components/Public/Index/Hero.vue';
 import NotifyMe from '~/components/Public/Index/NotifyMe.vue';
 import Pricing from '~/components/Public/Index/Pricing.vue';

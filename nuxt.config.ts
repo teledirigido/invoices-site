@@ -61,13 +61,14 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       appUrl: process.env.NITIDEZ_APP_URL ?? 'https://app.nitidez.es',
+      siteUrl: process.env.NITIDEZ_SITE_URL ?? 'https://nitidez.es',
     },
   },
 
-  modules: ['@nuxt/fonts', '@nuxt/icon', '@nuxtjs/i18n', '@nuxt/content', '@nuxtjs/sitemap'],
+  modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/icon', '@nuxtjs/i18n', '@nuxt/content', '@nuxtjs/sitemap'],
 
   site: {
-    url: 'https://nitidez.es',
+    url: process.env.NITIDEZ_SITE_URL ?? 'https://nitidez.es',
   },
 
   i18n: {
