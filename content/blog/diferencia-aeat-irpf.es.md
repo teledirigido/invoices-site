@@ -1,8 +1,8 @@
 ---
 locale: es
 slug: diferencia-aeat-irpf
-title: "Por qué la AEAT muestra un importe distinto al de tu factura"
-dateTime: "2026-08-22T09:00:00Z"
+title: 'Por qué la AEAT muestra un importe distinto al de tu factura'
+dateTime: '2026-09-17T09:00:00Z'
 translationSlug: aeat-irpf-difference
 categorySlug: agencia-tributaria
 ---
@@ -15,12 +15,12 @@ Cuando un autónomo emite una factura a otra empresa o profesional, en muchos ca
 
 Por ejemplo, una factura de 1.000 € de base con un 15 % de retención se desglosa así:
 
-| Concepto | En la factura | En la AEAT |
-|---|---|---|
-| Base imponible | 1.000 € | 1.000 € |
-| IVA (21 %) | 210 € | — |
-| Retención IRPF (15 %) | −150 € | 150 € (pago a cuenta a tu favor) |
-| **Total** | **1.060 € cobrados en tu cuenta** | **1.150 € (1.000 € facturados + 150 € de retención registrada)** |
+| Concepto              | En la factura                     | En la AEAT                                                       |
+| --------------------- | --------------------------------- | ---------------------------------------------------------------- |
+| Base imponible        | 1.000 €                           | 1.000 €                                                          |
+| IVA (21 %)            | 210 €                             | —                                                                |
+| Retención IRPF (15 %) | −150 €                            | 150 € (pago a cuenta a tu favor)                                 |
+| **Total**             | **1.060 € cobrados en tu cuenta** | **1.150 € (1.000 € facturados + 150 € de retención registrada)** |
 
 El autónomo emite la factura por 1.000 € más IVA, pero solo recibe 1.060 € en su cuenta, porque los 150 € de retención los ha ingresado el cliente en Hacienda. La AEAT, en cambio, no ve el neto cobrado: ve los 1.000 € facturados y, por separado, los 150 € que el cliente ha declarado como retención a tu nombre.
 

@@ -11,7 +11,13 @@
       <div v-if="route.path === '/'" class="d-flex gap-2 ai-center f-body-small site-header--menu">
         <a href="#audience">{{ $t('layout.public.menuAudience') }}</a>
         <a href="#scope">{{ $t('layout.public.menuScope') }}</a>
-        <Button icon="mdi-login" size="small" :text="$t('auth.login')" target="_blank" :href="`${config.public.appUrl}/login`" />
+        <Button
+          icon="mdi-login"
+          size="small"
+          :text="$t('auth.login')"
+          target="_blank"
+          :href="`${config.public.appUrl}/login`"
+        />
       </div>
     </header>
 
@@ -19,9 +25,12 @@
     <ToastNotifyMe />
     <footer class="py-1 pb-2 d-flex gap-2 space-between f-body-small site-footer">
       <div class="d-flex ai-center gap-1">
-        <img src="/images/favicon/favicon-32x32.png" alt="">
-        <NuxtLink to="/"><span><strong>Nitidez.es</strong></span></NuxtLink> • 
-        <span>Terminos & Condiciones</span>
+        <img src="/images/favicon/favicon-32x32.png" alt="" />
+        <NuxtLink to="/">
+          <span><strong>Nitidez.es</strong></span>
+        </NuxtLink>
+        •
+        <NuxtLink to="/pages/terms">Terminos & Condiciones</NuxtLink>
       </div>
       <div v-if="!route.path.startsWith('/blog')" class="d-flex gap-1 ai-center">
         <LocaleSwitcher />
@@ -48,9 +57,7 @@ useSeoMeta({
 });
 
 useHead({
-  link: [
-    { rel: 'canonical', href: computed(() => `https://nitidez.es${route.path}`) },
-  ],
+  link: [{ rel: 'canonical', href: computed(() => `https://nitidez.es${route.path}`) }],
 });
 </script>
 <style lang="scss">

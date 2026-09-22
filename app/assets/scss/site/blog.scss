@@ -25,8 +25,17 @@
     padding-left: 1.5rem;
   }
 
+  strong {
+    font-weight: bold;
+  }
+
   p:has(+ h2) {
     padding-bottom: 0;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 1rem;
   }
 
   table {
@@ -55,5 +64,26 @@
 
   ul {
     padding-left: 1.5rem;
+  }
+}
+
+.blog-card-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding-bottom: 2rem;
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.blog-card {
+  border: 1px solid rgba(46, 42, 36, 0.07);
+  border-radius: 1rem;
+  padding: 2rem;
+
+  &.has-shadow {
+    box-shadow: 0 20px 40px 0px rgba(0, 0, 0, 0.1);
   }
 }

@@ -1,8 +1,8 @@
 ---
 locale: en
 slug: aeat-irpf-difference
-title: "Why AEAT Shows a Different Amount Than Your Invoice"
-dateTime: "2026-08-22T09:00:00Z"
+title: 'Why AEAT Shows a Different Amount Than Your Invoice'
+dateTime: '2026-09-17T09:00:00Z'
 translationSlug: diferencia-aeat-irpf
 categorySlug: agencia-tributaria
 ---
@@ -15,12 +15,12 @@ When a self-employed professional (autónomo) invoices another business or profe
 
 For example, an invoice with a 1,000 € base amount and a 15 % withholding breaks down like this:
 
-| Item | On the invoice | At the AEAT |
-|---|---|---|
-| Taxable base | 1,000 € | 1,000 € |
-| IVA (21 %) | 210 € | — |
-| IRPF withholding (15 %) | −150 € | 150 € (advance payment in your favor) |
-| **Total** | **1,060 € received in your account** | **1,150 € (1,000 € invoiced + 150 € withholding recorded)** |
+| Item                    | On the invoice                       | At the AEAT                                                 |
+| ----------------------- | ------------------------------------ | ----------------------------------------------------------- |
+| Taxable base            | 1,000 €                              | 1,000 €                                                     |
+| IVA (21 %)              | 210 €                                | —                                                           |
+| IRPF withholding (15 %) | −150 €                               | 150 € (advance payment in your favor)                       |
+| **Total**               | **1,060 € received in your account** | **1,150 € (1,000 € invoiced + 150 € withholding recorded)** |
 
 The autónomo issues the invoice for 1,000 € plus IVA, but only receives 1,060 € in their account, because the client already paid the 150 € withholding to Hacienda. The AEAT, on the other hand, doesn't see the net amount received: it sees the 1,000 € invoiced and, separately, the 150 € the client declared as withholding under your name.
 
