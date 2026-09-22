@@ -2,6 +2,7 @@
 locale: en
 slug: social-security-brackets
 title: "What Are the Social Security (SS) Brackets for Autónomos"
+summaryText: "Since 2023 self-employed workers in Spain pay Social Security based on what they actually earn. Here's how the bracket system works for 2026."
 dateTime: "2026-09-22T10:00:00Z"
 translationSlug: tramos-seguridad-social
 categorySlug: seguridad-social

@@ -3,6 +3,7 @@ locale: es
 slug: que-son-los-modelos
 title: "Qué son los modelos de Hacienda y por qué debes presentarlos"
 description: "Introducción para autónomos: qué es un modelo tributario, quién lo presenta y por qué existen, antes de entrar en el detalle de cada uno."
+summaryText: "Qué es un modelo de la Agencia Tributaria, quién debe presentarlo y para qué sirve, antes de entrar en el detalle de cada uno."
 dateTime: "2026-09-18T09:00:00Z"
 translationSlug: what-are-tax-forms
 categorySlug: agencia-tributaria

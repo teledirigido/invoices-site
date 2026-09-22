@@ -2,6 +2,7 @@
 locale: es
 slug: tramos-seguridad-social
 title: "Qué son los tramos de la Seguridad Social (SS) para autónomos"
+summaryText: "Desde 2023 los autónomos pagan la Seguridad Social según lo que realmente ganan. Así funciona el sistema de tramos vigente para 2026."
 dateTime: "2026-09-22T10:00:00Z"
 translationSlug: social-security-brackets
 categorySlug: seguridad-social

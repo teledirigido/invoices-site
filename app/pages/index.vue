@@ -94,8 +94,7 @@
 
   <section class="pt-5 pb-4">
     <h3 class="f-size-l f-light text-center">{{ $t('index.socialSecurity.heading') }}</h3>
-    <div class="grid-2 mt-2 gap-2 mx-auto" style="max-width: 850px; ">
-
+    <div class="grid-2 mt-2 gap-2 mx-auto" style="max-width: 850px">
       <div class="item bg-white br-1 p-3">
         <h3 class="f-size-ml f-light">{{ $t('index.socialSecurity.obligationsTitle') }}</h3>
         <p class="pt-1 f-body-small">
@@ -109,10 +108,8 @@
           {{ $t('index.socialSecurity.bracketDesc') }}
         </p>
       </div>
-
     </div>
   </section>
-
 
   <section id="scope" class="w-860 mx-auto text-center py-4">
     <p class="top-text">{{ $t('index.scope.label') }}</p>
@@ -137,7 +134,6 @@
 </template>
 <script lang="ts" setup>
 import AppShowcase from '~/components/Public/Index/AppShowcase.vue';
-import ArchiveBlog from '~/components/Public/Index/ArchiveBlog.vue';
 import Hero from '~/components/Public/Index/Hero.vue';
 import NotifyMe from '~/components/Public/Index/NotifyMe.vue';
 import Pricing from '~/components/Public/Index/Pricing.vue';
@@ -151,29 +147,31 @@ useHead({
   script: [
     {
       type: 'application/ld+json',
-      innerHTML: computed(() => JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'SoftwareApplication',
-        name: 'Nitidez',
-        url: 'https://nitidez.es',
-        description: t('meta.home.description'),
-        applicationCategory: 'FinanceApplication',
-        operatingSystem: 'Web',
-        inLanguage: locale.value,
-        audience: {
-          '@type': 'Audience',
-          audienceType: 'Freelancers in Spain (autónomos)',
-        },
-        offers: {
-          '@type': 'Offer',
-          availability: 'https://schema.org/PreOrder',
-        },
-        provider: {
-          '@type': 'Organization',
+      innerHTML: computed(() =>
+        JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'SoftwareApplication',
           name: 'Nitidez',
           url: 'https://nitidez.es',
-        },
-      })),
+          description: t('meta.home.description'),
+          applicationCategory: 'FinanceApplication',
+          operatingSystem: 'Web',
+          inLanguage: locale.value,
+          audience: {
+            '@type': 'Audience',
+            audienceType: 'Freelancers in Spain (autónomos)',
+          },
+          offers: {
+            '@type': 'Offer',
+            availability: 'https://schema.org/PreOrder',
+          },
+          provider: {
+            '@type': 'Organization',
+            name: 'Nitidez',
+            url: 'https://nitidez.es',
+          },
+        }),
+      ),
     },
   ],
 });
@@ -202,7 +200,7 @@ const confirmationTypes: Array<ConfirmationType> = [
   },
 ];
 
-const config = useRuntimeConfig(); 
+const config = useRuntimeConfig();
 const route = useRoute();
 const router = useRouter();
 const toast = ref<InstanceType<typeof Toast> | null>(null);

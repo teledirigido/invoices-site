@@ -3,6 +3,7 @@ locale: es
 slug: modelos-autonomo
 title: "Qué modelos debo presentar como autónomo"
 description: "Guía de los modelos de Hacienda que debe presentar un autónomo en España: IVA, IRPF, retenciones y resumen anual, con sus plazos."
+summaryText: "Repaso de los modelos de Hacienda más habituales para autónomos, trimestrales y anuales, y cuándo toca presentarlos."
 dateTime: "2026-09-19T09:00:00Z"
 translationSlug: self-employed-tax-forms
 categorySlug: agencia-tributaria

@@ -28,6 +28,7 @@
     "backToAll": "Volver a todos los artículos",
     "viewAll": "Ver todos artículos",
     "latestArticles": "Últimos artículos",
-    "minRead": "{count} min de lectura"
+    "minRead": "{count} min de lectura",
+    "relatedArticles": "Artículos relacionados"
   }
 }

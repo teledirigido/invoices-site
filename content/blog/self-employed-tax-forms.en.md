@@ -3,6 +3,7 @@ locale: en
 slug: self-employed-tax-forms
 title: "Which tax forms do I need to file as a self-employed worker in Spain"
 description: "A guide to the tax forms self-employed workers (autónomos) in Spain must file with the tax agency: VAT, income tax, withholdings and annual summaries, with their deadlines."
+summaryText: "A rundown of the most common tax forms self-employed workers in Spain must file, quarterly and annual, and when they're due."
 dateTime: "2026-09-19T09:00:00Z"
 translationSlug: modelos-autonomo
 categorySlug: agencia-tributaria

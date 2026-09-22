@@ -1,20 +1,21 @@
 ---
 locale: es
 slug: que-es-verifactu
-title: 'Qué es Veri*Factu, cuándo es obligatorio y si necesitas una plataforma'
+title: 'Qué es Veri*Factu y qué necesitas saber'
 description: 'Guía para autónomos sobre Veri*Factu: qué es, cuándo entra en vigor la obligación y si es necesario usar la plataforma de la AEAT o basta con un software homologado.'
+summaryText: 'Veri*Factu no es una plataforma que tengas que usar: es una normativa técnica que debe cumplir tu software de facturación. Te explicamos qué es y cuándo te afecta.'
 dateTime: '2026-09-23T09:00:00Z'
 translationSlug: what-is-verifactu
 categorySlug: agencia-tributaria
 ---
 
-Si eres autónomo seguro que has oído hablar de Veri*Factu en los últimos meses. Es una de las novedades fiscales que más dudas genera, en parte porque el nombre se usa para varias cosas distintas a la vez. Aquí lo explicamos de forma clara: qué es, cuándo te afecta y qué tienes que hacer.
-
-![Factura validada por la AEAT](/images/verifactu-es.png)
+Si eres autónomo seguro que has oído hablar de Veri*Factu en los últimos meses. Es una de las novedades fiscales que más dudas genera, en parte porque el nombre se usa para varias cosas distintas a la vez.
 
 ## Qué es Veri*Factu
 
 Veri*Factu es el nombre común del **Reglamento de los Sistemas Informáticos de Facturación (SIF)**, una normativa de la Agencia Tributaria que obliga a que el software de facturación cumpla ciertos requisitos técnicos: los registros de cada factura deben ser íntegros, trazables, inalterables y estar encadenados mediante un código hash, de forma que no se puedan borrar ni modificar facturas ya emitidas sin dejar rastro.
+
+![Factura validada por la AEAT](/images/verifactu-es.png)
 
 Dentro de esa normativa existen dos modalidades:
 
@@ -43,6 +44,7 @@ Para las empresas sujetas al Impuesto sobre Sociedades.
 ---
 
 background: white
+shadow: true
 title: 1 de julio de 2027
 ---
 
@@ -72,6 +74,9 @@ shadow: true
 ---
 
 Si facturas con [Nitidez](/), no tienes que hacer nada especial: la plataforma ya cumple con Veri*Factu de forma nativa. Cada factura se encadena mediante hash con la anterior, se envía a la AEAT y se genera automáticamente su código QR de verificación. No necesitas instalar nada, adaptar un programa aparte ni depender de la aplicación gratuita de Hacienda.
+
+::video-player{src="/images/validar-verifactu-app.compressed.mp4" caption="Validando una factura Veri*Factu"}
+::
 
 ::
 

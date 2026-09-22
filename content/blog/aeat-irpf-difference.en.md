@@ -2,6 +2,7 @@
 locale: en
 slug: aeat-irpf-difference
 title: 'Why AEAT Shows a Different Amount Than Your Invoice'
+summaryText: "If the amount on an invoice you issued doesn't match your AEAT tax data, the explanation is almost always IRPF withholding."
 dateTime: '2026-09-17T09:00:00Z'
 translationSlug: diferencia-aeat-irpf
 categorySlug: agencia-tributaria

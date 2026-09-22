@@ -1,18 +1,18 @@
 <template>
-  <section v-if="articles?.length" class="py-4">
-    <h3 class="f-size-l f-light text-center pb-3">{{ title }}</h3>
-    <div class="grid-3 gap-2">
+  <section v-if="articles?.length">
+    <h3 :class="`f-size-l f-light text-${props.titleAlignment} pb-3`">{{ title }}</h3>
+    <div :class="`grid-${Math.min(articles.length, 3)} gap-2`">
       <div v-for="article in articles" :key="article.slug" class="item bg-white br-1 p-3 has-bg">
-        <p class="text-right pb-1">
-          <span class="f-body-small c-text-secondary">
-            {{ formatDate(article.dateTime) }}
-          </span>
+        <p class="pb-1 c-text-secondary text-right">
+          {{ $t('blog.minRead', { count: getReadingMinutes(article.body) }) }}
         </p>
         <h3 class="f-size-ml f-light underlined-on-hover">
           <NuxtLink :to="`/blog/${article.slug}`">{{ article.title }}</NuxtLink>
         </h3>
-        <p class="pt-1 c-text-secondary">
-          {{ $t('blog.minRead', { count: getReadingMinutes(article.body) }) }}
+        <p class="pb-1 pt-1">
+          <span class="f-body-small c-text-secondary">
+            {{ formatDate(article.dateTime) }}
+          </span>
         </p>
       </div>
     </div>
@@ -30,9 +30,12 @@ const props = withDefaults(
     count?: number;
     categorySlug?: string;
     title?: string;
+    excludeSlug?: string;
+    titleAlignment?: 'center' | 'left' | 'right';
   }>(),
   {
     count: 3,
+    titleAlignment: 'center',
   },
 );
 
@@ -40,7 +43,7 @@ const { t, locale } = useI18n();
 
 const title = computed(() => props.title ?? t('blog.latestArticles'));
 
-const { data: articles } = await useAsyncData(
+const { data: fetchedArticles } = await useAsyncData(
   () => `archive-blog-${props.categorySlug ?? 'all'}-${props.count}-${locale.value}`,
   () => {
     let query = queryCollection('blog').where('locale', '=', locale.value);
@@ -48,6 +51,12 @@ const { data: articles } = await useAsyncData(
     return query.order('dateTime', 'DESC').limit(props.count).all();
   },
   { watch: [locale, () => props.categorySlug, () => props.count] },
+);
+
+const articles = computed(() =>
+  (fetchedArticles.value ?? [])
+    .filter((a) => a.slug !== props.excludeSlug)
+    .slice(0, props.excludeSlug ? props.count - 1 : props.count),
 );
 
 const { data: categories } = await useAsyncData(

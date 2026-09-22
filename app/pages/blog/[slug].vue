@@ -3,30 +3,52 @@
     <article class="blog-entry">
       <h1 class="f-size-l f-light pb-1">{{ article.title }}</h1>
       <p class="f-body-small c-text-secondary pb-2">
-        {{ formatDate(article.dateTime) }} · {{ $t('blog.minRead', { count: getReadingMinutes(article.body) }) }}
+        {{ formatDate(article.dateTime) }} ·
+        {{ $t('blog.minRead', { count: getReadingMinutes(article.body) }) }}
         <template v-if="category">
-          · <NuxtLink class="underlined" :to="`/blog/categories/${category.slug}`">{{ category.name }}</NuxtLink>
+          ·
+          <NuxtLink class="underlined" :to="`/blog/categories/${category.slug}`">
+            {{ category.name }}
+          </NuxtLink>
         </template>
       </p>
-      <div v-if="translation" class="pb-2 op-05 f-hanken">
-        <i>
-          This article is also available in
-          <NuxtLink class="underlined" :to="`/blog/${translation.slug}`" @click="setLocale(translation.locale)">{{ translation.languageName }}</NuxtLink>
-        </i>
-      </div>
+
       <div class="f-body c-text-secondary f-hanken blog-body">
+        <div v-if="translation" class="f-hanken is-multi-lang">
+          <i>
+            This article is also available in
+            <NuxtLink
+              class="underlined"
+              :to="`/blog/${translation.slug}`"
+              @click="setLocale(translation.locale)"
+            >
+              {{ translation.languageName }}
+            </NuxtLink>
+          </i>
+        </div>
         <ContentRenderer :value="article" />
       </div>
-      <hr class="hr-bottom hr-bottom--left">
+      <RelatedBlogArticles
+        :count="2"
+        v-if="article"
+        :exclude-slug="article.slug"
+        :category-slug="article.categorySlug"
+      />
+      <hr class="hr-bottom hr-bottom--left" />
       <div class="pt-2 c-text-secondary">
-        <NuxtLink class="underlined d-flex ai-center gap-1" to="/blog"><Icon name="mdi-arrow-left" />{{ $t('blog.backToAll') }}</NuxtLink>
+        <NuxtLink class="underlined d-flex ai-center gap-1" to="/blog">
+          <Icon name="mdi-arrow-left" />
+          {{ $t('blog.backToAll') }}
+        </NuxtLink>
       </div>
     </article>
     <aside class="blog-aside">
       <p class="f-body-small pb-1">Categories</p>
       <ul v-if="categories?.length" class="d-flex flex-column gap-05">
         <li v-for="cat in categories" :key="cat.slug">
-          <NuxtLink class="underlined" :to="`/blog/categories/${cat.slug}`">{{ cat.name }}</NuxtLink>
+          <NuxtLink class="underlined" :to="`/blog/categories/${cat.slug}`">
+            {{ cat.name }}
+          </NuxtLink>
         </li>
       </ul>
     </aside>
@@ -54,14 +76,19 @@ const { data: translationArticle } = await useAsyncData(
   () => {
     if (!article.value?.translationSlug) return Promise.resolve(null);
     const otherLocale = locale.value === 'en' ? 'es' : 'en';
-    return queryCollection('blog').where('slug', '=', article.value.translationSlug).where('locale', '=', otherLocale).first();
+    return queryCollection('blog')
+      .where('slug', '=', article.value.translationSlug)
+      .where('locale', '=', otherLocale)
+      .first();
   },
   { watch: [article] },
 );
 
 const translation = computed(() => {
   if (!translationArticle.value) return null;
-  const localeObj = (locales.value as Array<LocaleObject>).find((l) => l.code === translationArticle.value!.locale);
+  const localeObj = (locales.value as Array<LocaleObject>).find(
+    (l) => l.code === translationArticle.value!.locale,
+  );
   return {
     slug: translationArticle.value.slug,
     locale: translationArticle.value.locale as LocaleObject['code'],
@@ -111,7 +138,11 @@ useHead(() => {
   ];
   if (translation.value) {
     links.push(
-      { rel: 'alternate', hreflang: translation.value.locale, href: `${config.public.siteUrl}/blog/${translation.value.slug}` },
+      {
+        rel: 'alternate',
+        hreflang: translation.value.locale,
+        href: `${config.public.siteUrl}/blog/${translation.value.slug}`,
+      },
       { rel: 'alternate', hreflang: 'x-default', href: canonicalUrl.value },
     );
   }

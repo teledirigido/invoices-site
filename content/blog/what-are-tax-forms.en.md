@@ -3,6 +3,7 @@ locale: en
 slug: what-are-tax-forms
 title: "What are tax forms (modelos) and why you need to file them"
 description: "An introduction for self-employed workers in Spain: what a modelo is, who files it, and why it exists, before diving into the details of each one."
+summaryText: "What a Spanish tax agency modelo is, who needs to file it, and what it's for, before diving into the details of each one."
 dateTime: "2026-09-18T09:00:00Z"
 translationSlug: que-son-los-modelos
 categorySlug: agencia-tributaria

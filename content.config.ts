@@ -28,6 +28,7 @@ export default defineContentConfig({
         slug: z.string(),
         title: z.string(),
         description: z.string().optional(),
+        summaryText: z.string().optional(),
         dateTime: z.string(),
         translationSlug: z.string().optional(),
         categorySlug: z.string().optional(),

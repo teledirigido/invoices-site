@@ -11,6 +11,7 @@
       <div v-if="route.path === '/'" class="d-flex gap-2 ai-center f-body-small site-header--menu">
         <a href="#audience">{{ $t('layout.public.menuAudience') }}</a>
         <a href="#scope">{{ $t('layout.public.menuScope') }}</a>
+        <NuxtLink to="/blog">{{ $t('layout.public.menuBlog') }}</NuxtLink>
         <Button
           icon="mdi-login"
           size="small"

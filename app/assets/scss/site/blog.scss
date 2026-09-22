@@ -1,11 +1,18 @@
+@use "@scss/global/mediaqueries" as mq;
+
 .blog-single {
   display: grid;
   grid-template-columns: 1fr minmax(min-content, 250px);
   gap: 4rem;
   position: relative;
+
+  @include mq.nondesktop {
+    grid-template-columns: 100%;
+  }
 }
 
 .blog-item {
+  list-style: none;
   border-top: 1px solid #FFF;
   border-bottom: 1px solid #CCC;
   padding-bottom: 2rem;
@@ -21,6 +28,9 @@
 }
 
 .blog-body {
+
+  position: relative;
+
   ul {
     padding-left: 1.5rem;
   }
@@ -33,9 +43,18 @@
     padding-bottom: 0;
   }
 
-  img {
-    max-width: 100%;
-    border-radius: 1rem;
+  &--figure {
+
+    video,
+    img {
+      max-width: 100%;
+      border-radius: 1rem;
+    }
+
+
+    figcaption {
+      opacity: 0.7;
+    }
   }
 
   table {
@@ -56,6 +75,14 @@
     }
 
   }
+
+  .is-multi-lang {
+    padding: 1rem 2rem;
+    background-color: rgba(#000, 0.05);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+  }
+
 }
 
 .blog-aside {
