@@ -20,6 +20,11 @@
   @include fn.contentWrapper(1240px, false);
 }
 
+.content-wrapper--public.page-public--docs-mcp {
+  @include fn.contentWrapper(1440px, false);
+}
+
+
 .f-hanken {
   font-family: "Hanken Grotesk", system-ui, sans-serif;
 }

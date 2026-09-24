@@ -30,5 +30,24 @@
     "latestArticles": "Últimos artículos",
     "minRead": "{count} min de lectura",
     "relatedArticles": "Artículos relacionados"
+  },
+  "docsMcp": {
+    "onThisPage": "En esta página",
+    "gettingStarted": "Primeros pasos",
+    "endpoint": "Endpoint",
+    "authAndAuthorization": "Autenticación y autorización",
+    "dataAccessed": "Datos a los que accede",
+    "tools": "Herramientas",
+    "supportAndContact": "Soporte y contacto",
+    "supportText": "Las dudas sobre este conector, o las solicitudes para revocar el acceso, se pueden enviar a {email}. La información general del producto está disponible en {home}, y nuestros términos están publicados en {terms}.",
+    "readOnly": "Solo lectura",
+    "action": "Acción",
+    "parameter": "Parámetro",
+    "type": "Tipo",
+    "required": "Obligatorio",
+    "description": "Descripción",
+    "yes": "Sí",
+    "no": "No",
+    "noParams": "Sin parámetros."
   }
 }

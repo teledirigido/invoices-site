@@ -1,0 +1,165 @@
+.docs-body {
+
+  a {
+    text-decoration: underline;
+  }
+
+  ul {
+    padding-top: 0.5rem;
+    padding-left: 1.5rem;
+  }
+
+  li {
+    padding-bottom: 0.75rem;
+  }
+
+  code {
+    background-color: var(--c-secondary-2);
+    border-radius: 4px;
+    padding: 0.1rem 0.4rem;
+    font-size: 0.9em;
+  }
+}
+
+.docs-page__layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 3rem;
+  align-items: start;
+
+  @media screen and (max-width: 860px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.docs-page__nav {
+  position: sticky;
+  top: 1.5rem;
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
+  padding-bottom: 1.5rem;
+
+  @media screen and (max-width: 860px) {
+    position: static;
+    max-height: none;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    ul {
+      padding-left: 1rem;
+      padding-top: 0.25rem;
+      padding-bottom: 0.75rem;
+    }
+  }
+
+  li {
+    padding-bottom: 0.4rem;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.9rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.is-active {
+      text-decoration: underline;
+    }
+  }
+
+  >ul>li>a {
+    font-weight: 600;
+  }
+}
+
+.tool-reference__content {
+  min-width: 0;
+}
+
+.tool-reference__group {
+  padding-bottom: 2rem;
+}
+
+.tool-reference__tool {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.tool-reference__tool-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-bottom: 0.5rem;
+}
+
+.tool-reference__name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  background-color: var(--c-secondary-2);
+}
+
+.tool-reference__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+
+  &.is-read {
+    background-color: var(--c-secondary);
+    color: var(--c-secondary-3);
+  }
+
+  &.is-action {
+    background-color: color-mix(in srgb, var(--c-success) 20%, white);
+    color: color-mix(in srgb, var(--c-success) 60%, black);
+  }
+}
+
+.tool-reference__params {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+
+  th {
+    text-align: left;
+    font-weight: 600;
+    padding: 0.4rem 0.75rem 0.4rem 0;
+    border-bottom: 1px solid var(--c-secondary-2);
+  }
+
+  td {
+    padding: 0.5rem 0.75rem 0.5rem 0;
+    border-bottom: 1px solid var(--c-secondary-2);
+    vertical-align: top;
+
+    &:first-child,
+    &:nth-child(2) {
+      white-space: nowrap;
+    }
+  }
+
+  code {
+    background-color: var(--c-secondary-2);
+    border-radius: 4px;
+    padding: 0.1rem 0.4rem;
+    font-size: 0.9em;
+  }
+}
+
+.tool-reference__no-params {
+  margin-top: 0.5rem;
+  font-style: italic;
+}

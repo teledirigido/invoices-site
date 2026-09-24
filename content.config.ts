@@ -43,5 +43,16 @@ export default defineContentConfig({
         name: z.string(),
       }),
     }),
+    docsPages: defineCollection({
+      type: 'page',
+      source: 'docs/*.md',
+      schema: z.object({
+        locale: z.enum(['en', 'es']),
+        slug: z.string(),
+        topText: z.string(),
+        title: z.string(),
+        lastUpdated: z.string(),
+      }),
+    }),
   },
 });
