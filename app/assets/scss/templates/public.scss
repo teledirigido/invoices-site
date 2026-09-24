@@ -164,11 +164,14 @@
 
 .pricing-card {
   width: 100%;
-  max-width: 340px;
   border: 1px solid rgba(46, 42, 36, 0.07);
   box-shadow:
     rgba(46, 42, 36, 0.08) 0px 20px 40px -28px,
     rgba(46, 42, 36, 0.06) 0px 4px 10px -6px;
+
+  @include mq.desktop {
+    max-width: 340px;
+  }
 
   &__price {
     display: flex;
@@ -187,6 +190,8 @@
   &__unit {
     font-size: 17px;
   }
+
+
 }
 
 @keyframes fade-up {

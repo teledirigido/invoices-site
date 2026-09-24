@@ -1,6 +1,6 @@
 <template>
-  <div class="p-6 mb-5 has-bg br-1">
-    <section class="grid-2">
+  <div class="p-6 p-2--nondesktop mb-5 has-bg br-1">
+    <section class="grid-2 gap-column-3">
       <div class="item">
         <p class="top-text pb-1">{{ $t('index.problem.label') }}</p>
         <h2 class="f-size-l f-light">
@@ -41,5 +41,5 @@
   </div>
 </template>
 <script lang="ts" setup>
-const config = useRuntimeConfig(); 
+const config = useRuntimeConfig();
 </script>

@@ -46,7 +46,11 @@
 }
 
 @include mq.nondesktop {
-  @for $i from 1 through 5 {
+  @for $i from 1 through 6 {
+    .p-#{$i}--nondesktop {
+      padding: $i+rem;
+    }
+
     .pt-#{$i}--nondesktop {
       padding-top: $i+rem;
     }
