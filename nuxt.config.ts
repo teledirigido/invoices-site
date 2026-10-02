@@ -67,6 +67,14 @@ export default defineNuxtConfig({
 
   modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/icon', '@nuxtjs/i18n', '@nuxt/content', '@nuxtjs/sitemap'],
 
+  hooks: {
+    'content:file:beforeParse'(ctx) {
+      if (typeof ctx.file.body !== 'string') return;
+      const appUrl = process.env.NITIDEZ_APP_URL ?? 'https://app.nitidez.es';
+      ctx.file.body = ctx.file.body.replaceAll('{{appUrl}}', appUrl);
+    },
+  },
+
   site: {
     url: process.env.NITIDEZ_SITE_URL ?? 'https://nitidez.es',
   },

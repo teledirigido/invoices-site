@@ -16,7 +16,7 @@
         </p>
       </div>
     </div>
-    <div class="pt-2 op-05 d-flex ai-center jc-end gap-1">
+    <div v-if="showAllLink" class="pt-2 op-05 d-flex ai-center jc-end gap-1">
       <NuxtLink class="underlined" to="/blog">
         {{ $t('blog.viewAll') }}
       </NuxtLink>
@@ -32,10 +32,12 @@ const props = withDefaults(
     title?: string;
     excludeSlug?: string;
     titleAlignment?: 'center' | 'left' | 'right';
+    showAllLink?: boolean;
   }>(),
   {
     count: 3,
     titleAlignment: 'center',
+    showAllLink: true,
   },
 );
 

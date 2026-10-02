@@ -31,7 +31,7 @@
       <RelatedBlogArticles
         :count="2"
         v-if="article"
-        :exclude-slug="article.slug"
+        :exclude-article-slug="article.slug"
         :category-slug="article.categorySlug"
       />
       <hr class="hr-bottom hr-bottom--left" />
