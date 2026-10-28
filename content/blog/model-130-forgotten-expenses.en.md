@@ -13,7 +13,8 @@ You notice right after filing: an invoice was missing, an expense you forgot to 
 
 ::card
 ---
-title: Short answer
+
+title: TL;DR
 background: white
 shadow: true
 ---
@@ -23,6 +24,7 @@ Modelo 130 is cumulative, so the next quarter almost always makes up the differe
 - **Not charged yet (direct debit):** you can correct the filing while the direct debit window is still open.
 - **Already paid:** you can wait for the next quarter or request a refund through an amendment.
 - **Paid too little:** this is fixed with a supplementary filing (declaración complementaria).
+
 ::
 
 ## Why Modelo 130 can "fix itself"
@@ -35,11 +37,11 @@ The key piece is box 05, which holds the installment payments from previous quar
 
 This is a made-up case to illustrate the mechanics, without withholdings or other boxes. Say you'd already paid 2,500 € between Q1 and Q2.
 
-| Quarter | What happened |
-| --- | --- |
-| Q3 | You declare a cumulative net income of 20,000 € and pay 1,500 € (20% of 20,000 €, minus the 2,500 € already paid). |
-| — | You realize you forgot 1,000 € in expenses: the real net income for Q3 was 19,000 €, not 20,000 €. Because of that mistake, you overpaid by 200 €. |
-| Q4 | Cumulative net income reaches 25,000 € (now including that 1,000 €). When calculating the Q4 payment, box 05 carries the 1,500 € you already paid in Q3, so the result comes out 200 € lower than it would have without the mistake: you pay 1,000 € instead of 1,200 €. |
+| Quarter | What happened                                                                                                                                                                                                                                                            |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Q3      | You declare a cumulative net income of 20,000 € and pay 1,500 € (20% of 20,000 €, minus the 2,500 € already paid).                                                                                                                                                       |
+| —       | You realize you forgot 1,000 € in expenses: the real net income for Q3 was 19,000 €, not 20,000 €. Because of that mistake, you overpaid by 200 €.                                                                                                                       |
+| Q4      | Cumulative net income reaches 25,000 € (now including that 1,000 €). When calculating the Q4 payment, box 05 carries the 1,500 € you already paid in Q3, so the result comes out 200 € lower than it would have without the mistake: you pay 1,000 € instead of 1,200 €. |
 
 The 200 € you overpaid in Q3 is offset by the 200 € you underpay in Q4. The total paid for the year doesn't change, only when you advance it to the tax authority (Hacienda).
 
@@ -47,12 +49,11 @@ The 200 € you overpaid in Q3 is offset by the 200 € you underpay in Q4. The 
 
 In practice, a Modelo 130 that's already been filed isn't canceled: it's corrected or offset afterward.
 
-| Situation | Path | What to keep in mind |
-| --- | --- | --- |
-| You paid too little | Supplementary filing (declaración complementaria) | Same form, checking the supplementary box and referencing the receipt from the original filing. |
-| You paid too much and can wait | Offset it in the next quarter | Box 05 of the next quarter includes what you already paid, as in the example. |
-| You paid too much and want it back now | Rectification request | As of April 2026, Modelo 130 didn't have the rectifying self-assessment (autoliquidación rectificativa) enabled. Check whether that's still the case. |
-| You'd rather redo it entirely | Substitute filing (declaración sustitutiva) | Fully replaces the original. Confirm with the AEAT's online office (Sede Electrónica) that it's available for Modelo 130. |
+| Situation                              | Path                                              | What to keep in mind                                                                                                                                                                                                                                        |
+| -------------------------------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| You paid too little                    | Supplementary filing (declaración complementaria) | Same form, checking the supplementary box and referencing the receipt from the original filing.                                                                                                                                                             |
+| You paid too much and can wait         | Offset it in the next quarter                     | Box 05 of the next quarter includes what you already paid, as in the example.                                                                                                                                                                               |
+| You paid too much and want it back now | Rectification request                             | Modelo 130 doesn't have a rectifying self-assessment (autoliquidación rectificativa): that path is only for Modelo 100, 303, and 200/220. For Modelo 130, correcting anything other than an underpayment is handled as a rectification request to the AEAT. |
 
 ## If you chose direct debit and haven't been charged yet
 
@@ -72,6 +73,7 @@ The larger the overpayment in one quarter and the lower the expected income in t
 
 ::card
 ---
+
 title: How Nitidez helps
 background: white
 showLogo: true
@@ -99,4 +101,4 @@ And when it's time to file, you don't have to fill in the form on the AEAT's sit
 - If you paid by direct debit and that window is still open, you can still correct the filing.
 - Waiting for the next quarter only works if that quarter comes out positive; otherwise, the adjustment carries over to your income tax return.
 
-_Source: [Electronic filing of Modelo 130 (AEAT help)](https://sede.agenciatributaria.gob.es/Sede/ayuda/consultas-informaticas/presentacion-declaraciones-ayuda-tecnica/modelo-130.html)._
+_Sources: [Electronic filing of Modelo 130 (AEAT help)](https://sede.agenciatributaria.gob.es/Sede/ayuda/consultas-informaticas/presentacion-declaraciones-ayuda-tecnica/modelo-130.html) and [Modelo 130 IRPF: instructions (AEAT)](https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-130-irpf______esionales-estimacion-directa-fraccionado_/instrucciones.html)._

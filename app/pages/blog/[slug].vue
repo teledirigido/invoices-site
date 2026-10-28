@@ -3,7 +3,7 @@
     <article class="blog-entry">
       <h1 class="f-size-l f-light pb-1">{{ article.title }}</h1>
       <p class="f-body-small c-text-secondary pb-2">
-        {{ formatDate(article.dateTime) }} ·
+        {{ formatDateTime(article.dateTime) }} ·
         {{ $t('blog.minRead', { count: getReadingMinutes(article.body) }) }}
         <template v-if="category">
           ·
@@ -105,8 +105,7 @@ const category = computed(() => {
   return categories.value?.find((c) => c.slug === article.value!.categorySlug) ?? null;
 });
 
-const formatDate = (dateTime: string) =>
-  new Date(dateTime).toLocaleDateString(article.value?.locale ?? locale.value);
+const { formatDateTime } = useFormats();
 
 definePageMeta({ layout: 'public' });
 

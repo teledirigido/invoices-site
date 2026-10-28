@@ -13,6 +13,7 @@ Te das cuenta justo después de presentar: faltaba una factura, un gasto que se 
 
 ::card
 ---
+
 title: Respuesta corta
 background: white
 shadow: true
@@ -23,7 +24,7 @@ El modelo 130 es acumulativo, así que el trimestre siguiente compensa casi siem
 - **Aún no se ha cargado (domiciliación):** puedes corregir la presentación mientras siga abierto el plazo de domiciliación.
 - **Ya pagaste:** puedes esperar al trimestre siguiente o pedir la devolución por la vía de rectificación.
 - **Pagaste de menos:** se corrige con una declaración complementaria.
-::
+  ::
 
 ## Por qué el modelo 130 se puede "arreglar solo"
 
@@ -35,11 +36,11 @@ La pieza clave es la casilla 05, donde se recogen los pagos fraccionados de los 
 
 Es un caso inventado para ilustrar la mecánica, sin retenciones ni otras casillas. Supón que ya habías pagado 2.500 € entre T1 y T2.
 
-| Trimestre | Qué pasó |
-| --- | --- |
-| T3 | Declaras un rendimiento neto acumulado de 20.000 € y pagas 1.500 € (el 20 % de 20.000 €, menos los 2.500 € ya pagados). |
-| — | Te das cuenta de que olvidaste 1.000 € de gastos: el rendimiento neto real del T3 era 19.000 €, no 20.000 €. Por ese error, pagaste 200 € de más. |
-| T4 | El rendimiento neto acumulado llega a 25.000 € (ya con esos 1.000 € incluidos). Al calcular el pago del T4, la casilla 05 recoge los 1.500 € que ya pagaste en el T3, así que el resultado te sale 200 € más bajo de lo que habría salido sin el error: pagas 1.000 € en vez de 1.200 €. |
+| Trimestre | Qué pasó                                                                                                                                                                                                                                                                                 |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| T3        | Declaras un rendimiento neto acumulado de 20.000 € y pagas 1.500 € (el 20 % de 20.000 €, menos los 2.500 € ya pagados).                                                                                                                                                                  |
+| —         | Te das cuenta de que olvidaste 1.000 € de gastos: el rendimiento neto real del T3 era 19.000 €, no 20.000 €. Por ese error, pagaste 200 € de más.                                                                                                                                        |
+| T4        | El rendimiento neto acumulado llega a 25.000 € (ya con esos 1.000 € incluidos). Al calcular el pago del T4, la casilla 05 recoge los 1.500 € que ya pagaste en el T3, así que el resultado te sale 200 € más bajo de lo que habría salido sin el error: pagas 1.000 € en vez de 1.200 €. |
 
 Los 200 € de más del T3 se compensan solos con los 200 € de menos del T4. El total pagado en el año no cambia, solo cuándo lo adelantas a Hacienda.
 
@@ -47,12 +48,11 @@ Los 200 € de más del T3 se compensan solos con los 200 € de menos del T4. E
 
 En la práctica, un modelo 130 ya presentado no se anula: se corrige o se compensa después.
 
-| Situación | Vía | Qué tener en cuenta |
-| --- | --- | --- |
-| Pagaste de menos | Declaración complementaria | Mismo modelo, marcando la casilla de complementaria e indicando el justificante de la declaración anterior. |
-| Pagaste de más y puedes esperar | Compensarlo en el trimestre siguiente | La casilla 05 del siguiente trimestre incluye lo ya pagado, como en el ejemplo. |
-| Pagaste de más y quieres recuperarlo ya | Solicitud de rectificación | En abril de 2026, el 130 no tenía habilitada la autoliquidación rectificativa. Comprueba si sigue siendo así. |
-| Prefieres rehacerla entera | Declaración sustitutiva | Reemplaza por completo a la original. Confirma en la Sede de la AEAT que está disponible para el 130. |
+| Situación                               | Vía                                   | Qué tener en cuenta                                                                                                                                                                                                                     |
+| --------------------------------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Pagaste de menos                        | Declaración complementaria            | Mismo modelo, marcando la casilla de complementaria e indicando el justificante de la declaración anterior.                                                                                                                             |
+| Pagaste de más y puedes esperar         | Compensarlo en el trimestre siguiente | La casilla 05 del siguiente trimestre incluye lo ya pagado, como en el ejemplo.                                                                                                                                                         |
+| Pagaste de más y quieres recuperarlo ya | Solicitud de rectificación            | El modelo 130 no tiene autoliquidación rectificativa (esa vía es para los modelos 100, 303 y 200/220). Para el 130, la corrección por cualquier causa distinta de pagar de más se tramita como solicitud de rectificación ante la AEAT. |
 
 ## Si elegiste domiciliación y todavía no te han cobrado
 
@@ -72,6 +72,7 @@ Cuanto mayor sea el pago de más en un trimestre y menor el rendimiento esperado
 
 ::card
 ---
+
 title: Cómo te ayuda Nitidez
 background: white
 showLogo: true
@@ -99,4 +100,4 @@ Y cuando toca presentar, no tienes que rellenar el formulario de la Sede a mano:
 - Si domiciliaste el pago y el plazo de domiciliación sigue abierto, aún puedes corregir la presentación.
 - Esperar al trimestre siguiente solo funciona si ese trimestre sale positivo; si no, el ajuste se traslada a la declaración de la Renta.
 
-_Fuente: [Presentación electrónica del modelo 130 (ayuda de la AEAT)](https://sede.agenciatributaria.gob.es/Sede/ayuda/consultas-informaticas/presentacion-declaraciones-ayuda-tecnica/modelo-130.html)._
+_Fuentes: [Presentación electrónica del modelo 130 (ayuda de la AEAT)](https://sede.agenciatributaria.gob.es/Sede/ayuda/consultas-informaticas/presentacion-declaraciones-ayuda-tecnica/modelo-130.html) y [Modelo 130 IRPF: instrucciones (AEAT)](https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-130-irpf______esionales-estimacion-directa-fraccionado_/instrucciones.html)._

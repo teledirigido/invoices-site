@@ -61,15 +61,5 @@ const articles = computed(() =>
     .slice(0, props.excludeSlug ? props.count - 1 : props.count),
 );
 
-const { data: categories } = await useAsyncData(
-  () => `blog-categories-${locale.value}`,
-  () => queryCollection('blogCategories').where('locale', '=', locale.value).all(),
-  { watch: [locale] },
-);
-
-const categoryNames = computed(() =>
-  Object.fromEntries((categories.value ?? []).map((c) => [c.slug, c.name])),
-);
-
 const formatDate = (dateTime: string) => new Date(dateTime).toLocaleDateString(locale.value);
 </script>

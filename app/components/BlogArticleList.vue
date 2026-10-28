@@ -3,7 +3,7 @@
     <li v-for="article in articles" :key="article.slug" class="blog-item">
       <header>
         <p class="ml-auto f-body-small c-text-secondary pb-1">
-          {{ formatDate(article.dateTime) }}
+          {{ formatDateTime(article.dateTime) }}
         </p>
         <h3 class="f-size-ml f-light underlined-on-hover">
           <NuxtLink :to="`/blog/${article.slug}`">{{ article.title }}</NuxtLink>
@@ -27,13 +27,15 @@
   </ul>
 </template>
 <script setup lang="ts">
+import type { MinimarkTree } from 'minimark';
+
 withDefaults(
   defineProps<{
     articles?: Array<{
       slug: string;
       title: string;
       dateTime: string;
-      body: unknown;
+      body: MinimarkTree;
       categorySlug?: string;
       summaryText?: string;
     }>;
@@ -45,6 +47,5 @@ withDefaults(
   },
 );
 
-const { locale } = useI18n();
-const formatDate = (dateTime: string) => new Date(dateTime).toLocaleDateString(locale.value);
+const { formatDateTime } = useFormats();
 </script>

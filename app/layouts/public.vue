@@ -20,6 +20,12 @@
           :href="`${config.public.appUrl}/login`"
         />
       </div>
+      <div
+        v-else-if="route.path.includes('/blog')"
+        class="d-flex gap-2 ai-center f-body-small site-header--menu"
+      >
+        <NuxtLink to="/blog">{{ $t('layout.public.menuBlog') }}</NuxtLink>
+      </div>
     </header>
 
     <NuxtPage />
