@@ -65,7 +65,14 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/icon', '@nuxtjs/i18n', '@nuxt/content', '@nuxtjs/sitemap'],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/fonts',
+    '@nuxt/icon',
+    '@nuxtjs/i18n',
+    '@nuxt/content',
+    '@nuxtjs/sitemap',
+  ],
 
   hooks: {
     'content:file:beforeParse'(ctx) {
@@ -80,6 +87,7 @@ export default defineNuxtConfig({
   },
 
   i18n: {
+    baseUrl: process.env.NITIDEZ_SITE_URL ?? 'https://nitidez.es',
     strategy: 'no_prefix',
     defaultLocale: 'es',
     locales: [
@@ -87,21 +95,13 @@ export default defineNuxtConfig({
         code: 'en',
         language: 'en-GB',
         name: 'English',
-        files: [
-          'en.json',
-          'pages/index/en.json',
-          'layout/public/en.json',
-        ],
+        files: ['en.json', 'pages/index/en.json', 'layout/public/en.json'],
       },
       {
         code: 'es',
         language: 'es-ES',
         name: 'Español',
-        files: [
-          'es.json',
-          'pages/index/es.json',
-          'layout/public/es.json',
-        ],
+        files: ['es.json', 'pages/index/es.json', 'layout/public/es.json'],
       },
     ],
     restructureDir: '.',

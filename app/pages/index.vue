@@ -52,7 +52,7 @@
           {{ $t('index.audience.description') }}
         </p>
         <p class="pb-1">{{ $t('index.audience.conclusion') }}</p>
-        <p class="pt-1">
+        <div class="pt-1">
           <Button
             :text="$t('index.hero.cta')"
             icon="mdi:login"
@@ -60,7 +60,7 @@
             :has-shadow="true"
             :href="`${config.public.appUrl}/register`"
           />
-        </p>
+        </div>
       </div>
     </div>
   </section>

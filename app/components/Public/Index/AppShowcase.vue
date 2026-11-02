@@ -1,5 +1,8 @@
 <template>
-  <section class="showcase-wrapper w-1000 mx-auto pt-2 pb-6 pb-3--mobile fade-up" :class="{ 'is-ready': ready }">
+  <section
+    class="showcase-wrapper w-1000 mx-auto pt-2 pb-6 pb-3--mobile fade-up"
+    :class="{ 'is-ready': ready }"
+  >
     <div class="showcase-nav d-flex gap-05 pb-1 mb-2">
       <div
         class="showcase-nav--item showcase-nav--item-webapp"
@@ -17,7 +20,11 @@
         <Icon name="material-icon-theme:claude" />
         {{ $t('index.appShowcase.tabClaude') }}
       </div>
-      <div class="showcase-nav--item showcase-nav--item-chatgpt" :class="{ active: activeTab === 'chatgpt' }" @click="selectChatgptTab">
+      <div
+        class="showcase-nav--item showcase-nav--item-chatgpt"
+        :class="{ active: activeTab === 'chatgpt' }"
+        @click="selectChatgptTab"
+      >
         <Icon name="hugeicons:chat-gpt" />
         {{ $t('index.appShowcase.tabChatgpt') }}
       </div>
@@ -50,21 +57,27 @@
         >
           <div class="d-flex-mobile d-flex gap-4 ai-center jc-center">
             <div class="pb-2 content">
-              <h3 class="f-light f-size-l pb-2">{{ $t('index.appShowcase.claudeHeading') }}</h3>
+              <h2 class="f-light f-size-l pb-2">{{ $t('index.appShowcase.claudeHeading') }}</h2>
               <div class="d-flex flex-column gap-1 f-size-m f-hanken c-text-secondary">
                 <p>
-                  {{ $t('index.appShowcase.claudeText1Line1') }} <br>{{ $t('index.appShowcase.claudeText1Line2') }}
+                  {{ $t('index.appShowcase.claudeText1Line1') }}
+                  <br />
+                  {{ $t('index.appShowcase.claudeText1Line2') }}
                 </p>
                 <p>
-                  {{ $t('index.appShowcase.claudeText2Line1') }} <br>{{ $t('index.appShowcase.claudeText2Line2') }}
+                  {{ $t('index.appShowcase.claudeText2Line1') }}
+                  <br />
+                  {{ $t('index.appShowcase.claudeText2Line2') }}
                 </p>
                 <p>
-                  {{ $t('index.appShowcase.claudeText3Line1') }} <br>{{ $t('index.appShowcase.claudeText3Line2') }}
+                  {{ $t('index.appShowcase.claudeText3Line1') }}
+                  <br />
+                  {{ $t('index.appShowcase.claudeText3Line2') }}
                 </p>
               </div>
             </div>
             <div>
-              <div style="max-width:250px">
+              <div style="max-width: 250px">
                 <Screenshot
                   type="mobile"
                   slug="chat"
@@ -86,21 +99,27 @@
         >
           <div class="d-flex-mobile d-flex gap-4 ai-center jc-center">
             <div class="pb-2 content">
-              <h3 class="f-light f-size-l pb-2">{{ $t('index.appShowcase.chatgptHeading') }}</h3>
+              <h2 class="f-light f-size-l pb-2">{{ $t('index.appShowcase.chatgptHeading') }}</h2>
               <div class="d-flex flex-column gap-1 f-size-m f-hanken c-text-secondary">
                 <p>
-                  {{ $t('index.appShowcase.chatgptText1Line1') }} <br>{{ $t('index.appShowcase.chatgptText1Line2') }}
+                  {{ $t('index.appShowcase.chatgptText1Line1') }}
+                  <br />
+                  {{ $t('index.appShowcase.chatgptText1Line2') }}
                 </p>
                 <p>
-                  {{ $t('index.appShowcase.chatgptText2Line1') }} <br>{{ $t('index.appShowcase.chatgptText2Line2') }}
+                  {{ $t('index.appShowcase.chatgptText2Line1') }}
+                  <br />
+                  {{ $t('index.appShowcase.chatgptText2Line2') }}
                 </p>
                 <p>
-                  {{ $t('index.appShowcase.chatgptText3Line1') }} <br>{{ $t('index.appShowcase.chatgptText3Line2') }}
+                  {{ $t('index.appShowcase.chatgptText3Line1') }}
+                  <br />
+                  {{ $t('index.appShowcase.chatgptText3Line2') }}
                 </p>
               </div>
             </div>
             <div>
-              <div style="max-width:250px">
+              <div style="max-width: 250px">
                 <Screenshot
                   type="mobile"
                   slug="chatgpt"
