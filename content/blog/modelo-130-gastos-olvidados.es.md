@@ -24,7 +24,8 @@ El modelo 130 es acumulativo, así que el trimestre siguiente compensa casi siem
 - **Aún no se ha cargado (domiciliación):** puedes corregir la presentación mientras siga abierto el plazo de domiciliación.
 - **Ya pagaste:** puedes esperar al trimestre siguiente o pedir la devolución por la vía de rectificación.
 - **Pagaste de menos:** se corrige con una declaración complementaria.
-  ::
+
+::
 
 ## Por qué el modelo 130 se puede "arreglar solo"
 
