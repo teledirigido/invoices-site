@@ -17,27 +17,36 @@ const route = useRoute();
 const slug = route.params.slug as string;
 const { locale } = useI18n();
 
-const { data: categories } = await useAsyncData(
-  () => `blog-categories-${locale.value}`,
-  () => queryCollection('blogCategories').where('locale', '=', locale.value).all(),
-  { watch: [locale] },
+// Queries do not depend on the visitor's locale: the static generation runs
+// without one (fallback en), so a filter by locale left es-only categories empty.
+const { data: allCategories } = await useAsyncData('blog-categories-all', () =>
+  queryCollection('blogCategories').all(),
 );
 
-const { data: articles } = await useAsyncData(
-  () => `blog-category-articles-${slug}-${locale.value}`,
-  () =>
-    queryCollection('blog')
-      .where('categorySlugs', 'LIKE', `%"${slug}"%`)
-      .where('locale', '=', locale.value)
-      .order('dateTime', 'DESC')
-      .all(),
-  { watch: [locale] },
+const { data: allArticles } = await useAsyncData(`blog-category-articles-${slug}`, () =>
+  queryCollection('blog')
+    .where('categorySlugs', 'LIKE', `%"${slug}"%`)
+    .order('dateTime', 'DESC')
+    .all(),
 );
 
-const category = computed(() => categories.value?.find((c) => c.slug === slug));
+// agencia-tributaria and seguridad-social share the slug in es and en:
+// prefer the visitor's language, otherwise the only one that exists.
+const category = computed(() => {
+  const matches = (allCategories.value ?? []).filter((c) => c.slug === slug);
+  return matches.find((c) => c.locale === locale.value) ?? matches[0];
+});
+
+const articles = computed(() =>
+  (allArticles.value ?? []).filter((a) => a.locale === category.value?.locale),
+);
 
 const categoryNames = computed(() =>
-  Object.fromEntries((categories.value ?? []).map((c) => [c.slug, c.name])),
+  Object.fromEntries(
+    (allCategories.value ?? [])
+      .filter((c) => c.locale === category.value?.locale)
+      .map((c) => [c.slug, c.name]),
+  ),
 );
 
 useSeoMeta({
