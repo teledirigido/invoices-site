@@ -46,7 +46,9 @@ What happened afterwards, the cancellation, is corrected with a rectifying invoi
 
 It is not R4. R4 is for ordinary mistakes, and here there was no mistake.
 
-**Type by difference (I).** The rectifying invoice shows only the change: the amounts of the original invoice with a minus sign. If you want to see how it differs from substitution, we explain it in [How to rectify an invoice](/blog/how-to-rectify-an-invoice).
+**Type by difference (I).** The rectifying invoice shows only the change: the amounts of the original invoice with a minus sign.
+
+It is also correct to do it **by substitution (S)**: the rectifying invoice shows what the invoice should be, 0 € if everything is cancelled, without writing negative amounts. Both ways lead to the same result, so it depends on what you prefer. We go through it with Tom's case in [Classes cancelled after invoicing: the rectifying invoice by substitution](/blog/cancelled-classes-substitution). The general differences between the two types are in [How to rectify an invoice](/blog/how-to-rectify-an-invoice).
 
 ## Which amounts
 

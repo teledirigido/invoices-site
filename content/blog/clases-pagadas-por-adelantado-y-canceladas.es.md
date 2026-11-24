@@ -46,7 +46,9 @@ Lo que pasó después, la cancelación, se corrige con una factura rectificativa
 
 No es R4. R4 es para errores normales, y aquí no hubo ningún error.
 
-**Tipo por diferencias (I).** La rectificativa indica solo el cambio: los importes de la factura original con signo menos. Si quieres ver la diferencia con la sustitución, lo explicamos en [Cómo rectificar una factura](/blog/como-rectificar-una-factura).
+**Tipo por diferencias (I).** La rectificativa indica solo el cambio: los importes de la factura original con signo menos.
+
+También es correcto hacerlo **por sustitución (S)**: la rectificativa indica cómo queda la factura, 0 € si se cancela todo, sin escribir importes en negativo. Las dos formas llevan al mismo resultado, así que depende de lo que prefieras. Lo vemos con el caso de Tom en [Me han cancelado unas clases ya facturadas: la rectificativa por sustitución](/blog/clases-canceladas-rectificativa-por-sustitucion). Las diferencias generales entre los dos tipos están en [Cómo rectificar una factura](/blog/como-rectificar-una-factura).
 
 ## Con qué importes
 
