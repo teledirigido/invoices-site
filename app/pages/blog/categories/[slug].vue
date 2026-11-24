@@ -17,13 +17,9 @@ const route = useRoute();
 const slug = route.params.slug as string;
 const { locale } = useI18n();
 
-const { data: category } = await useAsyncData(
-  () => `blog-category-${slug}-${locale.value}`,
-  () =>
-    queryCollection('blogCategories')
-      .where('slug', '=', slug)
-      .where('locale', '=', locale.value)
-      .first(),
+const { data: categories } = await useAsyncData(
+  () => `blog-categories-${locale.value}`,
+  () => queryCollection('blogCategories').where('locale', '=', locale.value).all(),
   { watch: [locale] },
 );
 
@@ -31,15 +27,17 @@ const { data: articles } = await useAsyncData(
   () => `blog-category-articles-${slug}-${locale.value}`,
   () =>
     queryCollection('blog')
-      .where('categorySlug', '=', slug)
+      .where('categorySlugs', 'LIKE', `%"${slug}"%`)
       .where('locale', '=', locale.value)
       .order('dateTime', 'DESC')
       .all(),
   { watch: [locale] },
 );
 
+const category = computed(() => categories.value?.find((c) => c.slug === slug));
+
 const categoryNames = computed(() =>
-  category.value ? { [category.value.slug]: category.value.name } : {},
+  Object.fromEntries((categories.value ?? []).map((c) => [c.slug, c.name])),
 );
 
 useSeoMeta({

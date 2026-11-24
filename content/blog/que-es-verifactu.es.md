@@ -6,7 +6,7 @@ description: 'Guía para autónomos sobre Veri*Factu: qué es, cuándo entra en 
 summaryText: 'Veri*Factu no es una plataforma que tengas que usar: es una normativa técnica que debe cumplir tu software de facturación. Te explicamos qué es y cuándo te afecta.'
 dateTime: '2026-09-23T09:00:00Z'
 translationSlug: what-is-verifactu
-categorySlug: agencia-tributaria
+categorySlugs: [agencia-tributaria]
 ---
 
 Si eres autónomo seguro que has oído hablar de Veri*Factu en los últimos meses. Es una de las novedades fiscales que más dudas genera, en parte porque el nombre se usa para varias cosas distintas a la vez.

@@ -6,7 +6,7 @@ description: "Introducción para autónomos: qué es un modelo tributario, quié
 summaryText: "Qué es un modelo de la Agencia Tributaria, quién debe presentarlo y para qué sirve, antes de entrar en el detalle de cada uno."
 dateTime: "2026-09-18T09:00:00Z"
 translationSlug: what-are-tax-forms
-categorySlug: agencia-tributaria
+categorySlugs: [agencia-tributaria]
 ---
 
 Si acabas de darte de alta como autónomo, es muy probable que hayas oído hablar de "presentar el modelo tal" sin que quede claro qué significa exactamente. Antes de entrar en el detalle de cada uno, conviene entender qué es un modelo y para qué sirve.

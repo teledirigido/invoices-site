@@ -6,7 +6,7 @@ description: 'A full walkthrough of the Nitidez MCP server: every tool it expose
 summaryText: "Nitidez ships an MCP connector so you can manage your invoicing from Claude or ChatGPT. Here's what each of its 13 tools actually does."
 dateTime: '2026-09-24T09:00:00Z'
 translationSlug: que-puede-hacer-el-mcp-de-nitidez
-categorySlug: using-nitidez
+categorySlugs: [using-nitidez]
 ---
 
 If you use Claude or ChatGPT, you can now talk to your Nitidez account directly from the chat: ask "how much do I owe in IVA this quarter", "log this expense", or "send me the PDF of invoice 45" without opening the dashboard. That's what the Nitidez MCP connector does — it exposes your invoicing data as a set of tools an AI assistant can call, with your permission, on your behalf.

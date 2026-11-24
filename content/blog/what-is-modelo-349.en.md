@@ -6,7 +6,7 @@ description: 'A guide to Modelo 349: which intra-EU transactions you report, the
 summaryText: 'Modelo 349 is the informative return where you detail your transactions with businesses in other EU countries. Nothing is paid with it: you just report who you traded with and for how much.'
 dateTime: '2026-10-28T09:00:00Z'
 translationSlug: que-es-el-modelo-349
-categorySlug: agencia-tributaria
+categorySlugs: [agencia-tributaria]
 ---
 
 If you invoice a company in Germany, France or the Netherlands without VAT, or you buy services from a business in another EU country, sooner or later Modelo 349 shows up. It's one of the forms that raises the most questions, mainly because you don't pay anything with it: it's purely informative.

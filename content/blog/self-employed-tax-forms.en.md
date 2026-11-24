@@ -6,7 +6,7 @@ description: "A guide to the tax forms self-employed workers (autónomos) in Spa
 summaryText: "A rundown of the most common tax forms self-employed workers in Spain must file, quarterly and annual, and when they're due."
 dateTime: "2026-09-19T09:00:00Z"
 translationSlug: modelos-autonomo
-categorySlug: agencia-tributaria
+categorySlugs: [agencia-tributaria]
 ---
 
 Being self-employed (autónomo) in Spain means filing several forms with the tax agency (AEAT) throughout the year, some quarterly and some annual. Here's a rundown of the most common ones and when they're due.

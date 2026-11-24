@@ -6,7 +6,7 @@ description: 'Guía del modelo 349: qué operaciones intracomunitarias se declar
 summaryText: 'El modelo 349 es la declaración informativa donde detallas tus operaciones con empresas de otros países de la UE. No se paga nada: solo informas de con quién has operado y por cuánto.'
 dateTime: '2026-10-28T09:00:00Z'
 translationSlug: what-is-modelo-349
-categorySlug: agencia-tributaria
+categorySlugs: [agencia-tributaria]
 ---
 
 Si facturas a una empresa de Alemania, Francia o Países Bajos sin IVA, o si contratas servicios a una empresa de otro país de la UE, tarde o temprano aparece el modelo 349. Es uno de los modelos que más dudas genera, sobre todo porque no se paga nada con él: es puramente informativo.

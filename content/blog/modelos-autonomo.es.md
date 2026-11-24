@@ -6,7 +6,7 @@ description: "Guía de los modelos de Hacienda que debe presentar un autónomo e
 summaryText: "Repaso de los modelos de Hacienda más habituales para autónomos, trimestrales y anuales, y cuándo toca presentarlos."
 dateTime: "2026-09-19T09:00:00Z"
 translationSlug: self-employed-tax-forms
-categorySlug: agencia-tributaria
+categorySlugs: [agencia-tributaria]
 ---
 
 Ser autónomo en España implica presentar varios modelos a la Agencia Tributaria a lo largo del año, unos trimestrales y otros anuales. Aquí tienes un repaso de los más habituales y cuándo toca presentarlos.

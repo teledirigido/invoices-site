@@ -6,7 +6,7 @@ description: 'Qué hacer si presentaste el modelo 130 sin incluir todos tus gast
 summaryText: 'Si presentaste el modelo 130 antes de añadir todos tus gastos, lo más habitual es que no tengas que deshacer nada: el 130 es acumulativo y el siguiente trimestre compensa la diferencia.'
 dateTime: '2026-10-02T09:00:00Z'
 translationSlug: model-130-forgotten-expenses
-categorySlug: agencia-tributaria
+categorySlugs: [agencia-tributaria]
 ---
 
 Te das cuenta justo después de presentar: faltaba una factura, un gasto que se te olvidó registrar a tiempo. Es un error habitual y, en la mayoría de los casos, el propio modelo 130 lo arregla en el trimestre siguiente, sin que tengas que anular ni rehacer nada.

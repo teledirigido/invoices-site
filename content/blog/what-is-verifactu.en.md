@@ -6,7 +6,7 @@ description: 'A guide for the self-employed on Veri*Factu: what it is, when the 
 summaryText: "Veri*Factu isn't a platform you have to use: it's a technical regulation your invoicing software must meet. Here's what it is and when it affects you."
 dateTime: '2026-09-23T09:00:00Z'
 translationSlug: que-es-verifactu
-categorySlug: agencia-tributaria
+categorySlugs: [agencia-tributaria]
 ---
 
 If you're self-employed in Spain, you've probably heard about Veri*Factu in the last few months. It's one of the tax changes that raises the most questions, partly because the name gets used for several different things at once.

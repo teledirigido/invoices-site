@@ -5,10 +5,10 @@
       <p class="f-body-small c-text-secondary pb-2">
         {{ formatDateTime(article.dateTime) }} ·
         {{ $t('blog.minRead', { count: getReadingMinutes(article.body) }) }}
-        <template v-if="category">
+        <template v-for="cat in articleCategories" :key="cat.slug">
           ·
-          <NuxtLink class="underlined" :to="`/blog/categories/${category.slug}`">
-            {{ category.name }}
+          <NuxtLink class="underlined" :to="`/blog/categories/${cat.slug}`">
+            {{ cat.name }}
           </NuxtLink>
         </template>
       </p>
@@ -32,7 +32,7 @@
         :count="2"
         v-if="article"
         :exclude-article-slug="article.slug"
-        :category-slug="article.categorySlug"
+        :category-slug="article.categorySlugs?.[0]"
       />
       <hr class="hr-bottom hr-bottom--left" />
       <div class="pt-2 c-text-secondary">
@@ -100,9 +100,10 @@ const { data: categories } = await useAsyncData(
   { watch: [article] },
 );
 
-const category = computed(() => {
-  if (!article.value?.categorySlug) return null;
-  return categories.value?.find((c) => c.slug === article.value!.categorySlug) ?? null;
+const articleCategories = computed(() => {
+  return (article.value?.categorySlugs ?? [])
+    .map((slug) => categories.value?.find((c) => c.slug === slug))
+    .filter((c) => !!c);
 });
 
 const { formatDateTime } = useFormats();

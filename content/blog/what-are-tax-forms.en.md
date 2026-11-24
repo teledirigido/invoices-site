@@ -6,7 +6,7 @@ description: "An introduction for self-employed workers in Spain: what a modelo 
 summaryText: "What a Spanish tax agency modelo is, who needs to file it, and what it's for, before diving into the details of each one."
 dateTime: "2026-09-18T09:00:00Z"
 translationSlug: que-son-los-modelos
-categorySlug: agencia-tributaria
+categorySlugs: [agencia-tributaria]
 ---
 
 If you've just registered as self-employed (autónomo) in Spain, you've probably heard about "filing modelo such-and-such" without it being clear what that actually means. Before getting into the details of each one, it's worth understanding what a modelo is and what it's for.

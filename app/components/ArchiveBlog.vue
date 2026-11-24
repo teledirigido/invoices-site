@@ -49,7 +49,9 @@ const { data: fetchedArticles } = await useAsyncData(
   () => `archive-blog-${props.categorySlug ?? 'all'}-${props.count}-${locale.value}`,
   () => {
     let query = queryCollection('blog').where('locale', '=', locale.value);
-    if (props.categorySlug) query = query.where('categorySlug', '=', props.categorySlug);
+    if (props.categorySlug) {
+      query = query.where('categorySlugs', 'LIKE', `%"${props.categorySlug}"%`);
+    }
     return query.order('dateTime', 'DESC').limit(props.count).all();
   },
   { watch: [locale, () => props.categorySlug, () => props.count] },

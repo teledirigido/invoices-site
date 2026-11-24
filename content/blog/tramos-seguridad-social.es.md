@@ -5,7 +5,7 @@ title: "Qué son los tramos de la Seguridad Social (SS) para autónomos"
 summaryText: "Desde 2023 los autónomos pagan la Seguridad Social según lo que realmente ganan. Así funciona el sistema de tramos vigente para 2026."
 dateTime: "2026-09-22T10:00:00Z"
 translationSlug: social-security-brackets
-categorySlug: seguridad-social
+categorySlugs: [seguridad-social]
 ---
 
 Desde 2023, los autónomos en España no pagan una cuota fija a la Seguridad Social: pagan según lo que realmente ganan. Cuanto más bajos sean tus rendimientos netos, menor es tu cuota mensual; cuanto más altos, mayor. Ese sistema de "tramos" es el que repasamos aquí, con las cifras vigentes para 2026.

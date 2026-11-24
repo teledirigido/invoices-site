@@ -5,7 +5,7 @@ title: 'Por qué la AEAT muestra un importe distinto al de tu factura'
 summaryText: "Si el importe de una factura emitida no coincide con tus datos fiscales de la AEAT, la explicación casi siempre es la retención de IRPF."
 dateTime: '2026-09-17T09:00:00Z'
 translationSlug: aeat-irpf-difference
-categorySlug: agencia-tributaria
+categorySlugs: [agencia-tributaria]
 ---
 
 Si alguna vez has comparado el importe de una factura emitida con lo que aparece en los datos fiscales de la AEAT o en el borrador de la Renta, es fácil pensar que algo no cuadra. La explicación casi siempre es la misma: la retención de IRPF.

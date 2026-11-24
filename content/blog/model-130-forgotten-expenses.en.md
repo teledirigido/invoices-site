@@ -6,7 +6,7 @@ description: 'What to do if you filed Modelo 130 without including all your dedu
 summaryText: "If you filed Modelo 130 before adding all your expenses, in most cases you don't have to undo anything: Modelo 130 is cumulative and the next quarter makes up the difference."
 dateTime: '2026-10-02T09:00:00Z'
 translationSlug: modelo-130-gastos-olvidados
-categorySlug: agencia-tributaria
+categorySlugs: [agencia-tributaria]
 ---
 
 You notice right after filing: an invoice was missing, an expense you forgot to log in time. It's a common mistake, and in most cases Modelo 130 itself fixes it the following quarter, without you having to cancel or redo anything.

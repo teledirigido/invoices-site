@@ -31,7 +31,7 @@ export default defineContentConfig({
         summaryText: z.string().optional(),
         dateTime: z.string(),
         translationSlug: z.string().optional(),
-        categorySlug: z.string().optional(),
+        categorySlugs: z.array(z.string()).optional(),
       }),
     }),
     blogCategories: defineCollection({

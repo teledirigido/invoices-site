@@ -11,14 +11,12 @@
       </header>
       <p class="pt-1 d-flex gap-05 c-text-secondary">
         {{ $t('blog.minRead', { count: getReadingMinutes(article.body) }) }}
-        <span>•</span>
-        <NuxtLink
-          v-if="categoryNames[article.categorySlug ?? '']"
-          class="underlined"
-          :to="`/blog/categories/${article.categorySlug}`"
-        >
-          {{ categoryNames[article.categorySlug ?? ''] }}
-        </NuxtLink>
+        <template v-for="slug in categoriesOf(article)" :key="slug">
+          <span>•</span>
+          <NuxtLink class="underlined" :to="`/blog/categories/${slug}`">
+            {{ categoryNames[slug] }}
+          </NuxtLink>
+        </template>
       </p>
       <p class="pt-1 c-text-secondary f-hanken">
         {{ article.summaryText }}
@@ -29,14 +27,14 @@
 <script setup lang="ts">
 import type { MinimarkTree } from 'minimark';
 
-withDefaults(
+const props = withDefaults(
   defineProps<{
     articles?: Array<{
       slug: string;
       title: string;
       dateTime: string;
       body: MinimarkTree;
-      categorySlug?: string;
+      categorySlugs?: string[];
       summaryText?: string;
     }>;
     categoryNames?: Record<string, string>;
@@ -48,4 +46,6 @@ withDefaults(
 );
 
 const { formatDateTime } = useFormats();
+const categoriesOf = (article: { categorySlugs?: string[] }) =>
+  (article.categorySlugs ?? []).filter((slug) => props.categoryNames[slug]);
 </script>

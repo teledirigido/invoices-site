@@ -6,7 +6,7 @@ description: 'Un recorrido completo por el servidor MCP de Nitidez: todo lo que 
 summaryText: "Nitidez tiene un conector MCP para gestionar tu facturación desde Claude o ChatGPT. Esto es todo lo que puede hacer."
 dateTime: '2026-09-24T09:00:00Z'
 translationSlug: what-can-the-nitidez-mcp-do
-categorySlug: usando-nitidez
+categorySlugs: [usando-nitidez]
 ---
 
 Si usas Claude o ChatGPT, ya puedes hablar directamente con tu cuenta de Nitidez desde el chat: preguntar "¿cuánto debo de IVA este trimestre?", "apunta este gasto" o "envíame el PDF de la factura 45" sin abrir el panel. Eso es lo que hace el conector MCP de Nitidez: expone tus datos de facturación como un conjunto de acciones que un asistente de IA puede usar, con tu permiso, en tu nombre.

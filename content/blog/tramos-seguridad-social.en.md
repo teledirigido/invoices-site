@@ -5,7 +5,7 @@ title: "What Are the Social Security (SS) Brackets for Autónomos"
 summaryText: "Since 2023 self-employed workers in Spain pay Social Security based on what they actually earn. Here's how the bracket system works for 2026."
 dateTime: "2026-09-22T10:00:00Z"
 translationSlug: tramos-seguridad-social
-categorySlug: seguridad-social
+categorySlugs: [seguridad-social]
 ---
 
 Since 2023, self-employed workers in Spain (autónomos) no longer pay a flat Social Security contribution: they pay based on what they actually earn. The lower your net income, the lower your monthly quota; the higher it is, the more you pay. This "bracket" (tramo) system is what we break down here, with the figures in force for 2026.
