@@ -3,7 +3,7 @@ locale: es
 slug: que-puede-hacer-el-mcp-de-nitidez
 title: '¿Qué puede hacer el conector MCP de Nitidez? Todas sus funciones explicadas'
 description: 'Un recorrido completo por el servidor MCP de Nitidez: todo lo que ofrece a Claude y ChatGPT, desde listar facturas hasta consultar tu IVA e IRPF trimestral.'
-summaryText: "Nitidez tiene un conector MCP para gestionar tu facturación desde Claude o ChatGPT. Esto es todo lo que puede hacer."
+summaryText: 'Nitidez tiene un conector MCP para gestionar tu facturación desde Claude o ChatGPT. Esto es todo lo que puede hacer.'
 dateTime: '2026-09-24T09:00:00Z'
 translationSlug: what-can-the-nitidez-mcp-do
 categorySlugs: [usando-nitidez]

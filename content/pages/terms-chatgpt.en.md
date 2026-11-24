@@ -3,7 +3,7 @@ locale: en
 slug: terms-chatgpt
 topText: Legal
 title: ChatGPT Connector — Data Use
-lastUpdated: "Last updated: August 2026"
+lastUpdated: 'Last updated: August 2026'
 summary:
   - title: Only your own data
     desc: The connector only gives ChatGPT access to your own Nitidez account, at your request.

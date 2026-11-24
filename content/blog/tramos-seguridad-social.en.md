@@ -1,9 +1,9 @@
 ---
 locale: en
 slug: social-security-brackets
-title: "What Are the Social Security (SS) Brackets for Autónomos"
+title: 'What Are the Social Security (SS) Brackets for Autónomos'
 summaryText: "Since 2023 self-employed workers in Spain pay Social Security based on what they actually earn. Here's how the bracket system works for 2026."
-dateTime: "2026-09-22T10:00:00Z"
+dateTime: '2026-09-22T10:00:00Z'
 translationSlug: tramos-seguridad-social
 categorySlugs: [seguridad-social]
 ---
@@ -33,28 +33,28 @@ It's this estimated monthly net income that determines which bracket you fall in
 
 ## Reduced table (net income below €1,166.70/month)
 
-| Bracket | Net income | Contribution base | Approx. monthly quota |
-|---|---|---|---|
-| R1 | ≤ €670/month | €653.59 – 718.94 | ~€199 |
-| R2 | €670 – 900/month | €718.95 – 900.00 | ~€219 |
-| R3 | €900 – 1,166.70/month | €849.67 – 1,166.70 | ~€259 |
+| Bracket | Net income            | Contribution base  | Approx. monthly quota |
+| ------- | --------------------- | ------------------ | --------------------- |
+| R1      | ≤ €670/month          | €653.59 – 718.94   | ~€199                 |
+| R2      | €670 – 900/month      | €718.95 – 900.00   | ~€219                 |
+| R3      | €900 – 1,166.70/month | €849.67 – 1,166.70 | ~€259                 |
 
 ## General table (net income of €1,166.70/month or more)
 
-| Bracket | Net income | Contribution base | Approx. monthly quota |
-|---|---|---|---|
-| G1 | €1,166.70 – 1,300/month | €950.98 – 1,300.00 | ~€290 |
-| G2 | €1,300 – 1,500/month | €960.78 – 1,500.00 | ~€293 |
-| G3 | €1,500 – 1,700/month | €960.78 – 1,700.00 | ~€293 |
-| G4 | €1,700 – 1,850/month | €1,143.79 – 1,850.00 | ~€349 |
-| G5 | €1,850 – 2,030/month | €1,209.15 – 2,030.00 | ~€369 |
-| G6 | €2,030 – 2,330/month | €1,274.51 – 2,330.00 | ~€389 |
-| G7 | €2,330 – 2,760/month | €1,356.21 – 2,760.00 | ~€414 |
-| G8 | €2,760 – 3,190/month | €1,437.91 – 3,190.00 | ~€439 |
-| G9 | €3,190 – 3,620/month | €1,519.61 – 3,620.00 | ~€464 |
-| G10 | €3,620 – 4,050/month | €1,601.31 – 4,050.00 | ~€488 |
-| G11 | €4,050 – 6,000/month | €1,732.03 – 5,101.20 | ~€528 |
-| G12 | > €6,000/month | €1,928.10 – 5,101.20 | ~€588 |
+| Bracket | Net income              | Contribution base    | Approx. monthly quota |
+| ------- | ----------------------- | -------------------- | --------------------- |
+| G1      | €1,166.70 – 1,300/month | €950.98 – 1,300.00   | ~€290                 |
+| G2      | €1,300 – 1,500/month    | €960.78 – 1,500.00   | ~€293                 |
+| G3      | €1,500 – 1,700/month    | €960.78 – 1,700.00   | ~€293                 |
+| G4      | €1,700 – 1,850/month    | €1,143.79 – 1,850.00 | ~€349                 |
+| G5      | €1,850 – 2,030/month    | €1,209.15 – 2,030.00 | ~€369                 |
+| G6      | €2,030 – 2,330/month    | €1,274.51 – 2,330.00 | ~€389                 |
+| G7      | €2,330 – 2,760/month    | €1,356.21 – 2,760.00 | ~€414                 |
+| G8      | €2,760 – 3,190/month    | €1,437.91 – 3,190.00 | ~€439                 |
+| G9      | €3,190 – 3,620/month    | €1,519.61 – 3,620.00 | ~€464                 |
+| G10     | €3,620 – 4,050/month    | €1,601.31 – 4,050.00 | ~€488                 |
+| G11     | €4,050 – 6,000/month    | €1,732.03 – 5,101.20 | ~€528                 |
+| G12     | > €6,000/month          | €1,928.10 – 5,101.20 | ~€588                 |
 
 ## What happens if your income varies during the year
 
@@ -66,4 +66,4 @@ Since you contribute based on a forecast of your net income, that estimate rarel
 - There are 15 brackets in total: 3 in the reduced table and 12 in the general one.
 - You can adjust your contribution base several times a year to stay closer to your real situation and avoid surprises at regularization time.
 
-*Source: Orden PJC/297/2026, of 30 March (BOE 31 March 2026).*
+_Source: Orden PJC/297/2026, of 30 March (BOE 31 March 2026)._

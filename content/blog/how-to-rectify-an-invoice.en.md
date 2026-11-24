@@ -71,12 +71,12 @@ It also works the other way round: an invoice you've already rectified cannot be
 
 Every rectifying invoice carries a code that says why it's being rectified. It's what gets sent to the AEAT with [Veri\*Factu](/blog/what-is-verifactu), and it's worth choosing it carefully, because it affects where the correction is declared.
 
-| Code   | When it's used                                                                                                                                                                       | Example                                                                                                                                                                         |
-| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Code   | When it's used                                                                                                                                                                   | Example                                                                                                                                                                                             |
+| ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **R1** | Returns, discounts or price changes after the sale, transactions that are undone, provisional prices (art. 80 Uno, Dos and Seis of the VAT Law), or an error fundado de derecho. | The customer returns part of the order, or you agree on a discount after invoicing. Another example is agreeing a discount with the customer on an already invoiced delivery because you were late. |
-| **R2** | The customer is in insolvency proceedings (art. 80.Tres of the VAT Law).                                                                                                             | You adjust the invoice of a customer who has entered insolvency proceedings.                                                                                                    |
-| **R3** | Uncollectable debt (art. 80.Cuatro of the VAT Law).                                                                                                                                  | An unpaid invoice that meets the legal requirements for an uncollectable debt.                                                                                                  |
-| **R4** | Any other reason, including an ordinary mistake.                                                                                                                                     | You charged 21% VAT when it should have been 10%, or you got a quantity wrong.                                                                                                  |
+| **R2** | The customer is in insolvency proceedings (art. 80.Tres of the VAT Law).                                                                                                         | You adjust the invoice of a customer who has entered insolvency proceedings.                                                                                                                        |
+| **R3** | Uncollectable debt (art. 80.Cuatro of the VAT Law).                                                                                                                              | An unpaid invoice that meets the legal requirements for an uncollectable debt.                                                                                                                      |
+| **R4** | Any other reason, including an ordinary mistake.                                                                                                                                 | You charged 21% VAT when it should have been 10%, or you got a quantity wrong.                                                                                                                      |
 
 There's also **R5**, reserved for rectifying simplified invoices (receipts), whatever the reason.
 
@@ -136,6 +136,7 @@ shadow: true
 - **Taxes:** Nitidez places each rectifying invoice in the right place in Modelo 303, 130 and 349. If a correction requires filing a rectifying self-assessment for a previous quarter, it warns you before you create it.
 
 [Create your free Nitidez account →]({{appUrl}}/register)
+
 ::
 
 ## In summary

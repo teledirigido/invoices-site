@@ -78,7 +78,10 @@ export default defineNuxtConfig({
     'content:file:beforeParse'(ctx) {
       if (typeof ctx.file.body !== 'string') return;
       const appUrl = process.env.NITIDEZ_APP_URL ?? 'https://app.nitidez.es';
-      ctx.file.body = ctx.file.body.replaceAll('{{appUrl}}', appUrl);
+      ctx.file.body = ctx.file.body
+        .replaceAll('{{appUrl}}', appUrl)
+        // Prettier indents a `::` that follows a list item; close the block on its own line.
+        .replace(/^[ \t]+(:{2,})[ \t]*$/gm, '\n$1');
     },
   },
 

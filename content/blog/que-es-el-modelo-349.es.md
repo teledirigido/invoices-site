@@ -119,6 +119,7 @@ shadow: true
 Desde ahí no tienes que transcribir nada a mano: Nitidez genera el **fichero del modelo 349 ya calculado**, listo para importarlo directamente en la Sede Electrónica de la AEAT.
 
 [Crea tu cuenta gratis en Nitidez →]({{appUrl}}/register)
+
 ::
 
 ## En resumen

@@ -3,7 +3,7 @@ locale: en
 slug: privacy
 topText: Legal
 title: Privacy Policy
-lastUpdated: "Last updated: August 2026"
+lastUpdated: 'Last updated: August 2026'
 summary:
   - title: No tracking cookies
     desc: We use cookie-less analytics (Umami) that doesn't identify individuals.

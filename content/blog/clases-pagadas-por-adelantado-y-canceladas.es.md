@@ -103,6 +103,7 @@ shadow: true
 - **Impuestos:** Nitidez coloca la rectificativa en el modelo 303 y el 130 que le corresponden.
 
 [Crea tu cuenta gratis en Nitidez →]({{appUrl}}/register)
+
 ::
 
 ## En resumen

@@ -3,7 +3,7 @@ locale: es
 slug: mcp
 topText: Documentación
 title: Conector MCP de Nitidez
-lastUpdated: "Última actualización: septiembre de 2026"
+lastUpdated: 'Última actualización: septiembre de 2026'
 ---
 
 ¿Prefieres una explicación narrativa? Lee el artículo del blog sobre [qué puede hacer el conector MCP de Nitidez](/blog/que-puede-hacer-el-mcp-de-nitidez).

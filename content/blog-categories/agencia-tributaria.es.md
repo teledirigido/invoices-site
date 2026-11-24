@@ -1,5 +1,5 @@
 ---
 locale: es
 slug: agencia-tributaria
-name: "Agencia Tributaria (AEAT)"
+name: 'Agencia Tributaria (AEAT)'
 ---

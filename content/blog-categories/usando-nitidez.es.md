@@ -1,5 +1,5 @@
 ---
 locale: es
 slug: usando-nitidez
-name: "Usando Nitidez"
+name: 'Usando Nitidez'
 ---

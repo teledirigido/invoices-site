@@ -136,6 +136,7 @@ shadow: true
 - **Impuestos:** Nitidez coloca cada rectificativa en el modelo 303, el 130 y el 349 que le corresponde. Si una corrección obliga a presentar una autoliquidación rectificativa de un trimestre anterior, te avisa antes de crearla.
 
 [Crea tu cuenta gratis en Nitidez →]({{appUrl}}/register)
+
 ::
 
 ## En resumen

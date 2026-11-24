@@ -3,7 +3,7 @@ locale: en
 slug: mcp
 topText: Documentation
 title: Nitidez MCP Connector
-lastUpdated: "Last updated: September 2026"
+lastUpdated: 'Last updated: September 2026'
 ---
 
 Prefer a narrative walkthrough? Read the blog article on [what the Nitidez MCP connector can do](/blog/what-can-the-nitidez-mcp-do).

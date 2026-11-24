@@ -3,7 +3,7 @@ locale: en
 slug: terms-claude
 topText: Legal
 title: Claude Connector — Data Use
-lastUpdated: "Last updated: August 2026"
+lastUpdated: 'Last updated: August 2026'
 summary:
   - title: Only your own data
     desc: The connector only gives Claude access to your own Nitidez account, at your request.

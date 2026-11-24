@@ -1,9 +1,9 @@
 ---
 locale: es
 slug: tramos-seguridad-social
-title: "Qué son los tramos de la Seguridad Social (SS) para autónomos"
-summaryText: "Desde 2023 los autónomos pagan la Seguridad Social según lo que realmente ganan. Así funciona el sistema de tramos vigente para 2026."
-dateTime: "2026-09-22T10:00:00Z"
+title: 'Qué son los tramos de la Seguridad Social (SS) para autónomos'
+summaryText: 'Desde 2023 los autónomos pagan la Seguridad Social según lo que realmente ganan. Así funciona el sistema de tramos vigente para 2026.'
+dateTime: '2026-09-22T10:00:00Z'
 translationSlug: social-security-brackets
 categorySlugs: [seguridad-social]
 ---
@@ -33,28 +33,28 @@ Es sobre ese rendimiento neto mensual estimado sobre el que se determina en qué
 
 ## Tabla reducida (rendimientos inferiores a 1.166,70 €/mes)
 
-| Tramo | Rendimientos netos | Base de cotización | Cuota mensual aprox. |
-|---|---|---|---|
-| R1 | ≤ 670 €/mes | 653,59 – 718,94 € | ~199 € |
-| R2 | 670 – 900 €/mes | 718,95 – 900,00 € | ~219 € |
-| R3 | 900 – 1.166,70 €/mes | 849,67 – 1.166,70 € | ~259 € |
+| Tramo | Rendimientos netos   | Base de cotización  | Cuota mensual aprox. |
+| ----- | -------------------- | ------------------- | -------------------- |
+| R1    | ≤ 670 €/mes          | 653,59 – 718,94 €   | ~199 €               |
+| R2    | 670 – 900 €/mes      | 718,95 – 900,00 €   | ~219 €               |
+| R3    | 900 – 1.166,70 €/mes | 849,67 – 1.166,70 € | ~259 €               |
 
 ## Tabla general (rendimientos de 1.166,70 €/mes o más)
 
-| Tramo | Rendimientos netos | Base de cotización | Cuota mensual aprox. |
-|---|---|---|---|
-| G1 | 1.166,70 – 1.300 €/mes | 950,98 – 1.300,00 € | ~290 € |
-| G2 | 1.300 – 1.500 €/mes | 960,78 – 1.500,00 € | ~293 € |
-| G3 | 1.500 – 1.700 €/mes | 960,78 – 1.700,00 € | ~293 € |
-| G4 | 1.700 – 1.850 €/mes | 1.143,79 – 1.850,00 € | ~349 € |
-| G5 | 1.850 – 2.030 €/mes | 1.209,15 – 2.030,00 € | ~369 € |
-| G6 | 2.030 – 2.330 €/mes | 1.274,51 – 2.330,00 € | ~389 € |
-| G7 | 2.330 – 2.760 €/mes | 1.356,21 – 2.760,00 € | ~414 € |
-| G8 | 2.760 – 3.190 €/mes | 1.437,91 – 3.190,00 € | ~439 € |
-| G9 | 3.190 – 3.620 €/mes | 1.519,61 – 3.620,00 € | ~464 € |
-| G10 | 3.620 – 4.050 €/mes | 1.601,31 – 4.050,00 € | ~488 € |
-| G11 | 4.050 – 6.000 €/mes | 1.732,03 – 5.101,20 € | ~528 € |
-| G12 | > 6.000 €/mes | 1.928,10 – 5.101,20 € | ~588 € |
+| Tramo | Rendimientos netos     | Base de cotización    | Cuota mensual aprox. |
+| ----- | ---------------------- | --------------------- | -------------------- |
+| G1    | 1.166,70 – 1.300 €/mes | 950,98 – 1.300,00 €   | ~290 €               |
+| G2    | 1.300 – 1.500 €/mes    | 960,78 – 1.500,00 €   | ~293 €               |
+| G3    | 1.500 – 1.700 €/mes    | 960,78 – 1.700,00 €   | ~293 €               |
+| G4    | 1.700 – 1.850 €/mes    | 1.143,79 – 1.850,00 € | ~349 €               |
+| G5    | 1.850 – 2.030 €/mes    | 1.209,15 – 2.030,00 € | ~369 €               |
+| G6    | 2.030 – 2.330 €/mes    | 1.274,51 – 2.330,00 € | ~389 €               |
+| G7    | 2.330 – 2.760 €/mes    | 1.356,21 – 2.760,00 € | ~414 €               |
+| G8    | 2.760 – 3.190 €/mes    | 1.437,91 – 3.190,00 € | ~439 €               |
+| G9    | 3.190 – 3.620 €/mes    | 1.519,61 – 3.620,00 € | ~464 €               |
+| G10   | 3.620 – 4.050 €/mes    | 1.601,31 – 4.050,00 € | ~488 €               |
+| G11   | 4.050 – 6.000 €/mes    | 1.732,03 – 5.101,20 € | ~528 €               |
+| G12   | > 6.000 €/mes          | 1.928,10 – 5.101,20 € | ~588 €               |
 
 ## Qué pasa si tus ingresos varían durante el año
 
@@ -66,4 +66,4 @@ Como cotizas según una previsión de tus rendimientos netos, es normal que la e
 - Existen 15 tramos en total: 3 en la tabla reducida y 12 en la general.
 - Puedes ajustar tu base de cotización varias veces al año para acercarte a tu situación real y evitar sorpresas en la regularización.
 
-*Fuente: Orden PJC/297/2026, de 30 de marzo (BOE 31 de marzo de 2026).*
+_Fuente: Orden PJC/297/2026, de 30 de marzo (BOE 31 de marzo de 2026)._

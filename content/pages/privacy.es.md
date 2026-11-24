@@ -3,7 +3,7 @@ locale: es
 slug: privacy
 topText: Legal
 title: Política de Privacidad
-lastUpdated: "Última actualización: agosto de 2026"
+lastUpdated: 'Última actualización: agosto de 2026'
 summary:
   - title: Sin cookies de rastreo
     desc: Usamos analítica sin cookies (Umami) que no identifica a personas.

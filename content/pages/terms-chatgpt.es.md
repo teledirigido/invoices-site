@@ -3,7 +3,7 @@ locale: es
 slug: terms-chatgpt
 topText: Legal
 title: Conector de ChatGPT — Uso de datos
-lastUpdated: "Última actualización: agosto de 2026"
+lastUpdated: 'Última actualización: agosto de 2026'
 summary:
   - title: Solo tus propios datos
     desc: El conector solo da acceso a ChatGPT a tu propia cuenta de Nitidez, cuando tú lo solicitas.

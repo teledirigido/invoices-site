@@ -85,6 +85,7 @@ Antes de presentar el modelo 130, [Nitidez](/) te deja revisar de un vistazo tod
 Y cuando toca presentar, no tienes que rellenar el formulario de la Sede a mano: Nitidez genera el fichero del modelo 130 ya calculado, listo para importarlo directamente en la Sede Electrónica de la AEAT.
 
 [Crea tu cuenta gratis en Nitidez →]({{appUrl}}/register)
+
 ::
 
 ## Cómo evitar que te pase el próximo trimestre

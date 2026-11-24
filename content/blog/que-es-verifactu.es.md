@@ -38,6 +38,7 @@ title: 1 de enero de 2027
 ---
 
 Para las empresas sujetas al Impuesto sobre Sociedades.
+
 ::
 
 ::card
@@ -49,6 +50,7 @@ title: 1 de julio de 2027
 ---
 
 **Autónomos** y el resto de obligados tributarios.
+
 ::
 
 ::
@@ -76,6 +78,7 @@ shadow: true
 Si facturas con [Nitidez](/), no tienes que hacer nada especial: la plataforma ya cumple con Veri*Factu de forma nativa. Cada factura se encadena mediante hash con la anterior, se envía a la AEAT y se genera automáticamente su código QR de verificación. No necesitas instalar nada, adaptar un programa aparte ni depender de la aplicación gratuita de Hacienda.
 
 ::video-player{src="/images/validar-verifactu-app.compressed.mp4" caption="Validando una factura Veri*Factu"}
+
 ::
 
 ::

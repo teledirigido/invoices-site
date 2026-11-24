@@ -2,5 +2,6 @@
   "singleQuote": true,
   "trailingComma": "all",
   "printWidth": 100,
-  "htmlWhitespaceSensitivity": "ignore"
+  "htmlWhitespaceSensitivity": "ignore",
+  "plugins": ["./prettier-plugin-mdc.mjs"]
 }

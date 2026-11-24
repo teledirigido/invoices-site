@@ -3,7 +3,7 @@ locale: es
 slug: terms-claude
 topText: Legal
 title: Conector de Claude — Uso de datos
-lastUpdated: "Última actualización: agosto de 2026"
+lastUpdated: 'Última actualización: agosto de 2026'
 summary:
   - title: Solo tus propios datos
     desc: El conector solo da acceso a Claude a tu propia cuenta de Nitidez, cuando tú lo solicitas.

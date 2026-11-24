@@ -3,7 +3,7 @@ locale: en
 slug: terms
 topText: Legal
 title: Terms of Service
-lastUpdated: "Last updated: September 2026"
+lastUpdated: 'Last updated: September 2026'
 summary:
   - title: 60-day free trial
     desc: No credit card required. Full access to every feature from signup.

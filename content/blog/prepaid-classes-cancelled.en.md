@@ -103,6 +103,7 @@ shadow: true
 - **Taxes:** Nitidez places the rectifying invoice in the modelo 303 and 130 where it belongs.
 
 [Create your free Nitidez account →]({{appUrl}}/register)
+
 ::
 
 ## In short

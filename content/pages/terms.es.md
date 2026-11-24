@@ -3,7 +3,7 @@ locale: es
 slug: terms
 topText: Legal
 title: Términos de Servicio
-lastUpdated: "Última actualización: septiembre de 2026"
+lastUpdated: 'Última actualización: septiembre de 2026'
 summary:
   - title: Prueba gratuita de 60 días
     desc: Sin tarjeta de crédito. Accede a todas las funciones desde el registro.

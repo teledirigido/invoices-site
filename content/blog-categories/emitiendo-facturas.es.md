@@ -1,5 +1,5 @@
 ---
 locale: es
 slug: emitiendo-facturas
-name: "Emitiendo facturas"
+name: 'Emitiendo facturas'
 ---
