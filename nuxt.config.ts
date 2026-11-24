@@ -18,15 +18,25 @@ export default defineNuxtConfig({
         { property: 'og:type', content: 'website' },
         { name: 'author', content: 'hi@miguel.nz' },
       ],
-      script: process.env.UMAMI_WEBSITE_ID
-        ? [
-            {
-              src: 'https://cloud.umami.is/script.js',
-              defer: true,
-              'data-website-id': process.env.UMAMI_WEBSITE_ID,
-            },
-          ]
-        : [],
+      script: [
+        // Static pages: the root is generated in Spanish. A visitor who chose English
+        // (i18n_locale cookie) or, with no choice, whose first supported browser
+        // language is English goes to /en before anything is painted, so the Spanish
+        // page never flashes.
+        {
+          tagPosition: 'head',
+          innerHTML: `(function(){if(location.pathname!=='/')return;var m=document.cookie.match(/(?:^|; )i18n_locale=([^;]+)/);var l=m&&m[1];if(!l){var ls=navigator.languages||[navigator.language];for(var i=0;i<ls.length;i++){var c=String(ls[i]).slice(0,2).toLowerCase();if(c==='es'||c==='en'){l=c;break;}}}if(l==='en')location.replace('/en'+location.search+location.hash);})()`,
+        },
+        ...(process.env.UMAMI_WEBSITE_ID
+          ? [
+              {
+                src: 'https://cloud.umami.is/script.js',
+                defer: true,
+                'data-website-id': process.env.UMAMI_WEBSITE_ID,
+              },
+            ]
+          : []),
+      ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/images/favicon/favicon.ico' },
         {
@@ -85,13 +95,21 @@ export default defineNuxtConfig({
     },
   },
 
+  // /en is not linked from the Spanish pages (the locale switcher is a select), so
+  // the crawler starts from it too.
+  nitro: {
+    prerender: {
+      routes: ['/', '/en'],
+    },
+  },
+
   site: {
     url: process.env.NITIDEZ_SITE_URL ?? 'https://nitidez.es',
   },
 
   i18n: {
     baseUrl: process.env.NITIDEZ_SITE_URL ?? 'https://nitidez.es',
-    strategy: 'no_prefix',
+    strategy: 'prefix_except_default',
     defaultLocale: 'es',
     locales: [
       {
@@ -113,7 +131,7 @@ export default defineNuxtConfig({
       useCookie: true,
       cookieKey: 'i18n_locale',
       cookieSecure: true,
-      fallbackLocale: 'en',
+      fallbackLocale: 'es',
       redirectOn: 'root',
     },
   },

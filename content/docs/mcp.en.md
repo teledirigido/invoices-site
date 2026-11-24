@@ -6,7 +6,7 @@ title: Nitidez MCP Connector
 lastUpdated: 'Last updated: September 2026'
 ---
 
-Prefer a narrative walkthrough? Read the blog article on [what the Nitidez MCP connector can do](/blog/what-can-the-nitidez-mcp-do).
+Prefer a narrative walkthrough? Read the blog article on [what the Nitidez MCP connector can do](/en/blog/what-can-the-nitidez-mcp-do).
 
 Documentation for IT admins and users evaluating or connecting the Nitidez Model Context Protocol (MCP) server for use with Claude, ChatGPT, or any other MCP-compatible client.
 

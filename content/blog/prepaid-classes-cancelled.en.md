@@ -48,7 +48,7 @@ It is not R4. R4 is for ordinary mistakes, and here there was no mistake.
 
 **Type by difference (I).** The rectifying invoice shows only the change: the amounts of the original invoice with a minus sign.
 
-It is also correct to do it **by substitution (S)**: the rectifying invoice shows what the invoice should be, 0 € if everything is cancelled, without writing negative amounts. Both ways lead to the same result, so it depends on what you prefer. We go through it with Tom's case in [Classes cancelled after invoicing: the rectifying invoice by substitution](/blog/cancelled-classes-substitution). The general differences between the two types are in [How to rectify an invoice](/blog/how-to-rectify-an-invoice).
+It is also correct to do it **by substitution (S)**: the rectifying invoice shows what the invoice should be, 0 € if everything is cancelled, without writing negative amounts. Both ways lead to the same result, so it depends on what you prefer. We go through it with Tom's case in [Classes cancelled after invoicing: the rectifying invoice by substitution](/en/blog/cancelled-classes-substitution). The general differences between the two types are in [How to rectify an invoice](/en/blog/how-to-rectify-an-invoice).
 
 ## Which amounts
 
@@ -98,7 +98,7 @@ showLogo: true
 shadow: true
 ---
 
-[Nitidez](/) guides you through the rectification in four steps: customer, invoices, reason and type.
+[Nitidez](/en) guides you through the rectification in four steps: customer, invoices, reason and type.
 
 - **Reason and type:** it explains each reason (R1 to R4) and each type (substitution or difference) with examples.
 - **Veri\*Factu:** it sends the rectifying invoice to the AEAT with its reason, its type and the invoice it corrects.

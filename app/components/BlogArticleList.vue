@@ -6,14 +6,14 @@
           {{ formatDateTime(article.dateTime) }}
         </p>
         <h3 class="f-size-ml f-light underlined-on-hover">
-          <NuxtLink :to="`/blog/${article.slug}`">{{ article.title }}</NuxtLink>
+          <NuxtLink :to="localePath(`/blog/${article.slug}`)">{{ article.title }}</NuxtLink>
         </h3>
       </header>
       <p class="pt-1 d-flex gap-05 c-text-secondary">
         {{ $t('blog.minRead', { count: getReadingMinutes(article.body) }) }}
         <template v-for="slug in categoriesOf(article)" :key="slug">
           <span>•</span>
-          <NuxtLink class="underlined" :to="`/blog/categories/${slug}`">
+          <NuxtLink class="underlined" :to="localePath(`/blog/categories/${slug}`)">
             {{ categoryNames[slug] }}
           </NuxtLink>
         </template>
@@ -26,6 +26,7 @@
 </template>
 <script setup lang="ts">
 import type { MinimarkTree } from 'minimark';
+const localePath = useLocalePath();
 
 const props = withDefaults(
   defineProps<{

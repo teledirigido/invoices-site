@@ -55,6 +55,27 @@
     padding-bottom: 0;
   }
 
+  // h2 titles link to themselves: same look as the title, a "#" on hover.
+  h2[id] {
+    scroll-margin-top: 2rem;
+  }
+
+  .heading-anchor {
+    color: inherit;
+    text-decoration: none;
+
+    &::after {
+      content: ' #';
+      opacity: 0;
+      transition: opacity 0.15s;
+    }
+
+    &:hover::after,
+    &:focus-visible::after {
+      opacity: 0.4;
+    }
+  }
+
   &--figure {
 
     video,

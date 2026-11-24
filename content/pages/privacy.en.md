@@ -48,7 +48,7 @@ In no case will we retain data longer than necessary for the described purpose.
 
 To send emails we use **Resend** (Plus Five Five, Inc.), an email delivery provider based in the United States. Data is transferred and processed in the US. Resend acknowledges the GDPR rights of EU/EEA residents. You can review their privacy policy at [resend.com](https://resend.com/legal/privacy-policy). We are working to migrate the email delivery service to EU-based infrastructure. We do not share your data with any other third party.
 
-If you use the Claude Connector to access your Nitidez account through Anthropic's Claude, additional data is processed as described in our [Claude Connector — Data Use page](/pages/terms-claude).
+If you use the Claude Connector to access your Nitidez account through Anthropic's Claude, additional data is processed as described in our [Claude Connector — Data Use page](/en/pages/terms-claude).
 
 ## 6. Your rights
 

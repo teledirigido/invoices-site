@@ -7,7 +7,7 @@
         {{ $t('blog.minRead', { count: getReadingMinutes(article.body) }) }}
         <template v-for="cat in articleCategories" :key="cat.slug">
           ·
-          <NuxtLink class="underlined" :to="`/blog/categories/${cat.slug}`">
+          <NuxtLink class="underlined" :to="localePath(`/blog/categories/${cat.slug}`)">
             {{ cat.name }}
           </NuxtLink>
         </template>
@@ -19,8 +19,8 @@
             This article is also available in
             <NuxtLink
               class="underlined"
-              :to="`/blog/${translation.slug}`"
-              @click="setLocale(translation.locale)"
+              :to="localePath(`/blog/${translation.slug}`, translation.locale)"
+              @click="setLocaleCookie(translation.locale)"
             >
               {{ translation.languageName }}
             </NuxtLink>
@@ -36,7 +36,7 @@
       />
       <hr class="hr-bottom hr-bottom--left" />
       <div class="pt-2 c-text-secondary">
-        <NuxtLink class="underlined d-flex ai-center gap-1" to="/blog">
+        <NuxtLink class="underlined d-flex ai-center gap-1" :to="localePath('/blog')">
           <Icon name="mdi-arrow-left" />
           {{ $t('blog.backToAll') }}
         </NuxtLink>
@@ -46,7 +46,7 @@
       <p class="f-body-small pb-1">Categories</p>
       <ul v-if="categories?.length" class="d-flex flex-column gap-05">
         <li v-for="cat in categories" :key="cat.slug">
-          <NuxtLink class="underlined" :to="`/blog/categories/${cat.slug}`">
+          <NuxtLink class="underlined" :to="localePath(`/blog/categories/${cat.slug}`)">
             {{ cat.name }}
           </NuxtLink>
         </li>
@@ -60,15 +60,28 @@
 import type { Link } from '@unhead/vue';
 import type { LocaleObject } from '@nuxtjs/i18n';
 import Pricing from '~/components/Public/Index/Pricing.vue';
+const localePath = useLocalePath();
 
 const route = useRoute();
 const slug = route.params.slug as string;
-const { locale, locales, setLocale } = useI18n();
+const { locale, locales, setLocaleCookie } = useI18n();
+
+// The h2 titles of an article link to themselves (ProseH2).
+provide('headingAnchors', true);
 
 const { data: article } = await useAsyncData(
   () => `blog-${slug}`,
   () => queryCollection('blog').where('slug', '=', slug).first(),
 );
+
+// Each article lives under its own language: an English one opened at /blog/<slug>
+// (an old link from before the /en prefix) moves to /en/blog/<slug>.
+if (article.value && article.value.locale !== locale.value) {
+  await navigateTo(localePath(`/blog/${slug}`, article.value.locale as LocaleObject['code']), {
+    redirectCode: 301,
+    replace: true,
+  });
+}
 
 const { data: translationArticle } = await useAsyncData(
   () => `blog-translation-${slug}`,
@@ -140,7 +153,7 @@ useHead(() => {
       {
         rel: 'alternate',
         hreflang: translation.value.locale,
-        href: `${config.public.siteUrl}/blog/${translation.value.slug}`,
+        href: `${config.public.siteUrl}${localePath(`/blog/${translation.value.slug}`, translation.value.locale)}`,
       },
       { rel: 'alternate', hreflang: 'x-default', href: canonicalUrl.value },
     );

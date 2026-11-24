@@ -69,7 +69,7 @@ It also works the other way round: an invoice you've already rectified cannot be
 
 ## The reason: R1, R2, R3 or R4
 
-Every rectifying invoice carries a code that says why it's being rectified. It's what gets sent to the AEAT with [Veri\*Factu](/blog/what-is-verifactu), and it's worth choosing it carefully, because it affects where the correction is declared.
+Every rectifying invoice carries a code that says why it's being rectified. It's what gets sent to the AEAT with [Veri\*Factu](/en/blog/what-is-verifactu), and it's worth choosing it carefully, because it affects where the correction is declared.
 
 | Code   | When it's used                                                                                                                                                                   | Example                                                                                                                                                                                             |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -86,7 +86,7 @@ The most common mistake is to think R1 means "error" and R4 "everything else". T
 
 R1 is for the article 80 reasons and for an error fundado de derecho, which is a misinterpretation of the law, not a slip.
 
-And a case that's often confused with a cancellation: if the transaction **existed and was undone afterwards** (the customer returns the whole order or the contract is terminated), the invoice was correct when it was issued. It isn't cancelled: it's rectified with an **R1** for the full amount. We walk through an example in [A client cancelled a service on an invoice they already paid](/blog/prepaid-classes-cancelled).
+And a case that's often confused with a cancellation: if the transaction **existed and was undone afterwards** (the customer returns the whole order or the contract is terminated), the invoice was correct when it was issued. It isn't cancelled: it's rectified with an **R1** for the full amount. We walk through an example in [A client cancelled a service on an invoice they already paid](/en/blog/prepaid-classes-cancelled).
 
 ## The type: substitution or difference
 
@@ -127,7 +127,7 @@ showLogo: true
 shadow: true
 ---
 
-[Nitidez](/) guides you through the rectification in four steps: customer, invoices, reason and type.
+[Nitidez](/en) guides you through the rectification in four steps: customer, invoices, reason and type.
 
 - **Invoices:** it only shows you the customer's sent invoices, so drafts and cancelled invoices don't appear. You can rectify several in a single document, as long as they're from the same quarter. If you pick an invoice that has already been replaced, Nitidez won't let you rectify it again: it tells you to rectify the latest rectifying invoice.
 - **Reason and type:** it explains each reason (R1 to R4) and each type (substitution or difference) with examples.

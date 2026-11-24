@@ -11,7 +11,7 @@ categorySlugs: [issuing-invoices]
 
 Tom gives private English classes. A student books the four November classes, at 30 € each, and pays for them in advance. Tom issues the invoice. A few days later, the student cancels all four and Tom refunds the money.
 
-It is the same case as Marta's in [A client cancelled a service on an invoice they already paid](/blog/prepaid-classes-cancelled). Marta solved it with a rectifying invoice **by difference**. Tom will use the other way: **by substitution**. Both are correct and lead to the same result.
+It is the same case as Marta's in [A client cancelled a service on an invoice they already paid](/en/blog/prepaid-classes-cancelled). Marta solved it with a rectifying invoice **by difference**. Tom will use the other way: **by substitution**. Both are correct and lead to the same result.
 
 ::card
 ---
@@ -114,7 +114,7 @@ showLogo: true
 shadow: true
 ---
 
-[Nitidez](/) guides you through the rectification in four steps: customer, invoices, reason and type.
+[Nitidez](/en) guides you through the rectification in four steps: customer, invoices, reason and type.
 
 - **Reason and type:** it explains each reason (R1 to R4) and each type (substitution or difference) with examples.
 - **No mixing the types:** if you choose substitution and write a negative amount, Nitidez does not let you create the rectifying invoice and explains which amount to enter.
@@ -130,7 +130,7 @@ shadow: true
 
 - If classes already invoiced are cancelled, the invoice is not annulled: you issue a rectifying invoice **R1**.
 - **By substitution (S)**, the rectifying invoice shows what the invoice should be: 0 € if everything is cancelled.
-- **By difference (I)**, it shows the amount to subtract, in negative. That is what Marta did in [A client cancelled a service on an invoice they already paid](/blog/prepaid-classes-cancelled).
+- **By difference (I)**, it shows the amount to subtract, in negative. That is what Marta did in [A client cancelled a service on an invoice they already paid](/en/blog/prepaid-classes-cancelled).
 - Both ways are correct and the result is the same. Choose the one you prefer.
 
 _Sources: [VAT Law, arts. 20 and 80 (BOE)](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a20), [Invoicing Regulation, Royal Decree 1619/2012, art. 15 (BOE)](https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696) and [Veri\*Factu FAQ: invoicing procedures (AEAT)](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes/procedimientos-facturacion.html)._

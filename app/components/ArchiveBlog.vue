@@ -7,7 +7,7 @@
           {{ $t('blog.minRead', { count: getReadingMinutes(article.body) }) }}
         </p>
         <h3 class="f-size-ml f-light underlined-on-hover">
-          <NuxtLink :to="`/blog/${article.slug}`">{{ article.title }}</NuxtLink>
+          <NuxtLink :to="localePath(`/blog/${article.slug}`)">{{ article.title }}</NuxtLink>
         </h3>
         <p class="pb-1 pt-1">
           <span class="f-body-small c-text-secondary">
@@ -17,7 +17,7 @@
       </div>
     </div>
     <div v-if="showAllLink" class="pt-2 op-05 d-flex ai-center jc-end gap-1">
-      <NuxtLink class="underlined" to="/blog">
+      <NuxtLink class="underlined" :to="localePath('/blog')">
         {{ $t('blog.viewAll') }}
       </NuxtLink>
       <Icon name="mdi-arrow-right" />
@@ -25,6 +25,7 @@
   </section>
 </template>
 <script setup lang="ts">
+const localePath = useLocalePath();
 const props = withDefaults(
   defineProps<{
     count?: number;

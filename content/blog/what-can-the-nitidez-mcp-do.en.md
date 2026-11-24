@@ -51,7 +51,7 @@ For a brand-new Nitidez account with no company set up yet, you can ask the assi
 
 Connect the Nitidez MCP server from your Claude or ChatGPT connector settings using your Nitidez account. Once connected, every action that creates or changes data — expenses, customers, payment status, and so on — still asks for your confirmation. The assistant never invoices or spends on your behalf without you seeing it first.
 
-For the technical details — endpoint, authentication, and the exact permissions each tool has — see the [connector documentation](/docs/mcp).
+For the technical details — endpoint, authentication, and the exact permissions each tool has — see the [connector documentation](/en/docs/mcp).
 
 ## In Summary
 

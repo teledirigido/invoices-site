@@ -20,7 +20,7 @@ disclaimer: These terms have been drafted in good faith to reflect how the servi
 
 Nitidez is an invoicing and tax management service for freelancers and small businesses in Spain, operated by **Miguel Ignacio Garrido Iglesias** (Tax ID / NIF: **60272850Q**), reachable at [hi@miguel.nz](mailto:hi@miguel.nz), domain **nitidez.es**.
 
-By registering and using Nitidez you accept these Terms of Service and our [Privacy Policy](/pages/privacy). If you do not agree, you must not use the service.
+By registering and using Nitidez you accept these Terms of Service and our [Privacy Policy](/en/pages/privacy). If you do not agree, you must not use the service.
 
 ## 2. The service
 
@@ -60,7 +60,7 @@ If you subscribe as a freelancer or business acting in the course of your profes
 
 The data you enter into Nitidez (invoices, customers, suppliers, expenses, and associated documents) belongs to you. You can request an export of your data or full deletion of your account at any time by emailing [hi@miguel.nz](mailto:hi@miguel.nz). When you delete your account, your data is permanently deleted except where we are legally required to retain certain information (for example, tax document retention obligations).
 
-How we handle your personal data is described in detail in our [Privacy Policy](/pages/privacy).
+How we handle your personal data is described in detail in our [Privacy Policy](/en/pages/privacy).
 
 ## 10. Service availability
 

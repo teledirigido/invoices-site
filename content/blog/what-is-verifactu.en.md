@@ -75,7 +75,7 @@ showLogo: true
 shadow: true
 ---
 
-If you invoice with [Nitidez](/), you don't need to do anything special: the platform already complies with Veri*Factu natively. Every invoice is hash-chained to the previous one, sent to the AEAT, and its verification QR code is generated automatically. You don't need to install anything, adapt a separate program, or rely on the Tax Agency's free application.
+If you invoice with [Nitidez](/en), you don't need to do anything special: the platform already complies with Veri*Factu natively. Every invoice is hash-chained to the previous one, sent to the AEAT, and its verification QR code is generated automatically. You don't need to install anything, adapt a separate program, or rely on the Tax Agency's free application.
 
 ::video-player{src="/images/validar-verifactu-app.compressed.mp4" caption="Validando una factura Veri*Factu"}
 

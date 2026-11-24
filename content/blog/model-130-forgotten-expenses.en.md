@@ -80,7 +80,7 @@ showLogo: true
 shadow: true
 ---
 
-Before filing Modelo 130, [Nitidez](/) lets you review all of the quarter's logged expenses at a glance, so you can check nothing is missing before you hit submit.
+Before filing Modelo 130, [Nitidez](/en) lets you review all of the quarter's logged expenses at a glance, so you can check nothing is missing before you hit submit.
 
 And when it's time to file, you don't have to fill in the form on the AEAT's site by hand: Nitidez generates the already-calculated Modelo 130 file, ready to import directly into the AEAT's Sede Electrónica.
 

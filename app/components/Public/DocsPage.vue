@@ -13,7 +13,9 @@
             </a>
           </li>
           <li>
-            <a href="#tools" :class="{ 'is-active': activeId === 'tools' }">{{ $t('docsMcp.tools') }}</a>
+            <a href="#tools" :class="{ 'is-active': activeId === 'tools' }">
+              {{ $t('docsMcp.tools') }}
+            </a>
             <ul>
               <li v-for="group in toolGroups" :key="group.name">
                 <a
@@ -51,17 +53,21 @@
         <h2 id="tools" class="f-size-ml f-light pb-1 pt-3">{{ $t('docsMcp.tools') }}</h2>
         <ToolReference />
 
-        <h2 id="support-and-contact" class="f-size-ml f-light pb-1 pt-3">{{ $t('docsMcp.supportAndContact') }}</h2>
+        <h2 id="support-and-contact" class="f-size-ml f-light pb-1 pt-3">
+          {{ $t('docsMcp.supportAndContact') }}
+        </h2>
         <p>
           <i18n-t keypath="docsMcp.supportText" tag="span">
             <template #email>
               <a class="underlined" href="mailto:hi@miguel.nz">hi@miguel.nz</a>
             </template>
             <template #home>
-              <NuxtLink class="underlined" to="/">nitidez.es</NuxtLink>
+              <NuxtLink class="underlined" :to="localePath('/')">nitidez.es</NuxtLink>
             </template>
             <template #terms>
-              <NuxtLink class="underlined" to="/pages/terms">nitidez.es/pages/terms</NuxtLink>
+              <NuxtLink class="underlined" :to="localePath('/pages/terms')">
+                nitidez.es/pages/terms
+              </NuxtLink>
             </template>
           </i18n-t>
         </p>
@@ -72,6 +78,7 @@
 
 <script setup lang="ts">
 import ToolReference from '~/components/Public/Docs/ToolReference.vue';
+const localePath = useLocalePath();
 
 const props = defineProps<{ slug: string }>();
 const { locale, t } = useI18n();

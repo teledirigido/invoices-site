@@ -1,16 +1,16 @@
 <template>
   <div v-if="category" class="mx-auto py-6">
     <h1 class="f-size-l f-light pb-2">{{ category.name }}</h1>
-    <NuxtLink class="underlined" to="/blog">All Articles</NuxtLink>
+    <NuxtLink class="underlined" :to="localePath('/blog')">{{ $t('blog.viewAll') }}</NuxtLink>
     <BlogArticleList :articles="articles ?? []" :category-names="categoryNames" />
-
     <div class="pt-2 c-text-secondary">
-      <NuxtLink class="underlined" to="/blog">{{ $t('blog.backToAll') }}</NuxtLink>
+      <NuxtLink class="underlined" :to="localePath('/blog')">{{ $t('blog.backToAll') }}</NuxtLink>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath();
 definePageMeta({ layout: 'public' });
 
 const route = useRoute();

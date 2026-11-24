@@ -114,7 +114,7 @@ showLogo: true
 shadow: true
 ---
 
-[Nitidez](/) automatically detects which of the quarter's invoices are intra-Community (business customer, with a VAT number from another EU country, and no VAT charged) and groups them by operator, with the operation key, the VAT number, and the total for the period.
+[Nitidez](/en) automatically detects which of the quarter's invoices are intra-Community (business customer, with a VAT number from another EU country, and no VAT charged) and groups them by operator, with the operation key, the VAT number, and the total for the period.
 
 From there you don't have to transcribe anything by hand: Nitidez generates the **already-calculated Modelo 349 file**, ready to import directly into the AEAT's Sede Electrónica.
 

@@ -4,7 +4,7 @@
       <p>{{ $t('index.toast.success') }}</p>
     </div>
     <form v-else action="#" class="c-form c-form-default" @submit.prevent="submit">
-      <div class="field d-flex gap-05" style="padding-bottom: 1rem;">
+      <div class="field d-flex gap-05" style="padding-bottom: 1rem">
         <input
           ref="input"
           v-model="email"
@@ -17,7 +17,11 @@
       </div>
       <div class="d-flex helper space-between">
         <p>
-          <NuxtLink to="/pages/privacy" class="underlined-on-hover f-size-xs" target="_blank">
+          <NuxtLink
+            :to="localePath('/pages/privacy')"
+            class="underlined-on-hover f-size-xs"
+            target="_blank"
+          >
             {{ $t('index.toast.privacyLink') }}
           </NuxtLink>
         </p>
@@ -28,6 +32,7 @@
 </template>
 
 <script setup>
+const localePath = useLocalePath();
 const { t } = useI18n();
 const { visible, hide } = useNotifyToast();
 const config = useRuntimeConfig();
@@ -82,10 +87,10 @@ async function submit() {
 }
 button {
   background: #444;
-  color: #FFF;
-  padding:1rem;
+  color: #fff;
+  padding: 1rem;
   border-radius: 0.5rem;
-  border:0 none;
+  border: 0 none;
   font-size: inherit;
 }
 </style>

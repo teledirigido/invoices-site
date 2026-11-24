@@ -18,7 +18,7 @@ disclaimer: This page describes the Claude Connector feature specifically and sh
 
 ## 1. What is the Claude Connector
 
-Nitidez offers an integration ("Connector" or MCP server) that lets you use Anthropic's Claude to interact with your Nitidez account using natural language. This page explains what data the connector can access, how it is used, and who processes it. It complements our general [Privacy Policy](/pages/privacy) and applies specifically to this feature.
+Nitidez offers an integration ("Connector" or MCP server) that lets you use Anthropic's Claude to interact with your Nitidez account using natural language. This page explains what data the connector can access, how it is used, and who processes it. It complements our general [Privacy Policy](/en/pages/privacy) and applies specifically to this feature.
 
 ## 2. What Claude can access
 
