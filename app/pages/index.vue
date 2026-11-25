@@ -33,19 +33,9 @@
 
   <Pricing />
 
-  <section id="audience" class="grid-2 gap-5 w-1140 mx-auto pb-4 pb-1--mobile">
+  <section id="audience" class="grid-2 gap-3 ai-center w-1140 mx-auto pb-4 pb-1--mobile">
+    <div class="item"><FlowDiagram /></div>
     <div class="item">
-      <Screenshot
-        src="/images/tipo-autonomo.png"
-        :alt="$t('index.screenshots.altFactura')"
-        :max-height="390"
-        :width="1440"
-        :height="1050"
-        :show-scroll="false"
-      />
-    </div>
-    <div class="item">
-      <p class="top-text pt-1">{{ $t('index.audience.label') }}</p>
       <h3 class="f-size-l f-light pt-1">{{ $t('index.audience.heading') }}</h3>
       <div class="f-hanken pt-2 c-text-secondary f-body">
         <p class="pb-1 ws-break-spaces">
@@ -66,9 +56,6 @@
   </section>
 
   <h3 class="f-size-l f-light pt-2">{{ $t('index.models.exportHeading') }}</h3>
-  <div class="pt-05">
-    <p>{{ $t('index.models.exportSubheading') }}</p>
-  </div>
   <section class="bg-secondary p-3 my-2 br-1">
     <div class="grid-3 gap-4">
       <div class="item">
@@ -134,6 +121,7 @@
 </template>
 <script lang="ts" setup>
 import AppShowcase from '~/components/Public/Index/AppShowcase.vue';
+import FlowDiagram from '~/components/Public/Index/FlowDiagram.vue';
 import Hero from '~/components/Public/Index/Hero.vue';
 import NotifyMe from '~/components/Public/Index/NotifyMe.vue';
 import Pricing from '~/components/Public/Index/Pricing.vue';

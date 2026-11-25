@@ -37,10 +37,9 @@
       "unit": "/mo"
     },
     "audience": {
-      "label": "Who it's for",
-      "heading": "Built for a specific kind of freelancer",
-      "description": "• You're a freelancer in Spain. \n• You keep track of Clients and Suppliers. \n• You work in services: no inventory, no employees. \n• You have clients in Spain, EU or abroad. \n• You're comfortable with numbers and want to understand your own finances. \n• You have an accountant, or not.",
-      "conclusion": "Perfect. Nitidez is for you."
+      "heading": "The best tool for freelancers in Spain",
+      "description": "• Manage your invoices and expenses. \n• Keep track of Clients and Suppliers. \n• Stay on top of VAT for your clients in Spain, the EU or abroad. \n• Get predictable results, instantly.\n• Download your tax forms ready to file.",
+      "conclusion": "Nitidez is perfect for you."
     },
     "models": {
       "modelo130Title": "Modelo 130",
@@ -51,8 +50,7 @@
       "retaDesc": "Your Social Security contribution factored into the calculation, not as a separate surprise.",
       "modelo349Title": "Modelo 349",
       "modelo349Desc": "For your clients in the EU, your transactions are declared with no extra effort.",
-      "exportHeading": "Tax forms ready to file",
-      "exportSubheading": "All you have to do is upload them"
+      "exportHeading": "Tax forms ready to file"
     },
     "socialSecurity": {
       "heading": "Nitidez and Social Security",
@@ -112,6 +110,16 @@
       "pressEnter": "Press enter to submit...",
       "tooManyAttempts": "Too many attempts. Try again later.",
       "genericError": "Something went wrong. Try again."
+    },
+    "flowDiagram": {
+      "ariaLabel": "Your invoices, expenses, clients and suppliers go into Nitidez, which prepares Modelo 130 (IRPF), 303 (VAT) and 349 (EU clients).",
+      "invoices": "Invoices",
+      "expenses": "Expenses",
+      "customers": "Clients",
+      "suppliers": "Suppliers",
+      "irpf": "IRPF",
+      "vat": "VAT",
+      "euClients": "EU Clients"
     }
   }
 }

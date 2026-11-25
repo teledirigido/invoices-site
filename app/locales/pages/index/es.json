@@ -37,10 +37,9 @@
       "unit": "/mes"
     },
     "audience": {
-      "label": "Para quién es",
-      "heading": "Pensado para un tipo de autónomo/a",
-      "description": "• Eres autónomo/a en España. \n• Llevas registro de Clientes y Proveedores. \n• Trabajas en servicios: sin inventario, sin empleados. \n• Tienes clientes de España, EU o en el extranjero \n• Te manejas con los números y quieres entender tus propias finanzas. \n• Tienes gestor, o no.",
-      "conclusion": "Perfecto. Nitidez es para ti."
+      "heading": "La mejor herramienta para autónomo/a en España",
+      "description": "• Administra tus facturas y gastos. \n• Lleva registro de Clientes y Proveedores. \n• Controla el IVA de tus clientes en España, EU o en el extranjero \n• Obten predictibilidad de tus resultados al momento.\n• Descarga tus modelos listos para presentar",
+      "conclusion": "Nitidez es perfecto para ti."
     },
     "models": {
       "modelo130Title": "Modelo 130",
@@ -51,8 +50,7 @@
       "retaDesc": "Tu cuota de Seguridad Social contemplada dentro del cálculo, no como una sorpresa aparte.",
       "modelo349Title": "Modelo 349",
       "modelo349Desc": "Para tus clientes en la UE, tus operaciones quedan declaradas sin esfuerzo extra.",
-      "exportHeading": "Tus modelos listos para presentar",
-      "exportSubheading": "Solo te toca subirlos"
+      "exportHeading": "Tus modelos listos para presentar"
     },
     "socialSecurity": {
       "heading": "Nitidez en la Seguridad Social",
@@ -112,6 +110,16 @@
       "pressEnter": "Presiona enter para enviar...",
       "tooManyAttempts": "Demasiados intentos. Inténtalo más tarde.",
       "genericError": "Algo salió mal. Inténtalo de nuevo."
+    },
+    "flowDiagram": {
+      "ariaLabel": "Tus facturas, gastos, clientes y proveedores entran en Nitidez, que prepara los modelos 130 (IRPF), 303 (IVA) y 349 (clientes de la UE).",
+      "invoices": "Facturas",
+      "expenses": "Gastos",
+      "customers": "Clientes",
+      "suppliers": "Proveedores",
+      "irpf": "IRPF",
+      "vat": "IVA",
+      "euClients": "Clientes EU"
     }
   }
 }
