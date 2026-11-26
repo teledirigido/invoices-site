@@ -58,21 +58,15 @@
           <div class="d-flex-mobile d-flex gap-4 ai-center jc-center">
             <div class="pb-2 content">
               <h2 class="f-light f-size-l pb-2">{{ $t('index.appShowcase.claudeHeading') }}</h2>
-              <div class="d-flex flex-column gap-1 f-size-m f-hanken c-text-secondary">
+              <div class="d-flex flex-column gap-05 f-size-m f-hanken c-text-secondary">
                 <p>
-                  {{ $t('index.appShowcase.claudeText1Line1') }}
-                  <br />
-                  {{ $t('index.appShowcase.claudeText1Line2') }}
+                  {{ $t('index.appShowcase.claudeTextLine1') }}
                 </p>
                 <p>
-                  {{ $t('index.appShowcase.claudeText2Line1') }}
-                  <br />
-                  {{ $t('index.appShowcase.claudeText2Line2') }}
+                  {{ $t('index.appShowcase.claudeTextLine2') }}
                 </p>
                 <p>
-                  {{ $t('index.appShowcase.claudeText3Line1') }}
-                  <br />
-                  {{ $t('index.appShowcase.claudeText3Line2') }}
+                  {{ $t('index.appShowcase.claudeTextLine3') }}
                 </p>
               </div>
             </div>
@@ -100,21 +94,15 @@
           <div class="d-flex-mobile d-flex gap-4 ai-center jc-center">
             <div class="pb-2 content">
               <h2 class="f-light f-size-l pb-2">{{ $t('index.appShowcase.chatgptHeading') }}</h2>
-              <div class="d-flex flex-column gap-1 f-size-m f-hanken c-text-secondary">
+              <div class="d-flex flex-column gap-05 f-size-m f-hanken c-text-secondary">
                 <p>
-                  {{ $t('index.appShowcase.chatgptText1Line1') }}
-                  <br />
-                  {{ $t('index.appShowcase.chatgptText1Line2') }}
+                  {{ $t('index.appShowcase.chatgptTextLine1') }}
                 </p>
                 <p>
-                  {{ $t('index.appShowcase.chatgptText2Line1') }}
-                  <br />
-                  {{ $t('index.appShowcase.chatgptText2Line2') }}
+                  {{ $t('index.appShowcase.chatgptTextLine2') }}
                 </p>
                 <p>
-                  {{ $t('index.appShowcase.chatgptText3Line1') }}
-                  <br />
-                  {{ $t('index.appShowcase.chatgptText3Line2') }}
+                  {{ $t('index.appShowcase.chatgptTextLine3') }}
                 </p>
               </div>
             </div>

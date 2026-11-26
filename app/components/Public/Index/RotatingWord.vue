@@ -53,7 +53,9 @@ function shuffle(length) {
   return counter;
 }
 
-let bag = shuffle(words.value.length);
+let order = [];
+let position = 0;
+let leaveTimer;
 
 function observeCurrent() {
   if (!resizeObserver) return;
@@ -63,20 +65,16 @@ function observeCurrent() {
 }
 
 watch(locale, () => {
-  bag = shuffle(words.value.length);
-  currentIndex.value = 0;
+  if (order.length !== words.value.length) order = shuffle(words.value.length);
+  position = 0;
+  currentIndex.value = order[0];
   leavingIndex.value = -1;
   nextTick(observeCurrent);
 });
 
 function drawNext() {
-  if (bag.length === 0) {
-    bag = shuffle(words.value.length);
-    if (bag[0] === currentIndex.value && bag.length > 1) {
-      [bag[0], bag[1]] = [bag[1], bag[0]];
-    }
-  }
-  return bag.shift();
+  position = (position + 1) % order.length;
+  return order[position];
 }
 
 function next() {
@@ -84,7 +82,8 @@ function next() {
   leavingIndex.value = currentIndex.value;
   currentIndex.value = nextIndex;
   nextTick(observeCurrent);
-  setTimeout(() => {
+  clearTimeout(leaveTimer);
+  leaveTimer = setTimeout(() => {
     leavingIndex.value = -1;
   }, SLIDE_MS);
 }
@@ -99,6 +98,10 @@ function resume() {
 }
 
 onMounted(() => {
+  order = shuffle(words.value.length);
+  position = 0;
+  currentIndex.value = order[0];
+
   let firstMeasure = true;
   resizeObserver = new ResizeObserver((entries) => {
     const entry = entries[0];
@@ -113,6 +116,7 @@ onMounted(() => {
 });
 onUnmounted(() => {
   clearInterval(timer);
+  clearTimeout(leaveTimer);
   resizeObserver?.disconnect();
 });
 </script>

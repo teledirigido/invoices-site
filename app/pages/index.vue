@@ -98,7 +98,7 @@
     </div>
   </section>
 
-  <section id="scope" class="w-860 mx-auto text-center py-4">
+  <section id="scope" class="w-860 mx-auto text-center pt-4 pb-6">
     <p class="top-text">{{ $t('index.scope.label') }}</p>
     <h3 class="f-size-l f-light pt-1">{{ $t('index.scope.heading') }}</h3>
     <div class="pt-2 f-hanken f-body">

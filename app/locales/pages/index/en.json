@@ -1,16 +1,21 @@
 {
   "index": {
     "hero": {
-      "tagline": "Accounting for freelancers in Spain",
+      "tagline": "The best software for freelancers in Spain",
       "headingPrefix": "Understand",
       "headingSuffix": "Freelancing in Spain, sorted.",
-      "description": "Manage your invoices, clients and expenses. Get your Modelo 130, 303 and 349 ready to file with Agencia Tributaria.",
+      "description": "Everything you need to understand your taxes and your dealings with the Agencia Tributaria (AEAT).",
       "cta": "Get Started",
       "disclaimer": "60-day trial. No credit card required",
       "rotatingWords": [
-        "your Invoices.",
+        "Veri*Factu.",
+        "your invoices.",
+        "your paperwork.",
+        "Social Security.",
         "the Modelo 303.",
-        "your Spending.",
+        "your expenses.",
+        "your suppliers.",
+        "your clients.",
         "your IRPF.",
         "your VAT.",
         "the Modelo 130.",
@@ -26,9 +31,9 @@
       "invoicesDesc": "Issue invoices, record expenses from the web, Claude.ai or ChatGPT."
     },
     "problem": {
-      "label": "Nitidez is also predictability",
+      "label": "Nitidez is predictability",
       "heading": "Say goodbye to end-of-quarter surprises",
-      "description": "Invoices, expenses, clients, suppliers and intra-community management always available. Verifactu and Claude.ai integration for daily tasks.",
+      "description": "Unlimited invoices, expenses, clients and suppliers, always available. Veri*Factu, plus Claude.ai or ChatGPT integration for your daily tasks.",
       "conclusion": "Finally a tool on our side."
     },
     "pricing": {
@@ -37,8 +42,8 @@
       "unit": "/mo"
     },
     "audience": {
-      "heading": "The best tool for freelancers in Spain",
-      "description": "• Manage your invoices and expenses. \n• Keep track of Clients and Suppliers. \n• Stay on top of VAT for your clients in Spain, the EU or abroad. \n• Get predictable results, instantly.\n• Download your tax forms ready to file.",
+      "heading": "The best software for freelancers in Spain",
+      "description": "• No limit on invoices or expenses. \n• Keep track of Clients and Suppliers. \n• Stay on top of VAT for your clients in Spain, the EU or abroad. \n• Get predictable results, instantly.\n• Download your tax forms ready to file.",
       "conclusion": "Nitidez is perfect for you."
     },
     "models": {
@@ -49,7 +54,7 @@
       "retaTitle": "RETA",
       "retaDesc": "Your Social Security contribution factored into the calculation, not as a separate surprise.",
       "modelo349Title": "Modelo 349",
-      "modelo349Desc": "For your clients in the EU, your transactions are declared with no extra effort.",
+      "modelo349Desc": "For your EU clients and expenses, your transactions are declared with no extra effort.",
       "exportHeading": "Tax forms ready to file"
     },
     "socialSecurity": {
@@ -60,12 +65,12 @@
       "bracketDesc": "Based on your average net income, we show you your bracket and flag if what you're paying is running low or high."
     },
     "scope": {
-      "label": "Honest Scope",
+      "label": "",
       "heading": "What Nitidez.es is not",
-      "description": "It doesn't replace an accountant in complex situations. It doesn't handle payroll, modules, or multiple simultaneous activities. It doesn't file anything on your behalf. It puts you in charge of your numbers so you understand every obligation before it's due.",
-      "chipNominas": "No payroll",
-      "chipModulos": "No modules",
-      "chipPresenta": "Doesn't file for you"
+      "description": "We don't handle inventory, payroll or modules. Nor do we limit the number of invoices, expenses or scans you make each year.",
+      "chipNominas": "No limit on invoices",
+      "chipModulos": "No limit on expenses",
+      "chipPresenta": "No limit on scans"
     },
     "notifyMe": {
       "label": "Currently in private BETA",
@@ -83,23 +88,17 @@
       "tabClaude": "Claude.ai",
       "tabChatgpt": "ChatGPT",
       "comingSoon": "Coming soon",
-      "descWebApp": "All your accounting, clear and in one dashboard.",
+      "descWebApp": "Simplify your tasks and make your numbers predictable.",
       "descClaude": "Invoice, log expenses and check your taxes just by talking to Claude.",
       "descChatgpt": "Invoice, log expenses and check your taxes just by talking to ChatGPT.",
-      "claudeHeading": "Talk to Claude",
-      "claudeText1Line1": "Invoice straight from the chat.",
-      "claudeText1Line2": "Name the client and the amount, and Claude builds the invoice.",
-      "claudeText2Line1": "Log expenses on the spot.",
-      "claudeText2Line2": "Send a photo of the receipt and Claude files it.",
-      "claudeText3Line1": "Ask about your VAT and IRPF.",
-      "claudeText3Line2": "Clear answers, no surprises.",
-      "chatgptHeading": "ChatGPT, built in",
-      "chatgptText1Line1": "Create invoices without leaving ChatGPT.",
-      "chatgptText1Line2": "Name the client and the amount, done.",
-      "chatgptText2Line1": "Upload a receipt to the chat.",
-      "chatgptText2Line2": "ChatGPT turns it into a logged expense.",
-      "chatgptText3Line1": "Check your tax standing.",
-      "chatgptText3Line2": "VAT and IRPF up to date, whenever you need it."
+      "claudeHeading": "Chat with Claude",
+      "claudeTextLine1": "Snap your receipts.",
+      "claudeTextLine2": "Create invoices on the spot.",
+      "claudeTextLine3": "Manage all your suppliers.",
+      "chatgptHeading": "Work with ChatGPT",
+      "chatgptTextLine1": "Ask about the status of your invoices.",
+      "chatgptTextLine2": "Scan your expenses.",
+      "chatgptTextLine3": "Check your tax status."
     },
     "toast": {
       "subscriptionConfirmed": "Your subscription has been confirmed.",
@@ -119,7 +118,7 @@
       "suppliers": "Suppliers",
       "irpf": "IRPF",
       "vat": "VAT",
-      "euClients": "EU Clients"
+      "euClients": "intra-EU transactions"
     }
   }
 }

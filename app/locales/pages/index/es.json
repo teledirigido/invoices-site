@@ -1,16 +1,21 @@
 {
   "index": {
     "hero": {
-      "tagline": "Contabilidad para autónomos en España",
+      "tagline": "El mejor software para Autónomos en España",
       "headingPrefix": "Claridad con",
       "headingSuffix": "Nitidez con Hacienda",
-      "description": "Gestiona tus facturas, clientes y gastos. Obten tus Modelos 130, 303 y 349 listos para presentarlos.",
+      "description": "Lo que necesitas para entender tus impuestos y gestiones con la Agencia Tributaria (AEAT)",
       "cta": "Comenzar",
-      "disclaimer": "60-días de prueba. No requiere tarjeta de credito.",
+      "disclaimer": "60 días de prueba. No requiere tarjeta de crédito.",
       "rotatingWords": [
-        "tus Facturas.",
+        "Veri*Factu.",
+        "tus facturas.",
+        "tus gestiones.",
+        "la seguridad social.",
         "el Modelo 303.",
-        "tus Gastos.",
+        "tus gastos.",
+        "tus proveedores.",
+        "tus clientes.",
         "el IRPF.",
         "el IVA.",
         "el Modelo 130.",
@@ -26,9 +31,9 @@
       "invoicesDesc": "Emite facturas, registra gastos desde la web, Claude.ai o ChatGPT."
     },
     "problem": {
-      "label": "Nitidez es también predictibilidad",
+      "label": "Nitidez es predictibilidad",
       "heading": "Adiós a las sorpresas de fin de trimestre",
-      "description": "Facturas, gastos, clientes, proveedores y gestión intracomunitaria siempre disponibles. Verifactu e integración con Claude.ai para las tareas diarias.",
+      "description": "Facturas, gastos, clientes, proveedores ilimitados y siempre disponibles. Veri*Factu, integración con Claude.ai o ChatGPT para tus tareas diarias.",
       "conclusion": "Al fin una herramienta de nuestro lado."
     },
     "pricing": {
@@ -37,8 +42,8 @@
       "unit": "/mes"
     },
     "audience": {
-      "heading": "La mejor herramienta para autónomos/as en España",
-      "description": "• Administra tus facturas y gastos. \n• Lleva registro de Clientes y Proveedores. \n• Controla el IVA de tus clientes en España, EU o en el extranjero \n• Obten predictibilidad de tus resultados al momento.\n• Descarga tus modelos listos para presentar",
+      "heading": "El mejor software para autónomos en España",
+      "description": "• Sin límite de facturas o gastos. \n• Lleva registro de Clientes y Proveedores. \n• Controla el IVA de tus clientes en España, UE o el extranjero \n• Obtén predictibilidad de tus resultados al momento.\n• Descarga tus modelos listos para presentar",
       "conclusion": "Nitidez es perfecto para ti."
     },
     "models": {
@@ -49,7 +54,7 @@
       "retaTitle": "RETA",
       "retaDesc": "Tu cuota de Seguridad Social contemplada dentro del cálculo, no como una sorpresa aparte.",
       "modelo349Title": "Modelo 349",
-      "modelo349Desc": "Para tus clientes en la UE, tus operaciones quedan declaradas sin esfuerzo extra.",
+      "modelo349Desc": "Para tus clientes y gastos en la UE, tus operaciones quedan declaradas sin esfuerzo extra.",
       "exportHeading": "Tus modelos listos para presentar"
     },
     "socialSecurity": {
@@ -60,17 +65,17 @@
       "bracketDesc": "Según tu rendimiento neto medio, te indicamos tu tramo y si lo que estás pagando se queda corto o se pasa."
     },
     "scope": {
-      "label": "Alcance Honesto",
+      "label": "",
       "heading": "Lo que Nitidez.es no es",
-      "description": "No gestiona inventario, nominas si tienes empleados, módulos o varias actividades simultáneas. Nitidez.es te da claridad en tus obligaciones fiscales y números para que entiendas cada obligación antes de que venza.",
-      "chipNominas": "No hace nóminas",
-      "chipModulos": "No hace módulos",
-      "chipPresenta": "No gestiona inventario"
+      "description": "No gestionamos inventario, nóminas o módulos. Tampoco te limitamos en el número de facturas, gastos o escaneos que hagas al año.",
+      "chipNominas": "No limita tus facturas",
+      "chipModulos": "No limita tus gastos",
+      "chipPresenta": "No limita tus escaneos"
     },
     "notifyMe": {
       "label": "Actualmente en Fase Inicial",
-      "heading": "Por Autonomos, para autónomos",
-      "description": "Si no sabes como va a terminar tu trimestre, por qué pagas tanto IVA e IRPF o qué es el Modelo 349. Entonces esta es tu herramienta."
+      "heading": "Por autónomos, para autónomos",
+      "description": "Si no sabes cómo va a terminar tu trimestre, por qué pagas tanto IVA e IRPF o qué es el Modelo 349. Entonces esta es tu herramienta."
     },
     "screenshots": {
       "altIngresos": "Vista de ingresos en Nitidez",
@@ -83,23 +88,17 @@
       "tabClaude": "Claude.ai",
       "tabChatgpt": "ChatGPT",
       "comingSoon": "Pronto",
-      "descWebApp": "Gestiona tus tareas de Autónomo en una sola página.",
+      "descWebApp": "Simplifica tus tareas y obtén predictibilidad en tus números.",
       "descClaude": "Factura, registra gastos y consulta tus impuestos hablando con Claude.",
       "descChatgpt": "Factura, registra gastos y consulta tus impuestos hablando con ChatGPT.",
       "claudeHeading": "Conversa con Claude",
-      "claudeText1Line1": "Factura desde el chat.",
-      "claudeText1Line2": "Dile el cliente y el importe, y Claude genera la factura.",
-      "claudeText2Line1": "Registra gastos al instante.",
-      "claudeText2Line2": "Envía una foto del ticket y Claude lo archiva.",
-      "claudeText3Line1": "Pregunta por tu IVA e IRPF.",
-      "claudeText3Line2": "Respuestas claras, sin sorpresas.",
+      "claudeTextLine1": "Sácale fotos a tus tickets.",
+      "claudeTextLine2": "Crea facturas al momento.",
+      "claudeTextLine3": "Administra tus proveedores.",
       "chatgptHeading": "ChatGPT contigo",
-      "chatgptText1Line1": "Crea facturas sin salir de ChatGPT.",
-      "chatgptText1Line2": "Indica el cliente y el importe, listo.",
-      "chatgptText2Line1": "Sube un ticket a la conversación.",
-      "chatgptText2Line2": "ChatGPT lo convierte en gasto registrado.",
-      "chatgptText3Line1": "Consulta tu situación fiscal.",
-      "chatgptText3Line2": "IVA e IRPF al día, cuando lo necesites."
+      "chatgptTextLine1": "Pregunta el estado de tus facturas.",
+      "chatgptTextLine2": "Escanea tus gastos.",
+      "chatgptTextLine3": "Consulta tu estado fiscal."
     },
     "toast": {
       "subscriptionConfirmed": "Tu suscripción ha sido confirmada.",
@@ -119,7 +118,7 @@
       "suppliers": "Proveedores",
       "irpf": "IRPF",
       "vat": "IVA",
-      "euClients": "Clientes EU"
+      "euClients": "Operaciones UE"
     }
   }
 }
